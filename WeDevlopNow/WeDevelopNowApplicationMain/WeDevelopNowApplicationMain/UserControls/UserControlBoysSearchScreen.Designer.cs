@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBoysSearchScreen));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblBoysTitle1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -38,17 +39,27 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnHome);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.lblBoysTitle1);
-            this.panel2.Location = new System.Drawing.Point(60, 39);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(425, 700);
+            this.panel2.Size = new System.Drawing.Size(600, 800);
             this.panel2.TabIndex = 4;
+            // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(287, 642);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(220, 90);
+            this.btnHome.TabIndex = 5;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(145, 17);
+            this.pictureBox4.Location = new System.Drawing.Point(210, 16);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(181, 191);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -83,5 +94,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblBoysTitle1;
+        private System.Windows.Forms.Button btnHome;
     }
 }

@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UserControlBrandTypeSearchResultScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlBrandTypeSearchResultScreen.Designer.cs">
+      <DependentUpon>UserControlBrandTypeSearchResultScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControlBrandSearchResultScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,6 +144,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\UserControlBrandTypeSearchResultScreen.resx">
+      <DependentUpon>UserControlBrandTypeSearchResultScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlBrandSearchResultScreen.resx">
       <DependentUpon>UserControlBrandSearchResultScreen.cs</DependentUpon>
     </EmbeddedResource>

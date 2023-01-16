@@ -39,9 +39,19 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlHomepage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
+            this.pnlHomepage.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            pictureBox1.Location = new System.Drawing.Point(210, 16);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(180, 192);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // pnlHomepage
             // 
@@ -53,9 +63,9 @@
             this.pnlHomepage.Controls.Add(this.button2);
             this.pnlHomepage.Controls.Add(this.button1);
             this.pnlHomepage.Controls.Add(pictureBox1);
-            this.pnlHomepage.Location = new System.Drawing.Point(261, 16);
+            this.pnlHomepage.Location = new System.Drawing.Point(0, 0);
             this.pnlHomepage.Name = "pnlHomepage";
-            this.pnlHomepage.Size = new System.Drawing.Size(425, 700);
+            this.pnlHomepage.Size = new System.Drawing.Size(600, 800);
             this.pnlHomepage.TabIndex = 1;
             // 
             // label2
@@ -127,26 +137,16 @@
             this.button1.Text = "Men";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            pictureBox1.Location = new System.Drawing.Point(120, 17);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(180, 192);
-            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // UserControlHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlHomepage);
             this.Name = "UserControlHomepage";
-            this.Size = new System.Drawing.Size(894, 711);
+            this.Size = new System.Drawing.Size(600, 800);
+            ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
             this.pnlHomepage.ResumeLayout(false);
             this.pnlHomepage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

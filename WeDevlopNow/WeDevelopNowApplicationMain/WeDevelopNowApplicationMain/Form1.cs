@@ -17,7 +17,12 @@ namespace WeDevelopNowApplicationMain
             InitializeComponent();
         }
 
-        private void pnlHomepage_Paint(object sender, PaintEventArgs e)
+        public void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void btnBack_Click(object sender, EventArgs e)
         {
 
         }

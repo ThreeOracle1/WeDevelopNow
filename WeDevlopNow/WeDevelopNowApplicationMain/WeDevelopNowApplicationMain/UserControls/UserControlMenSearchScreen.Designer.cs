@@ -32,6 +32,7 @@
             this.pnlMens = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.Button();
             this.pnlMens.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -40,15 +41,15 @@
             // 
             this.pnlMens.Controls.Add(this.pictureBox2);
             this.pnlMens.Controls.Add(this.label1);
-            this.pnlMens.Location = new System.Drawing.Point(229, 33);
+            this.pnlMens.Location = new System.Drawing.Point(0, 0);
             this.pnlMens.Name = "pnlMens";
-            this.pnlMens.Size = new System.Drawing.Size(425, 700);
+            this.pnlMens.Size = new System.Drawing.Size(600, 800);
             this.pnlMens.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(136, 17);
+            this.pictureBox2.Location = new System.Drawing.Point(210, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(181, 192);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -65,13 +66,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Men";
             // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(636, 643);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(220, 90);
+            this.btnHome.TabIndex = 3;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            // 
             // UserControlMenSearchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.pnlMens);
             this.Name = "UserControlMenSearchScreen";
-            this.Size = new System.Drawing.Size(882, 766);
+            this.Size = new System.Drawing.Size(600, 800);
             this.pnlMens.ResumeLayout(false);
             this.pnlMens.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -84,5 +95,6 @@
         private System.Windows.Forms.Panel pnlMens;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnHome;
     }
 }
