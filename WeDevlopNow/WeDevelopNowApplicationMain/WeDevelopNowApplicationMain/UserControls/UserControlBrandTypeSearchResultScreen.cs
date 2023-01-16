@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WeDevelopNowApplicationMain
 {
-    public partial class Form1 : Form
+    public partial class UserControlBrandTypeSearchResultScreen : UserControl
     {
-        public Form1()
+        public UserControlBrandTypeSearchResultScreen()
         {
             InitializeComponent();
-        }
-
-        private void pnlHomepage_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
