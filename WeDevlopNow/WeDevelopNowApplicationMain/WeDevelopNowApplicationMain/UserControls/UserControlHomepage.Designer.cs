@@ -136,7 +136,6 @@
             this.btnMen.TabIndex = 2;
             this.btnMen.Text = "Men";
             this.btnMen.UseVisualStyleBackColor = false;
-            this.btnMen.Click += new System.EventHandler(this.btnMen_Click);
             // 
             // UserControlHomepage
             // 
