@@ -46,10 +46,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            pictureBox1.Location = new System.Drawing.Point(210, 16);
+            pictureBox1.Location = new System.Drawing.Point(162, 36);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new System.Drawing.Size(180, 192);
-            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -80,9 +80,9 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.button6.Location = new System.Drawing.Point(224, 537);
+            this.button6.Location = new System.Drawing.Point(318, 528);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(125, 125);
+            this.button6.Size = new System.Drawing.Size(99, 113);
             this.button6.TabIndex = 7;
             this.button6.Text = "Brand Type";
             this.button6.UseVisualStyleBackColor = false;
@@ -90,9 +90,9 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.button5.Location = new System.Drawing.Point(76, 537);
+            this.button5.Location = new System.Drawing.Point(97, 563);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 125);
+            this.button5.Size = new System.Drawing.Size(84, 78);
             this.button5.TabIndex = 6;
             this.button5.Text = "Brand";
             this.button5.UseVisualStyleBackColor = false;
@@ -100,9 +100,9 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.button4.Location = new System.Drawing.Point(224, 385);
+            this.button4.Location = new System.Drawing.Point(318, 425);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 125);
+            this.button4.Size = new System.Drawing.Size(85, 85);
             this.button4.TabIndex = 5;
             this.button4.Text = "Girls";
             this.button4.UseVisualStyleBackColor = false;
@@ -110,9 +110,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.button3.Location = new System.Drawing.Point(76, 385);
+            this.button3.Location = new System.Drawing.Point(75, 407);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 125);
+            this.button3.Size = new System.Drawing.Size(106, 103);
             this.button3.TabIndex = 4;
             this.button3.Text = "Boys";
             this.button3.UseVisualStyleBackColor = false;
@@ -120,9 +120,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.button2.Location = new System.Drawing.Point(224, 240);
+            this.button2.Location = new System.Drawing.Point(318, 273);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 125);
+            this.button2.Size = new System.Drawing.Size(99, 92);
             this.button2.TabIndex = 3;
             this.button2.Text = "Women";
             this.button2.UseVisualStyleBackColor = false;
@@ -130,9 +130,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.button1.Location = new System.Drawing.Point(76, 240);
+            this.button1.Location = new System.Drawing.Point(75, 273);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 125);
+            this.button1.Size = new System.Drawing.Size(106, 92);
             this.button1.TabIndex = 2;
             this.button1.Text = "Men";
             this.button1.UseVisualStyleBackColor = false;

@@ -28,41 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.userControlHomepage2 = new WeDevelopNowApplicationMain.UserControlHomepage();
             this.SuspendLayout();
             // 
-            // panel3
+            // userControlHomepage2
             // 
-            this.panel3.Controls.Add(this.pictureBox5);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(1745, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(425, 700);
-            this.panel3.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 38);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 16);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Girls";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(87, 18);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(181, 191);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.userControlHomepage2.Location = new System.Drawing.Point(0, 0);
+            this.userControlHomepage2.Name = "userControlHomepage2";
+            this.userControlHomepage2.Size = new System.Drawing.Size(580, 750);
+            this.userControlHomepage2.TabIndex = 5;
             // 
             // Form1
             // 
@@ -70,20 +44,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(582, 753);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.userControlHomepage2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label4;
+        private UserControlHomepage userControlHomepage2;
     }
 }
 
