@@ -37,7 +37,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMen = new System.Windows.Forms.Button();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
             this.pnlHomepage.SuspendLayout();
@@ -61,7 +61,7 @@
             this.pnlHomepage.Controls.Add(this.button4);
             this.pnlHomepage.Controls.Add(this.button3);
             this.pnlHomepage.Controls.Add(this.button2);
-            this.pnlHomepage.Controls.Add(this.button1);
+            this.pnlHomepage.Controls.Add(this.btnMen);
             this.pnlHomepage.Controls.Add(pictureBox1);
             this.pnlHomepage.Location = new System.Drawing.Point(0, 0);
             this.pnlHomepage.Name = "pnlHomepage";
@@ -127,15 +127,16 @@
             this.button2.Text = "Women";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnMen
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.button1.Location = new System.Drawing.Point(75, 273);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 92);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Men";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.btnMen.Location = new System.Drawing.Point(75, 273);
+            this.btnMen.Name = "btnMen";
+            this.btnMen.Size = new System.Drawing.Size(106, 92);
+            this.btnMen.TabIndex = 2;
+            this.btnMen.Text = "Men";
+            this.btnMen.UseVisualStyleBackColor = false;
+            this.btnMen.Click += new System.EventHandler(this.btnMen_Click);
             // 
             // UserControlHomepage
             // 
@@ -160,6 +161,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMen;
     }
 }
