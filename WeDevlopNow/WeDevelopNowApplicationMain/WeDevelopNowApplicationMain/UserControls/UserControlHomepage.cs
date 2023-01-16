@@ -12,15 +12,17 @@ namespace WeDevelopNowApplicationMain
 {
     public partial class UserControlHomepage : UserControl
     {
+        
 
         public UserControlHomepage()
         {
             InitializeComponent();
         }
 
-        public void btnMen_Click(object sender, EventArgs e)
+        private void btnMen_Click(object sender, EventArgs e, UserControlHomepage userControlHomepage, UserControlMenSearchScreen userControlMenSearchScreen)
         {
-           // form1Instance.MenSearchPage();
+            userControlHomepage.Visible = false;
+            userControlMenSearchScreen.Visible = true;
         }
     }
 }
