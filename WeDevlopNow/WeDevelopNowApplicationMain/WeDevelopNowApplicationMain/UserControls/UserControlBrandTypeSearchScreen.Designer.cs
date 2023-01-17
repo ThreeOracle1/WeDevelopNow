@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBrandTypeSearchScreen));
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlBrandTypeSearch = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4.SuspendLayout();
+            this.pnlBrandTypeSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel4
+            // pnlBrandTypeSearch
             // 
-            this.panel4.Controls.Add(this.btnHome);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(600, 800);
-            this.panel4.TabIndex = 6;
+            this.pnlBrandTypeSearch.Controls.Add(this.btnHome);
+            this.pnlBrandTypeSearch.Controls.Add(this.pictureBox1);
+            this.pnlBrandTypeSearch.Controls.Add(this.label1);
+            this.pnlBrandTypeSearch.Location = new System.Drawing.Point(0, 0);
+            this.pnlBrandTypeSearch.Name = "pnlBrandTypeSearch";
+            this.pnlBrandTypeSearch.Size = new System.Drawing.Size(580, 750);
+            this.pnlBrandTypeSearch.TabIndex = 6;
             // 
             // btnHome
             // 
@@ -79,11 +79,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pnlBrandTypeSearch);
             this.Name = "UserControlBrandTypeSearchScreen";
-            this.Size = new System.Drawing.Size(600, 800);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.Size = new System.Drawing.Size(580, 750);
+            this.pnlBrandTypeSearch.ResumeLayout(false);
+            this.pnlBrandTypeSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -91,7 +91,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlBrandTypeSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnHome;

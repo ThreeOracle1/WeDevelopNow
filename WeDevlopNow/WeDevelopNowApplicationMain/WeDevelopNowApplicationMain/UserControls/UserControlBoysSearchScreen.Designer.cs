@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBoysSearchScreen));
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlBoysSearch = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblBoysTitle1 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
+            this.pnlBoysSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // pnlBoysSearch
             // 
-            this.panel2.Controls.Add(this.btnHome);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.lblBoysTitle1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 800);
-            this.panel2.TabIndex = 4;
+            this.pnlBoysSearch.Controls.Add(this.btnHome);
+            this.pnlBoysSearch.Controls.Add(this.pictureBox4);
+            this.pnlBoysSearch.Controls.Add(this.lblBoysTitle1);
+            this.pnlBoysSearch.Location = new System.Drawing.Point(0, 0);
+            this.pnlBoysSearch.Name = "pnlBoysSearch";
+            this.pnlBoysSearch.Size = new System.Drawing.Size(580, 750);
+            this.pnlBoysSearch.TabIndex = 4;
             // 
             // btnHome
             // 
@@ -79,11 +79,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlBoysSearch);
             this.Name = "UserControlBoysSearchScreen";
-            this.Size = new System.Drawing.Size(600, 800);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.Size = new System.Drawing.Size(580, 750);
+            this.pnlBoysSearch.ResumeLayout(false);
+            this.pnlBoysSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
@@ -91,7 +91,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlBoysSearch;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblBoysTitle1;
         private System.Windows.Forms.Button btnHome;

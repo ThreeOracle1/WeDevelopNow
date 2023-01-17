@@ -50,7 +50,19 @@ namespace WeDevelopNowApplicationMain
             }
         }
 
+        public void WomenUserControlVisable()
+        {
+            {
+                var formInstance1 = Form.ActiveForm as Form1;
 
+                if (formInstance1 != null)
+                {
+                    formInstance1.userControlHomepage2.Visible = false;
+
+                    formInstance1.userControlWomenSearchScreen1.Visible = true;
+                }
+            }
+        }
 
         public void btnHome_Click(object sender, EventArgs e)
         {
@@ -61,5 +73,7 @@ namespace WeDevelopNowApplicationMain
         {
 
         }
+
+
     }
 }

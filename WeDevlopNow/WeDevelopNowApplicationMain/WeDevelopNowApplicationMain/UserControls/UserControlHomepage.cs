@@ -14,14 +14,19 @@ namespace WeDevelopNowApplicationMain
     {
         public UserControlHomepage()
         {
-            InitializeComponent1();
+            InitializeComponent();
         }
 
-        private void btnMen_Click(object sender, EventArgs e)
+        private void btnHomeMen_Click(object sender, EventArgs e)
         {
-            Form1 formInstance = new Form1();
-            
-            formInstance.MenUserControlVisable();
+
         }
+
+        //private void btnHomeMen_Click(object sender, EventArgs e)
+        //{
+        //    Form1 formInstance = new Form1();
+
+        //    formInstance.MenUserControlVisable();
+        //}
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.userControlHomepage2 = new WeDevelopNowApplicationMain.UserControlHomepage();
             this.userControlBoysSearchResultScreen1 = new WeDevelopNowApplicationMain.UserControlBoysSearchResultScreen();
             this.userControlBoysSearchScreen1 = new WeDevelopNowApplicationMain.UserControlBoysSearchScreen();
             this.userControlBrandSearchResultScreen1 = new WeDevelopNowApplicationMain.UserControlBrandSearchResultScreen();
@@ -43,96 +42,89 @@
             this.userControlWomenSearchScreen1 = new WeDevelopNowApplicationMain.UserControlWomenSearchScreen();
             this.SuspendLayout();
             // 
-            // userControlHomepage2
-            // 
-            this.userControlHomepage2.Location = new System.Drawing.Point(0, 0);
-            this.userControlHomepage2.Name = "userControlHomepage2";
-            this.userControlHomepage2.Size = new System.Drawing.Size(580, 750);
-            this.userControlHomepage2.TabIndex = 5;
-            // 
             // userControlBoysSearchResultScreen1
             // 
             this.userControlBoysSearchResultScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlBoysSearchResultScreen1.Name = "userControlBoysSearchResultScreen1";
-            this.userControlBoysSearchResultScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlBoysSearchResultScreen1.TabIndex = 6;
+            this.userControlBoysSearchResultScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlBoysSearchResultScreen1.TabIndex = 0;
             // 
             // userControlBoysSearchScreen1
             // 
             this.userControlBoysSearchScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlBoysSearchScreen1.Name = "userControlBoysSearchScreen1";
-            this.userControlBoysSearchScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlBoysSearchScreen1.TabIndex = 7;
+            this.userControlBoysSearchScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlBoysSearchScreen1.TabIndex = 1;
             // 
             // userControlBrandSearchResultScreen1
             // 
             this.userControlBrandSearchResultScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlBrandSearchResultScreen1.Name = "userControlBrandSearchResultScreen1";
-            this.userControlBrandSearchResultScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlBrandSearchResultScreen1.TabIndex = 8;
+            this.userControlBrandSearchResultScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlBrandSearchResultScreen1.TabIndex = 2;
             // 
             // userControlBrandSearchScreen1
             // 
             this.userControlBrandSearchScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlBrandSearchScreen1.Name = "userControlBrandSearchScreen1";
-            this.userControlBrandSearchScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlBrandSearchScreen1.TabIndex = 9;
+            this.userControlBrandSearchScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlBrandSearchScreen1.TabIndex = 3;
             // 
             // userControlBrandTypeSearchResultScreen1
             // 
             this.userControlBrandTypeSearchResultScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlBrandTypeSearchResultScreen1.Name = "userControlBrandTypeSearchResultScreen1";
-            this.userControlBrandTypeSearchResultScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlBrandTypeSearchResultScreen1.TabIndex = 10;
+            this.userControlBrandTypeSearchResultScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlBrandTypeSearchResultScreen1.TabIndex = 4;
             // 
             // userControlBrandTypeSearchScreen1
             // 
             this.userControlBrandTypeSearchScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlBrandTypeSearchScreen1.Name = "userControlBrandTypeSearchScreen1";
-            this.userControlBrandTypeSearchScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlBrandTypeSearchScreen1.TabIndex = 11;
+            this.userControlBrandTypeSearchScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlBrandTypeSearchScreen1.TabIndex = 5;
             // 
             // userControlGirlsSearchResultScreen1
             // 
             this.userControlGirlsSearchResultScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlGirlsSearchResultScreen1.Name = "userControlGirlsSearchResultScreen1";
-            this.userControlGirlsSearchResultScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlGirlsSearchResultScreen1.TabIndex = 12;
+            this.userControlGirlsSearchResultScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlGirlsSearchResultScreen1.TabIndex = 6;
             // 
             // userControlGirlsSearchScreen1
             // 
             this.userControlGirlsSearchScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlGirlsSearchScreen1.Name = "userControlGirlsSearchScreen1";
-            this.userControlGirlsSearchScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlGirlsSearchScreen1.TabIndex = 13;
+            this.userControlGirlsSearchScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlGirlsSearchScreen1.TabIndex = 7;
             // 
             // userControlMenSearchResultScreen1
             // 
             this.userControlMenSearchResultScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlMenSearchResultScreen1.Name = "userControlMenSearchResultScreen1";
-            this.userControlMenSearchResultScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlMenSearchResultScreen1.TabIndex = 14;
+            this.userControlMenSearchResultScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlMenSearchResultScreen1.TabIndex = 8;
             // 
             // userControlMenSearchScreen1
             // 
             this.userControlMenSearchScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlMenSearchScreen1.Name = "userControlMenSearchScreen1";
-            this.userControlMenSearchScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlMenSearchScreen1.TabIndex = 15;
+            this.userControlMenSearchScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlMenSearchScreen1.TabIndex = 9;
             // 
             // userControlWomenSearchResultScreen1
             // 
             this.userControlWomenSearchResultScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlWomenSearchResultScreen1.Name = "userControlWomenSearchResultScreen1";
-            this.userControlWomenSearchResultScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlWomenSearchResultScreen1.TabIndex = 16;
+            this.userControlWomenSearchResultScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlWomenSearchResultScreen1.TabIndex = 10;
             // 
             // userControlWomenSearchScreen1
             // 
             this.userControlWomenSearchScreen1.Location = new System.Drawing.Point(0, 0);
             this.userControlWomenSearchScreen1.Name = "userControlWomenSearchScreen1";
-            this.userControlWomenSearchScreen1.Size = new System.Drawing.Size(580, 750);
-            this.userControlWomenSearchScreen1.TabIndex = 17;
+            this.userControlWomenSearchScreen1.Size = new System.Drawing.Size(600, 800);
+            this.userControlWomenSearchScreen1.TabIndex = 11;
             // 
             // Form1
             // 
@@ -152,7 +144,6 @@
             this.Controls.Add(this.userControlBrandSearchResultScreen1);
             this.Controls.Add(this.userControlBoysSearchScreen1);
             this.Controls.Add(this.userControlBoysSearchResultScreen1);
-            this.Controls.Add(this.userControlHomepage2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -160,7 +151,7 @@
         }
 
         #endregion
-        private UserControlHomepage userControlHomepage2;
+
         private UserControlBoysSearchResultScreen userControlBoysSearchResultScreen1;
         private UserControlBoysSearchScreen userControlBoysSearchScreen1;
         private UserControlBrandSearchResultScreen userControlBrandSearchResultScreen1;

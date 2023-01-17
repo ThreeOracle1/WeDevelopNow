@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UserControlHomepage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlHomepage.Designer.cs">
+      <DependentUpon>UserControlHomepage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControlBrandTypeSearchResultScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,12 +120,6 @@
     <Compile Include="UserControls\UserControlMenSearchScreen.Designer.cs">
       <DependentUpon>UserControlMenSearchScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UserControlHomepage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserControlHomepage.Designer.cs">
-      <DependentUpon>UserControlHomepage.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\UserControlWomenSearchScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,6 +144,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\UserControlHomepage.resx">
+      <DependentUpon>UserControlHomepage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlBrandTypeSearchResultScreen.resx">
       <DependentUpon>UserControlBrandTypeSearchResultScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,9 +173,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlBoysSearchScreen.resx">
       <DependentUpon>UserControlBoysSearchScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserControlHomepage.resx">
-      <DependentUpon>UserControlHomepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlMenSearchScreen.resx">
       <DependentUpon>UserControlMenSearchScreen.cs</DependentUpon>

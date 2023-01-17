@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlWomenSearchScreen));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlWomenSearch = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.pnlWomenSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlWomenSearch
             // 
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 800);
-            this.panel1.TabIndex = 3;
+            this.pnlWomenSearch.Controls.Add(this.btnHome);
+            this.pnlWomenSearch.Controls.Add(this.pictureBox3);
+            this.pnlWomenSearch.Controls.Add(this.label3);
+            this.pnlWomenSearch.Location = new System.Drawing.Point(0, 0);
+            this.pnlWomenSearch.Name = "pnlWomenSearch";
+            this.pnlWomenSearch.Size = new System.Drawing.Size(580, 750);
+            this.pnlWomenSearch.TabIndex = 3;
             // 
             // pictureBox3
             // 
@@ -67,7 +68,7 @@
             // 
             // btnHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(633, 620);
+            this.btnHome.Location = new System.Drawing.Point(246, 608);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(220, 90);
             this.btnHome.TabIndex = 4;
@@ -78,12 +79,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnHome);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlWomenSearch);
             this.Name = "UserControlWomenSearchScreen";
-            this.Size = new System.Drawing.Size(600, 800);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Size = new System.Drawing.Size(580, 750);
+            this.pnlWomenSearch.ResumeLayout(false);
+            this.pnlWomenSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -91,7 +91,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlWomenSearch;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnHome;
