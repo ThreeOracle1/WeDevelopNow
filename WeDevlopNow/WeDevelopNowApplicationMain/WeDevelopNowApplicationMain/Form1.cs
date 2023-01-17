@@ -298,5 +298,41 @@ namespace WeDevelopNowApplicationMain
                 formInstance1.userControlHomepage1.Visible = true;
             }
         }
+
+        public void GirlsToGirlsResultControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlGirlsSearchScreen1.Visible = false;
+
+                formInstance1.userControlGirlsSearchResultScreen1.Visible = true;
+            }
+        }
+
+        public void BackToGirlsControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlGirlsSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlGirlsSearchScreen1.Visible = true;
+            }
+        }
+
+        public void GirlsResultToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlGirlsSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
     }
 }

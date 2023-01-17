@@ -30,17 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlGirlsSearchResultScreen));
             this.pnlGirlsSearchResult = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnBackToGirls = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btnGirlsResultsToHome = new System.Windows.Forms.Button();
             this.pnlGirlsSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGirlsSearchResult
             // 
-            this.pnlGirlsSearchResult.Controls.Add(this.btnBack);
+            this.pnlGirlsSearchResult.Controls.Add(this.btnGirlsResultsToHome);
+            this.pnlGirlsSearchResult.Controls.Add(this.btnBackToGirls);
             this.pnlGirlsSearchResult.Controls.Add(this.pictureBox1);
             this.pnlGirlsSearchResult.Controls.Add(this.label1);
             this.pnlGirlsSearchResult.Location = new System.Drawing.Point(0, 0);
@@ -48,14 +49,15 @@
             this.pnlGirlsSearchResult.Size = new System.Drawing.Size(580, 750);
             this.pnlGirlsSearchResult.TabIndex = 6;
             // 
-            // btnBack
+            // btnBackToGirls
             // 
-            this.btnBack.Location = new System.Drawing.Point(29, 642);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(220, 90);
-            this.btnBack.TabIndex = 8;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBackToGirls.Location = new System.Drawing.Point(29, 642);
+            this.btnBackToGirls.Name = "btnBackToGirls";
+            this.btnBackToGirls.Size = new System.Drawing.Size(220, 90);
+            this.btnBackToGirls.TabIndex = 8;
+            this.btnBackToGirls.Text = "<< Back";
+            this.btnBackToGirls.UseVisualStyleBackColor = true;
+            this.btnBackToGirls.Click += new System.EventHandler(this.btnBackToGirls_Click);
             // 
             // pictureBox1
             // 
@@ -76,20 +78,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Girls results";
             // 
-            // btnHome
+            // btnGirlsResultsToHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(355, 642);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 7;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnGirlsResultsToHome.Location = new System.Drawing.Point(304, 642);
+            this.btnGirlsResultsToHome.Name = "btnGirlsResultsToHome";
+            this.btnGirlsResultsToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnGirlsResultsToHome.TabIndex = 7;
+            this.btnGirlsResultsToHome.Text = "Home";
+            this.btnGirlsResultsToHome.UseVisualStyleBackColor = true;
+            this.btnGirlsResultsToHome.Click += new System.EventHandler(this.btnGirlsResultsToHome_Click);
             // 
             // UserControlGirlsSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.pnlGirlsSearchResult);
             this.Name = "UserControlGirlsSearchResultScreen";
             this.Size = new System.Drawing.Size(580, 750);
@@ -105,7 +107,7 @@
         private System.Windows.Forms.Panel pnlGirlsSearchResult;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnGirlsResultsToHome;
+        private System.Windows.Forms.Button btnBackToGirls;
     }
 }
