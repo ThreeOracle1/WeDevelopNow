@@ -371,5 +371,40 @@ namespace WeDevelopNowApplicationMain
             }
         }
 
+        public void BrandTypeToBrandTypeResultControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBrandTypeSearchScreen1.Visible = false;
+
+                formInstance1.userControlBrandTypeSearchResultScreen1.Visible = true;
+            }
+        }
+
+        public void BackToBrandTypeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBrandTypeSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlBrandTypeSearchScreen1.Visible = true;
+            }
+        }
+
+        public void BrandTypeResultToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBrandTypeSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
     }
 }
