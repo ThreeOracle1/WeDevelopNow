@@ -33,12 +33,14 @@
             this.btnBoysToHome = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblBoysTitle1 = new System.Windows.Forms.Label();
+            this.txtbProductTypeBoys = new System.Windows.Forms.TextBox();
             this.pnlBoysSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBoysSearch
             // 
+            this.pnlBoysSearch.Controls.Add(this.txtbProductTypeBoys);
             this.pnlBoysSearch.Controls.Add(this.btnBoysToHome);
             this.pnlBoysSearch.Controls.Add(this.pictureBox4);
             this.pnlBoysSearch.Controls.Add(this.lblBoysTitle1);
@@ -49,11 +51,11 @@
             // 
             // btnBoysToHome
             // 
-            this.btnBoysToHome.Location = new System.Drawing.Point(287, 642);
+            this.btnBoysToHome.Location = new System.Drawing.Point(37, 642);
             this.btnBoysToHome.Name = "btnBoysToHome";
-            this.btnBoysToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnBoysToHome.Size = new System.Drawing.Size(519, 90);
             this.btnBoysToHome.TabIndex = 5;
-            this.btnBoysToHome.Text = "Home";
+            this.btnBoysToHome.Text = "<< Home";
             this.btnBoysToHome.UseVisualStyleBackColor = true;
             this.btnBoysToHome.Click += new System.EventHandler(this.btnBoysToHome_Click);
             // 
@@ -76,6 +78,14 @@
             this.lblBoysTitle1.TabIndex = 0;
             this.lblBoysTitle1.Text = "Boys";
             // 
+            // txtbProductTypeBoys
+            // 
+            this.txtbProductTypeBoys.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.txtbProductTypeBoys.Location = new System.Drawing.Point(37, 255);
+            this.txtbProductTypeBoys.Name = "txtbProductTypeBoys";
+            this.txtbProductTypeBoys.Size = new System.Drawing.Size(519, 41);
+            this.txtbProductTypeBoys.TabIndex = 6;
+            // 
             // UserControlBoysSearchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -96,5 +106,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblBoysTitle1;
         private System.Windows.Forms.Button btnBoysToHome;
+        private System.Windows.Forms.TextBox txtbProductTypeBoys;
     }
 }
