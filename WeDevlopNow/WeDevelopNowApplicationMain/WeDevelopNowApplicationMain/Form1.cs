@@ -44,9 +44,21 @@ namespace WeDevelopNowApplicationMain
 
             if (formInstance1 != null)
             {
-                formInstance1.userControlHomepage2.Visible = false;
+                formInstance1.userControlHomepage1.Visible = false;
 
                 formInstance1.userControlMenSearchScreen1.Visible = true;
+            }
+        }
+
+        public void MenToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlMenSearchScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
             }
         }
 
@@ -57,7 +69,7 @@ namespace WeDevelopNowApplicationMain
 
                 if (formInstance1 != null)
                 {
-                    formInstance1.userControlHomepage2.Visible = false;
+                    formInstance1.userControlHomepage1.Visible = false;
 
                     formInstance1.userControlWomenSearchScreen1.Visible = true;
                 }

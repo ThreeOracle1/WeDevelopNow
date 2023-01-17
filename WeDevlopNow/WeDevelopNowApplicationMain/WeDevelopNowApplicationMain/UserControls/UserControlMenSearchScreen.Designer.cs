@@ -30,22 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlMenSearchScreen));
             this.pnlMenSearch = new System.Windows.Forms.Panel();
+            this.btnMenToHome = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
             this.pnlMenSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenSearch
             // 
-            this.pnlMenSearch.Controls.Add(this.btnHome);
+            this.pnlMenSearch.Controls.Add(this.btnMenToHome);
             this.pnlMenSearch.Controls.Add(this.pictureBox2);
             this.pnlMenSearch.Controls.Add(this.label1);
             this.pnlMenSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlMenSearch.Name = "pnlMenSearch";
             this.pnlMenSearch.Size = new System.Drawing.Size(580, 750);
             this.pnlMenSearch.TabIndex = 2;
+            // 
+            // btnMenToHome
+            // 
+            this.btnMenToHome.Location = new System.Drawing.Point(291, 621);
+            this.btnMenToHome.Name = "btnMenToHome";
+            this.btnMenToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnMenToHome.TabIndex = 3;
+            this.btnMenToHome.Text = "Home";
+            this.btnMenToHome.UseVisualStyleBackColor = true;
+            this.btnMenToHome.Click += new System.EventHandler(this.btnMenToHome_Click);
             // 
             // pictureBox2
             // 
@@ -67,15 +77,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Men";
             // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(291, 621);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            // 
             // UserControlMenSearchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -95,6 +96,6 @@
         private System.Windows.Forms.Panel pnlMenSearch;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnMenToHome;
     }
 }
