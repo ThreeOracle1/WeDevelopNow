@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlWomenSearchResultScreen));
             this.pnlWomenSearchResult = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnWomenResultToHome = new System.Windows.Forms.Button();
+            this.btnBackToWomen = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
             this.pnlWomenSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlWomenSearchResult
             // 
-            this.pnlWomenSearchResult.Controls.Add(this.btnHome);
-            this.pnlWomenSearchResult.Controls.Add(this.btnBack);
+            this.pnlWomenSearchResult.Controls.Add(this.btnWomenResultToHome);
+            this.pnlWomenSearchResult.Controls.Add(this.btnBackToWomen);
             this.pnlWomenSearchResult.Controls.Add(this.pictureBox1);
             this.pnlWomenSearchResult.Controls.Add(this.label1);
             this.pnlWomenSearchResult.Location = new System.Drawing.Point(0, 0);
@@ -49,14 +49,25 @@
             this.pnlWomenSearchResult.Size = new System.Drawing.Size(580, 750);
             this.pnlWomenSearchResult.TabIndex = 6;
             // 
-            // btnBack
+            // btnWomenResultToHome
             // 
-            this.btnBack.Location = new System.Drawing.Point(66, 644);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(220, 90);
-            this.btnBack.TabIndex = 8;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnWomenResultToHome.Location = new System.Drawing.Point(329, 644);
+            this.btnWomenResultToHome.Name = "btnWomenResultToHome";
+            this.btnWomenResultToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnWomenResultToHome.TabIndex = 7;
+            this.btnWomenResultToHome.Text = "Home";
+            this.btnWomenResultToHome.UseVisualStyleBackColor = true;
+            this.btnWomenResultToHome.Click += new System.EventHandler(this.btnWomenResultToHome_Click);
+            // 
+            // btnBackToWomen
+            // 
+            this.btnBackToWomen.Location = new System.Drawing.Point(66, 644);
+            this.btnBackToWomen.Name = "btnBackToWomen";
+            this.btnBackToWomen.Size = new System.Drawing.Size(220, 90);
+            this.btnBackToWomen.TabIndex = 8;
+            this.btnBackToWomen.Text = "<< Back";
+            this.btnBackToWomen.UseVisualStyleBackColor = true;
+            this.btnBackToWomen.Click += new System.EventHandler(this.btnBackToWomen_Click);
             // 
             // pictureBox1
             // 
@@ -77,15 +88,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Women results";
             // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(329, 644);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 7;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            // 
             // UserControlWomenSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -105,7 +107,7 @@
         private System.Windows.Forms.Panel pnlWomenSearchResult;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnWomenResultToHome;
+        private System.Windows.Forms.Button btnBackToWomen;
     }
 }

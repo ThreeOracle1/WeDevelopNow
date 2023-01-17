@@ -226,5 +226,42 @@ namespace WeDevelopNowApplicationMain
                 formInstance1.userControlHomepage1.Visible = true;
             }
         }
+
+        public void WomenToWomenResultControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlWomenSearchScreen1.Visible = false;
+
+                formInstance1.userControlWomenSearchResultScreen1.Visible = true;
+            }
+        }
+
+        public void BackToWomenControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlWomenSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlWomenSearchScreen1.Visible = true;
+            }
+        }
+
+        public void WomenResultToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlWomenSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
+
     }
 }
