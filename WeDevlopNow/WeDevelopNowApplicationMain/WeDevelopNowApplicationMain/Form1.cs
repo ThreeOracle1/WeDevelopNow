@@ -334,5 +334,42 @@ namespace WeDevelopNowApplicationMain
                 formInstance1.userControlHomepage1.Visible = true;
             }
         }
+
+        public void BrandToBrandResultControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBrandSearchScreen1.Visible = false;
+
+                formInstance1.userControlBrandSearchResultScreen1.Visible = true;
+            }
+        }
+
+        public void BackToBrandControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBrandSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlBrandSearchScreen1.Visible = true;
+            }
+        }
+
+        public void BrandResultToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBrandSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
+
     }
 }

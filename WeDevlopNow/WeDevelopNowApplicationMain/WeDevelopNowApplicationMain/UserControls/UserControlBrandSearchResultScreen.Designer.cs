@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBrandSearchResultScreen));
             this.pnlBrandSearchResult = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnBrandResultToHome = new System.Windows.Forms.Button();
+            this.btnBrandResultBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
             this.pnlBrandSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBrandSearchResult
             // 
-            this.pnlBrandSearchResult.Controls.Add(this.btnHome);
-            this.pnlBrandSearchResult.Controls.Add(this.btnBack);
+            this.pnlBrandSearchResult.Controls.Add(this.btnBrandResultToHome);
+            this.pnlBrandSearchResult.Controls.Add(this.btnBrandResultBack);
             this.pnlBrandSearchResult.Controls.Add(this.pictureBox1);
             this.pnlBrandSearchResult.Controls.Add(this.label1);
             this.pnlBrandSearchResult.Location = new System.Drawing.Point(0, 0);
@@ -49,14 +49,25 @@
             this.pnlBrandSearchResult.Size = new System.Drawing.Size(580, 750);
             this.pnlBrandSearchResult.TabIndex = 6;
             // 
-            // btnBack
+            // btnBrandResultToHome
             // 
-            this.btnBack.Location = new System.Drawing.Point(29, 639);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(220, 90);
-            this.btnBack.TabIndex = 8;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBrandResultToHome.Location = new System.Drawing.Point(336, 639);
+            this.btnBrandResultToHome.Name = "btnBrandResultToHome";
+            this.btnBrandResultToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnBrandResultToHome.TabIndex = 7;
+            this.btnBrandResultToHome.Text = "Home";
+            this.btnBrandResultToHome.UseVisualStyleBackColor = true;
+            this.btnBrandResultToHome.Click += new System.EventHandler(this.btnBrandResultToHome_Click);
+            // 
+            // btnBrandResultBack
+            // 
+            this.btnBrandResultBack.Location = new System.Drawing.Point(29, 639);
+            this.btnBrandResultBack.Name = "btnBrandResultBack";
+            this.btnBrandResultBack.Size = new System.Drawing.Size(220, 90);
+            this.btnBrandResultBack.TabIndex = 8;
+            this.btnBrandResultBack.Text = "<< Back";
+            this.btnBrandResultBack.UseVisualStyleBackColor = true;
+            this.btnBrandResultBack.Click += new System.EventHandler(this.btnBrandResultBack_Click);
             // 
             // pictureBox1
             // 
@@ -77,15 +88,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Brand results";
             // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(336, 639);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 7;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            // 
             // UserControlBrandSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -105,7 +107,7 @@
         private System.Windows.Forms.Panel pnlBrandSearchResult;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnBrandResultToHome;
+        private System.Windows.Forms.Button btnBrandResultBack;
     }
 }

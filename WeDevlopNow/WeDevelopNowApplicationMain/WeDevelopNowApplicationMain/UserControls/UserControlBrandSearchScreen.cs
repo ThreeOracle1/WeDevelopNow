@@ -23,5 +23,12 @@ namespace WeDevelopNowApplicationMain
 
             formInstance.BrandToHomeControlVisable();
         }
+
+        private void btnFindBrand_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.BrandToBrandResultControlVisable();
+        }
     }
 }

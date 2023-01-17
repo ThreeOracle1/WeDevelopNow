@@ -33,12 +33,38 @@
             this.btnBrandToHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblGenderBrand = new System.Windows.Forms.Label();
+            this.lblProductTypeBrand = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnFindBrand = new System.Windows.Forms.Button();
+            this.cmbxGenderBrand = new System.Windows.Forms.ComboBox();
+            this.cmbxProductTypeBrand = new System.Windows.Forms.ComboBox();
+            this.cmbxSizeBrand = new System.Windows.Forms.ComboBox();
+            this.cmbxColourBrand = new System.Windows.Forms.ComboBox();
+            this.txtbPriceMinBrand = new System.Windows.Forms.TextBox();
+            this.txtbPriceMaxBrand = new System.Windows.Forms.TextBox();
             this.pnlBrandSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBrandSearch
             // 
+            this.pnlBrandSearch.Controls.Add(this.txtbPriceMaxBrand);
+            this.pnlBrandSearch.Controls.Add(this.txtbPriceMinBrand);
+            this.pnlBrandSearch.Controls.Add(this.cmbxColourBrand);
+            this.pnlBrandSearch.Controls.Add(this.cmbxSizeBrand);
+            this.pnlBrandSearch.Controls.Add(this.cmbxProductTypeBrand);
+            this.pnlBrandSearch.Controls.Add(this.cmbxGenderBrand);
+            this.pnlBrandSearch.Controls.Add(this.btnFindBrand);
+            this.pnlBrandSearch.Controls.Add(this.label7);
+            this.pnlBrandSearch.Controls.Add(this.label6);
+            this.pnlBrandSearch.Controls.Add(this.label5);
+            this.pnlBrandSearch.Controls.Add(this.label4);
+            this.pnlBrandSearch.Controls.Add(this.lblProductTypeBrand);
+            this.pnlBrandSearch.Controls.Add(this.lblGenderBrand);
             this.pnlBrandSearch.Controls.Add(this.btnBrandToHome);
             this.pnlBrandSearch.Controls.Add(this.pictureBox1);
             this.pnlBrandSearch.Controls.Add(this.label1);
@@ -49,11 +75,12 @@
             // 
             // btnBrandToHome
             // 
-            this.btnBrandToHome.Location = new System.Drawing.Point(317, 625);
+            this.btnBrandToHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.btnBrandToHome.Location = new System.Drawing.Point(37, 625);
             this.btnBrandToHome.Name = "btnBrandToHome";
-            this.btnBrandToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnBrandToHome.Size = new System.Drawing.Size(500, 90);
             this.btnBrandToHome.TabIndex = 7;
-            this.btnBrandToHome.Text = "Home";
+            this.btnBrandToHome.Text = "<< Home";
             this.btnBrandToHome.UseVisualStyleBackColor = true;
             this.btnBrandToHome.Click += new System.EventHandler(this.btnBrandToHome_Click);
             // 
@@ -76,6 +103,129 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Brand";
             // 
+            // lblGenderBrand
+            // 
+            this.lblGenderBrand.AutoSize = true;
+            this.lblGenderBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblGenderBrand.Location = new System.Drawing.Point(31, 242);
+            this.lblGenderBrand.Name = "lblGenderBrand";
+            this.lblGenderBrand.Size = new System.Drawing.Size(122, 36);
+            this.lblGenderBrand.TabIndex = 8;
+            this.lblGenderBrand.Text = "Gender:";
+            // 
+            // lblProductTypeBrand
+            // 
+            this.lblProductTypeBrand.AutoSize = true;
+            this.lblProductTypeBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblProductTypeBrand.Location = new System.Drawing.Point(31, 305);
+            this.lblProductTypeBrand.Name = "lblProductTypeBrand";
+            this.lblProductTypeBrand.Size = new System.Drawing.Size(201, 36);
+            this.lblProductTypeBrand.TabIndex = 9;
+            this.lblProductTypeBrand.Text = "Product Type:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label4.Location = new System.Drawing.Point(31, 362);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 36);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Size:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label5.Location = new System.Drawing.Point(31, 417);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 36);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Colour:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label6.Location = new System.Drawing.Point(22, 486);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(148, 36);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Price Min:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label7.Location = new System.Drawing.Point(282, 489);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(155, 36);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Price Max:";
+            // 
+            // btnFindBrand
+            // 
+            this.btnFindBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.btnFindBrand.Location = new System.Drawing.Point(43, 547);
+            this.btnFindBrand.Name = "btnFindBrand";
+            this.btnFindBrand.Size = new System.Drawing.Size(494, 62);
+            this.btnFindBrand.TabIndex = 14;
+            this.btnFindBrand.Text = "Find";
+            this.btnFindBrand.UseVisualStyleBackColor = true;
+            this.btnFindBrand.Click += new System.EventHandler(this.btnFindBrand_Click);
+            // 
+            // cmbxGenderBrand
+            // 
+            this.cmbxGenderBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxGenderBrand.FormattingEnabled = true;
+            this.cmbxGenderBrand.Location = new System.Drawing.Point(247, 239);
+            this.cmbxGenderBrand.Name = "cmbxGenderBrand";
+            this.cmbxGenderBrand.Size = new System.Drawing.Size(290, 44);
+            this.cmbxGenderBrand.TabIndex = 15;
+            // 
+            // cmbxProductTypeBrand
+            // 
+            this.cmbxProductTypeBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxProductTypeBrand.FormattingEnabled = true;
+            this.cmbxProductTypeBrand.Location = new System.Drawing.Point(247, 297);
+            this.cmbxProductTypeBrand.Name = "cmbxProductTypeBrand";
+            this.cmbxProductTypeBrand.Size = new System.Drawing.Size(290, 44);
+            this.cmbxProductTypeBrand.TabIndex = 16;
+            // 
+            // cmbxSizeBrand
+            // 
+            this.cmbxSizeBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxSizeBrand.FormattingEnabled = true;
+            this.cmbxSizeBrand.Location = new System.Drawing.Point(247, 359);
+            this.cmbxSizeBrand.Name = "cmbxSizeBrand";
+            this.cmbxSizeBrand.Size = new System.Drawing.Size(290, 44);
+            this.cmbxSizeBrand.TabIndex = 17;
+            // 
+            // cmbxColourBrand
+            // 
+            this.cmbxColourBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxColourBrand.FormattingEnabled = true;
+            this.cmbxColourBrand.Location = new System.Drawing.Point(247, 414);
+            this.cmbxColourBrand.Name = "cmbxColourBrand";
+            this.cmbxColourBrand.Size = new System.Drawing.Size(290, 44);
+            this.cmbxColourBrand.TabIndex = 18;
+            // 
+            // txtbPriceMinBrand
+            // 
+            this.txtbPriceMinBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.txtbPriceMinBrand.Location = new System.Drawing.Point(176, 486);
+            this.txtbPriceMinBrand.Name = "txtbPriceMinBrand";
+            this.txtbPriceMinBrand.Size = new System.Drawing.Size(100, 41);
+            this.txtbPriceMinBrand.TabIndex = 19;
+            // 
+            // txtbPriceMaxBrand
+            // 
+            this.txtbPriceMaxBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.txtbPriceMaxBrand.Location = new System.Drawing.Point(443, 486);
+            this.txtbPriceMaxBrand.Name = "txtbPriceMaxBrand";
+            this.txtbPriceMaxBrand.Size = new System.Drawing.Size(100, 41);
+            this.txtbPriceMaxBrand.TabIndex = 20;
+            // 
             // UserControlBrandSearchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -96,5 +246,18 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBrandToHome;
+        private System.Windows.Forms.Button btnFindBrand;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblProductTypeBrand;
+        private System.Windows.Forms.Label lblGenderBrand;
+        private System.Windows.Forms.ComboBox cmbxColourBrand;
+        private System.Windows.Forms.ComboBox cmbxSizeBrand;
+        private System.Windows.Forms.ComboBox cmbxProductTypeBrand;
+        private System.Windows.Forms.ComboBox cmbxGenderBrand;
+        private System.Windows.Forms.TextBox txtbPriceMaxBrand;
+        private System.Windows.Forms.TextBox txtbPriceMinBrand;
     }
 }
