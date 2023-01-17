@@ -16,5 +16,12 @@ namespace WeDevelopNowApplicationMain
         {
             InitializeComponent();
         }
+
+        private void btnBoysToHome_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.BoysToHomeControlVisable();
+        }
     }
 }

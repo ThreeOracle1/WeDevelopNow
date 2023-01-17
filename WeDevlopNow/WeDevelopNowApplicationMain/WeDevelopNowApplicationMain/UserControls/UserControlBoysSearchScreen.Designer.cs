@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBoysSearchScreen));
             this.pnlBoysSearch = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btnBoysToHome = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblBoysTitle1 = new System.Windows.Forms.Label();
             this.pnlBoysSearch.SuspendLayout();
@@ -39,7 +39,7 @@
             // 
             // pnlBoysSearch
             // 
-            this.pnlBoysSearch.Controls.Add(this.btnHome);
+            this.pnlBoysSearch.Controls.Add(this.btnBoysToHome);
             this.pnlBoysSearch.Controls.Add(this.pictureBox4);
             this.pnlBoysSearch.Controls.Add(this.lblBoysTitle1);
             this.pnlBoysSearch.Location = new System.Drawing.Point(0, 0);
@@ -47,14 +47,15 @@
             this.pnlBoysSearch.Size = new System.Drawing.Size(580, 750);
             this.pnlBoysSearch.TabIndex = 4;
             // 
-            // btnHome
+            // btnBoysToHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(287, 642);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 5;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnBoysToHome.Location = new System.Drawing.Point(287, 642);
+            this.btnBoysToHome.Name = "btnBoysToHome";
+            this.btnBoysToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnBoysToHome.TabIndex = 5;
+            this.btnBoysToHome.Text = "Home";
+            this.btnBoysToHome.UseVisualStyleBackColor = true;
+            this.btnBoysToHome.Click += new System.EventHandler(this.btnBoysToHome_Click);
             // 
             // pictureBox4
             // 
@@ -94,6 +95,6 @@
         private System.Windows.Forms.Panel pnlBoysSearch;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblBoysTitle1;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnBoysToHome;
     }
 }

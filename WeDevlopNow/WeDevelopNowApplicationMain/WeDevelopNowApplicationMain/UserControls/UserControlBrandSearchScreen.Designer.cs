@@ -30,22 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBrandSearchScreen));
             this.pnlBrandSearch = new System.Windows.Forms.Panel();
+            this.btnBrandToHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
             this.pnlBrandSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBrandSearch
             // 
-            this.pnlBrandSearch.Controls.Add(this.btnHome);
+            this.pnlBrandSearch.Controls.Add(this.btnBrandToHome);
             this.pnlBrandSearch.Controls.Add(this.pictureBox1);
             this.pnlBrandSearch.Controls.Add(this.label1);
             this.pnlBrandSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlBrandSearch.Name = "pnlBrandSearch";
             this.pnlBrandSearch.Size = new System.Drawing.Size(580, 750);
             this.pnlBrandSearch.TabIndex = 6;
+            // 
+            // btnBrandToHome
+            // 
+            this.btnBrandToHome.Location = new System.Drawing.Point(317, 625);
+            this.btnBrandToHome.Name = "btnBrandToHome";
+            this.btnBrandToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnBrandToHome.TabIndex = 7;
+            this.btnBrandToHome.Text = "Home";
+            this.btnBrandToHome.UseVisualStyleBackColor = true;
+            this.btnBrandToHome.Click += new System.EventHandler(this.btnBrandToHome_Click);
             // 
             // pictureBox1
             // 
@@ -66,15 +76,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Brand";
             // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(317, 625);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 7;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            // 
             // UserControlBrandSearchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -94,6 +95,6 @@
         private System.Windows.Forms.Panel pnlBrandSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnBrandToHome;
     }
 }

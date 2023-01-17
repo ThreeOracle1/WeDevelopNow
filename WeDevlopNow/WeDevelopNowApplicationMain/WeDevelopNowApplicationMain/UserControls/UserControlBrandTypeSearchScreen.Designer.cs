@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBrandTypeSearchScreen));
             this.pnlBrandTypeSearch = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btnBrandTypeToHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlBrandTypeSearch.SuspendLayout();
@@ -39,7 +39,7 @@
             // 
             // pnlBrandTypeSearch
             // 
-            this.pnlBrandTypeSearch.Controls.Add(this.btnHome);
+            this.pnlBrandTypeSearch.Controls.Add(this.btnBrandTypeToHome);
             this.pnlBrandTypeSearch.Controls.Add(this.pictureBox1);
             this.pnlBrandTypeSearch.Controls.Add(this.label1);
             this.pnlBrandTypeSearch.Location = new System.Drawing.Point(0, 0);
@@ -47,14 +47,15 @@
             this.pnlBrandTypeSearch.Size = new System.Drawing.Size(580, 750);
             this.pnlBrandTypeSearch.TabIndex = 6;
             // 
-            // btnHome
+            // btnBrandTypeToHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(297, 589);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 7;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnBrandTypeToHome.Location = new System.Drawing.Point(297, 589);
+            this.btnBrandTypeToHome.Name = "btnBrandTypeToHome";
+            this.btnBrandTypeToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnBrandTypeToHome.TabIndex = 7;
+            this.btnBrandTypeToHome.Text = "Home";
+            this.btnBrandTypeToHome.UseVisualStyleBackColor = true;
+            this.btnBrandTypeToHome.Click += new System.EventHandler(this.btnBrandTypeToHome_Click);
             // 
             // pictureBox1
             // 
@@ -94,6 +95,6 @@
         private System.Windows.Forms.Panel pnlBrandTypeSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnBrandTypeToHome;
     }
 }

@@ -93,6 +93,7 @@
             this.btnHomeBoys.TabIndex = 5;
             this.btnHomeBoys.Text = "Boys";
             this.btnHomeBoys.UseVisualStyleBackColor = true;
+            this.btnHomeBoys.Click += new System.EventHandler(this.btnHomeBoys_Click);
             // 
             // btnHomeGirls
             // 
@@ -102,6 +103,7 @@
             this.btnHomeGirls.TabIndex = 6;
             this.btnHomeGirls.Text = "Girls";
             this.btnHomeGirls.UseVisualStyleBackColor = true;
+            this.btnHomeGirls.Click += new System.EventHandler(this.btnHomeGirls_Click);
             // 
             // btnHomeBrand
             // 
@@ -111,6 +113,7 @@
             this.btnHomeBrand.TabIndex = 7;
             this.btnHomeBrand.Text = "Brand";
             this.btnHomeBrand.UseVisualStyleBackColor = true;
+            this.btnHomeBrand.Click += new System.EventHandler(this.btnHomeBrand_Click);
             // 
             // btnHomeBrandType
             // 
@@ -120,6 +123,7 @@
             this.btnHomeBrandType.TabIndex = 8;
             this.btnHomeBrandType.Text = "Brand Type";
             this.btnHomeBrandType.UseVisualStyleBackColor = true;
+            this.btnHomeBrandType.Click += new System.EventHandler(this.btnHomeBrandType_Click);
             // 
             // UserControlHomepage
             // 

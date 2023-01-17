@@ -87,6 +87,108 @@ namespace WeDevelopNowApplicationMain
                 formInstance1.userControlHomepage1.Visible = true;
             }
         }
+        public void BoysUserControlVisable()
+        {
+            {
+                var formInstance1 = Form.ActiveForm as Form1;
 
+                if (formInstance1 != null)
+                {
+                    formInstance1.userControlHomepage1.Visible = false;
+
+                    formInstance1.userControlBoysSearchScreen1.Visible = true;
+                }
+            }
+        }
+
+        public void BoysToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBoysSearchScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
+
+        public void GirlsUserControlVisable()
+        {
+            {
+                var formInstance1 = Form.ActiveForm as Form1;
+
+                if (formInstance1 != null)
+                {
+                    formInstance1.userControlHomepage1.Visible = false;
+
+                    formInstance1.userControlGirlsSearchScreen1.Visible = true;
+                }
+            }
+        }
+
+        public void GirlsToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlGirlsSearchScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
+
+        public void BrandUserControlVisable()
+        {
+            {
+                var formInstance1 = Form.ActiveForm as Form1;
+
+                if (formInstance1 != null)
+                {
+                    formInstance1.userControlHomepage1.Visible = false;
+
+                    formInstance1.userControlBrandSearchScreen1.Visible = true;
+                }
+            }
+        }
+
+        public void BrandToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBrandSearchScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
+
+        public void BrandTypeUserControlVisable()
+        {
+            {
+                var formInstance1 = Form.ActiveForm as Form1;
+
+                if (formInstance1 != null)
+                {
+                    formInstance1.userControlHomepage1.Visible = false;
+
+                    formInstance1.userControlBrandTypeSearchScreen1.Visible = true;
+                }
+            }
+        }
+
+        public void BrandTypeToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBrandTypeSearchScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
     }
 }

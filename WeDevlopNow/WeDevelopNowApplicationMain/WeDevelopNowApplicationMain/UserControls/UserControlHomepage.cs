@@ -30,5 +30,33 @@ namespace WeDevelopNowApplicationMain
 
             formInstance.WomenUserControlVisable();
         }
+
+        private void btnHomeBoys_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.BoysUserControlVisable();
+        }
+
+        private void btnHomeGirls_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.GirlsUserControlVisable();
+        }
+
+        private void btnHomeBrand_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.BrandUserControlVisable();
+        }
+
+        private void btnHomeBrandType_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.BrandTypeUserControlVisable();
+        }
     }
 }
