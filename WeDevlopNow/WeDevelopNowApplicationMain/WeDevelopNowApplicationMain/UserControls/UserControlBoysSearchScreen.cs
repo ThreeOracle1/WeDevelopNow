@@ -23,5 +23,12 @@ namespace WeDevelopNowApplicationMain
 
             formInstance.BoysToHomeControlVisable();
         }
+
+        private void btnFindBoys_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.BoysToBoysResultControlVisable();
+        }
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBoysSearchResultScreen));
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnBoysResultToHome = new System.Windows.Forms.Button();
+            this.btnBackToBoys = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -38,23 +38,25 @@
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnHome
+            // btnBoysResultToHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(326, 634);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnBoysResultToHome.Location = new System.Drawing.Point(326, 634);
+            this.btnBoysResultToHome.Name = "btnBoysResultToHome";
+            this.btnBoysResultToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnBoysResultToHome.TabIndex = 3;
+            this.btnBoysResultToHome.Text = "Home";
+            this.btnBoysResultToHome.UseVisualStyleBackColor = true;
+            this.btnBoysResultToHome.Click += new System.EventHandler(this.btnBoysResultToHome_Click);
             // 
-            // btnBack
+            // btnBackToBoys
             // 
-            this.btnBack.Location = new System.Drawing.Point(45, 634);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(220, 90);
-            this.btnBack.TabIndex = 7;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBackToBoys.Location = new System.Drawing.Point(45, 634);
+            this.btnBackToBoys.Name = "btnBackToBoys";
+            this.btnBackToBoys.Size = new System.Drawing.Size(220, 90);
+            this.btnBackToBoys.TabIndex = 7;
+            this.btnBackToBoys.Text = "<< Back";
+            this.btnBackToBoys.UseVisualStyleBackColor = true;
+            this.btnBackToBoys.Click += new System.EventHandler(this.btnBackToBoys_Click);
             // 
             // label1
             // 
@@ -77,8 +79,8 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.btnHome);
-            this.panel4.Controls.Add(this.btnBack);
+            this.panel4.Controls.Add(this.btnBoysResultToHome);
+            this.panel4.Controls.Add(this.btnBackToBoys);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -101,8 +103,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnBoysResultToHome;
+        private System.Windows.Forms.Button btnBackToBoys;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;

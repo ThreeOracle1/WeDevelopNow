@@ -263,5 +263,40 @@ namespace WeDevelopNowApplicationMain
             }
         }
 
+        public void BoysToBoysResultControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBoysSearchScreen1.Visible = false;
+
+                formInstance1.userControlBoysSearchResultScreen1.Visible = true;
+            }
+        }
+
+        public void BackToBoysControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBoysSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlBoysSearchScreen1.Visible = true;
+            }
+        }
+
+        public void BoysResultToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlBoysSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
     }
 }
