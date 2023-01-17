@@ -38,6 +38,20 @@ namespace WeDevelopNowApplicationMain
             userControlWomenSearchScreen1.Visible = false;
         }
 
+        public void MenUserControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlHomepage2.Visible = false;
+
+                formInstance1.userControlMenSearchScreen1.Visible = true;
+            }
+        }
+
+
+
         public void btnHome_Click(object sender, EventArgs e)
         {
 

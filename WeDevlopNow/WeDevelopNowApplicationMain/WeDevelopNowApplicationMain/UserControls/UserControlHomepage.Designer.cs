@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent1()
         {
             System.Windows.Forms.PictureBox pictureBox1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlHomepage));
@@ -136,6 +136,7 @@
             this.btnMen.TabIndex = 2;
             this.btnMen.Text = "Men";
             this.btnMen.UseVisualStyleBackColor = false;
+            this.btnMen.Click += new System.EventHandler(this.btnMen_Click);
             // 
             // UserControlHomepage
             // 
