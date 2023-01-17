@@ -190,5 +190,41 @@ namespace WeDevelopNowApplicationMain
                 formInstance1.userControlHomepage1.Visible = true;
             }
         }
+
+        public void MenToMenResultControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlMenSearchScreen1.Visible = false;
+
+                formInstance1.userControlMenSearchResultScreen1.Visible = true;
+            }
+        }
+
+        public void BackToMenControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlMenSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlMenSearchScreen1.Visible = true;
+            }
+        }
+
+        public void MenResultToHomeControlVisable()
+        {
+            var formInstance1 = Form.ActiveForm as Form1;
+
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlMenSearchResultScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
+        }
     }
 }

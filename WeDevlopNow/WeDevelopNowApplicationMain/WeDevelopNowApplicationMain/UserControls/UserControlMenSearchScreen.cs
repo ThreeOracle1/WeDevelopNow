@@ -23,5 +23,12 @@ namespace WeDevelopNowApplicationMain
 
             formInstance.MenToHomeControlVisable();
         }
+
+        private void btnFindMen_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.MenToMenResultControlVisable();
+        }
     }
 }

@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlMenSearchResultScreen));
             this.pnlMenSearchResult = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnMenResultToHome = new System.Windows.Forms.Button();
+            this.btnBackToMen = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
             this.pnlMenSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenSearchResult
             // 
-            this.pnlMenSearchResult.Controls.Add(this.btnHome);
-            this.pnlMenSearchResult.Controls.Add(this.btnBack);
+            this.pnlMenSearchResult.Controls.Add(this.btnMenResultToHome);
+            this.pnlMenSearchResult.Controls.Add(this.btnBackToMen);
             this.pnlMenSearchResult.Controls.Add(this.pictureBox1);
             this.pnlMenSearchResult.Controls.Add(this.label1);
             this.pnlMenSearchResult.Location = new System.Drawing.Point(0, 0);
@@ -49,14 +49,25 @@
             this.pnlMenSearchResult.Size = new System.Drawing.Size(580, 750);
             this.pnlMenSearchResult.TabIndex = 6;
             // 
-            // btnBack
+            // btnMenResultToHome
             // 
-            this.btnBack.Location = new System.Drawing.Point(61, 602);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(220, 90);
-            this.btnBack.TabIndex = 8;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnMenResultToHome.Location = new System.Drawing.Point(320, 602);
+            this.btnMenResultToHome.Name = "btnMenResultToHome";
+            this.btnMenResultToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnMenResultToHome.TabIndex = 7;
+            this.btnMenResultToHome.Text = "Home";
+            this.btnMenResultToHome.UseVisualStyleBackColor = true;
+            this.btnMenResultToHome.Click += new System.EventHandler(this.btnMenResultToHome_Click);
+            // 
+            // btnBackToMen
+            // 
+            this.btnBackToMen.Location = new System.Drawing.Point(61, 602);
+            this.btnBackToMen.Name = "btnBackToMen";
+            this.btnBackToMen.Size = new System.Drawing.Size(220, 90);
+            this.btnBackToMen.TabIndex = 8;
+            this.btnBackToMen.Text = "<< Back";
+            this.btnBackToMen.UseVisualStyleBackColor = true;
+            this.btnBackToMen.Click += new System.EventHandler(this.btnBackToMen_Click);
             // 
             // pictureBox1
             // 
@@ -77,15 +88,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Men results";
             // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(342, 602);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 7;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            // 
             // UserControlMenSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -105,7 +107,7 @@
         private System.Windows.Forms.Panel pnlMenSearchResult;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnMenResultToHome;
+        private System.Windows.Forms.Button btnBackToMen;
     }
 }

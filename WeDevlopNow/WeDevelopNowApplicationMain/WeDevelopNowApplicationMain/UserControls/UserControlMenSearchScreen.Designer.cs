@@ -222,6 +222,7 @@
             this.btnFindMen.TabIndex = 16;
             this.btnFindMen.Text = "Find";
             this.btnFindMen.UseVisualStyleBackColor = true;
+            this.btnFindMen.Click += new System.EventHandler(this.btnFindMen_Click);
             // 
             // UserControlMenSearchScreen
             // 
