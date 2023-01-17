@@ -76,16 +76,17 @@ namespace WeDevelopNowApplicationMain
             }
         }
 
-        public void btnHome_Click(object sender, EventArgs e)
+        public void WomenToHomeControlVisable()
         {
+            var formInstance1 = Form.ActiveForm as Form1;
 
+            if (formInstance1 != null)
+            {
+                formInstance1.userControlWomenSearchScreen1.Visible = false;
+
+                formInstance1.userControlHomepage1.Visible = true;
+            }
         }
-
-        public void btnBack_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
     }
 }
