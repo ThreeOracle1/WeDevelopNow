@@ -36,44 +36,16 @@ namespace WeDevelopNowApplicationMain
 
 
         List<string> columnProductTypelist = new List<string>();
-        List<string> columnColourlist = new List<string>();
-        List<string> columnBrandlist = new List<string>();
 
         public void PopulateProductTypeDropdownBox()
         {
-            using (SqlConnection con = new SqlConnection(conString))
+            string defaultProductTypeMen = "Fleeces/Hoodies/Sweatshirts/Polo Shirts/Shoes/Shorts/Sweatshirts/Tracksuit Bottoms";
+
+            string[] individualProductType = defaultProductTypeMen.Split('/');
+
+            for (int i = 0; i < individualProductType.Length; i++)
             {
-                con.Open();
-
-                string sqlStatement = "Select [Product Type] FROM OurProducts";
-
-                using (SqlCommand cmd = new SqlCommand(sqlStatement, con))
-                {
-                    if (con.State == System.Data.ConnectionState.Open)
-                    {
-                        SqlDataReader reader = cmd.ExecuteReader();
-
-                        while (reader.Read())
-                        {
-                            columnProductTypelist.Add(reader.GetString(0));
-                        }
-                    }
-                }
-            }
-
-            string excludedItemDressSkirt = "Dresses & Skirts\r\n                                                                                  ";
-
-            string excludedItemLeggingsTights = "Leggings & Tights\r\n                                                                                 ";
-
-            for (int i = 0; i < (columnProductTypelist.Count - 1); i++)
-            {
-                if (columnProductTypelist[i] != excludedItemDressSkirt)
-                {
-                    if(columnProductTypelist[i] != excludedItemLeggingsTights)
-                    {
-                        cmbxProductTypeMen.Items.Add(columnProductTypelist[i]);
-                    }
-                }
+                cmbxProductTypeMen.Items.Add(individualProductType[i]);
             }
         }
 

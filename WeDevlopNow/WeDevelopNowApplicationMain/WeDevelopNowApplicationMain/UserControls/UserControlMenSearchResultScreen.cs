@@ -19,8 +19,6 @@ namespace WeDevelopNowApplicationMain
         public UserControlMenSearchResultScreen()
         {
             InitializeComponent();
-
-            BindDataGridMenResult();
         }
 
         public void BindDataGridMenResult()
@@ -50,29 +48,29 @@ namespace WeDevelopNowApplicationMain
 
         public void BindDataGridMenFindResult(string sqlMenFindStatement)
         {
+            SqlConnection con = new SqlConnection(conString);
 
+            con.Open();
 
-            using (SqlConnection con = new SqlConnection(conString))
+            if (con.State == System.Data.ConnectionState.Open)
             {
+                SqlCommand cmd = con.CreateCommand();
 
-                using (SqlCommand cmd = new SqlCommand(sqlMenFindStatement, con))
-                {
-                    cmd.CommandType = CommandType.Text;
+                cmd.CommandType = CommandType.Text;
 
-                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
-                    {
-                        using (DataTable dt = new DataTable())
-                        {
-                            dgvwMenResults.Update();
+                cmd.CommandText = sqlMenFindStatement;
 
-                            dgvwMenResults.Refresh();
+                cmd.ExecuteNonQuery();
 
-                            sda.Fill(dt);
-                            dgvwMenResults.DataSource = dt;
-                        }
-                    }
-                }
+                DataTable dt = new DataTable();
+
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+
+                sda.Fill(dt);
+
+                dgvwMenResults.DataSource = dt;
             }
+
         }
 
 
