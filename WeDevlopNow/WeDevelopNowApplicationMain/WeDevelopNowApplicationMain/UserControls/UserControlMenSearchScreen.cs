@@ -123,20 +123,18 @@ namespace WeDevelopNowApplicationMain
 
         bool validFindRequest = true;
 
-        string sqlMenFindStatement;
-
         private void btnFindMen_Click(object sender, EventArgs e)
         {
             Form1 formInstance = new Form1();
 
             UserControlMenSearchResultScreen menResultInstance = new UserControlMenSearchResultScreen();
 
-            FindTableSearchQueryMen();
+            string sqlMenStatementReady = FindTableSearchQueryMen();
 
             if (validFindRequest == true)
             {
 
-                menResultInstance.BindDataGridMenFindResult();
+                menResultInstance.BindDataGridMenFindResult(sqlMenStatementReady);
 
 
                 formInstance.MenToMenResultControlVisable();
@@ -145,7 +143,7 @@ namespace WeDevelopNowApplicationMain
             validFindRequest = true;
         }
 
-        public void FindTableSearchQueryMen()
+        public string FindTableSearchQueryMen()
         {
 
             string menProductTypeSearch = cmbxProductTypeMen.Text;
@@ -191,7 +189,7 @@ namespace WeDevelopNowApplicationMain
                 validFindRequest = false;
             }
 
-            sqlMenFindStatement = "SELECT [Product Type], [Mens Sizes], Colour, Price, Brands FROM OurProducts WHERE [Product Type] ='" + menProductTypeSearch + "' AND [Mens Sizes]='" + menSizeSearch + "' AND Colour = '" + menColourSearch + "' AND Price BETWEEN '" + menPriceMin + "' AND '" + menPriceMax + "' AND Brands = '" + menBrandSearch + "'";
+            return "SELECT [Product Type], [Mens Sizes], Colour, Price, Brands FROM OurProducts WHERE [Product Type] ='" + menProductTypeSearch + "' AND [Mens Sizes]='" + menSizeSearch + "' AND Colour = '" + menColourSearch + "' AND Price BETWEEN '" + menPriceMin + "' AND '" + menPriceMax + "' AND Brands = '" + menBrandSearch + "'";
         }
 
     }
