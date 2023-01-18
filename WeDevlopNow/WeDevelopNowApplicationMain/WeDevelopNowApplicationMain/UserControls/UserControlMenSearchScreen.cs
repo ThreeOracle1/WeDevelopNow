@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Data;
+using System.Xml.Linq;
 
 namespace WeDevelopNowApplicationMain
 {
@@ -22,12 +23,17 @@ namespace WeDevelopNowApplicationMain
             InitializeComponent();
 
             PopulateProductTypeDropdownBox();
+
+            PopulateSizeDropdownBox();
+
+            PopulateColourDropdownBox();
+
+            PopulateBrandDropdownBox();
         }
 
 
 
         List<string> columnProductTypelist = new List<string>();
-        List<string> columnMensSizelist = new List<string>();
         List<string> columnColourlist = new List<string>();
         List<string> columnBrandlist = new List<string>();
 
@@ -73,36 +79,40 @@ namespace WeDevelopNowApplicationMain
 
         public void PopulateSizeDropdownBox()
         {
-            string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
+            string defaultSizes = "S/M/L/XL/XXL";
 
-            using (SqlConnection con = new SqlConnection(conString))
+            string[] individualSizes = defaultSizes.Split('/');
+
+            for (int s = 0; s < individualSizes.Length; s++)
             {
-                con.Open();
-
-                string sqlStatement = "Select [Mens Sizes] FROM OurProducts";
-
-                using (SqlCommand cmd = new SqlCommand(sqlStatement, con))
-                {
-                    if (con.State == System.Data.ConnectionState.Open)
-                    {
-                        SqlDataReader reader = cmd.ExecuteReader();
-
-                        while (reader.Read())
-                        {
-                            columnMensSizelist.Add(reader.GetString(0));
-                        }
-                    }
-                }
-            }
-
-            for (int i = 0; i < (columnProductTypelist.Count - 1); i++)
-            {
-                cmbxSizeMen.Items.Add(columnProductTypelist[i]);
+                cmbxSizeMen.Items.Add(individualSizes[s]);
             }
         }
 
+        public void PopulateColourDropdownBox()
+        {
+            string defaultColours = "Black/Blue/Beige/Multi/Pink/Purple/Tan/Red";
 
+            string[] individualColours = defaultColours.Split('/');
 
+            for (int s = 0; s < individualColours.Length; s++)
+            {
+                cmbxColourMen.Items.Add(individualColours[s]);
+            }
+        }
+
+        public void PopulateBrandDropdownBox()
+        {
+            string defaultBrands = "Brand A/Brand B/Brand C/Brand D";
+
+            string[] individualBrands = defaultBrands.Split('/');
+
+            for (int s = 0; s < individualBrands.Length; s++)
+            {
+                cmbxBrandMen.Items.Add(individualBrands[s]);
+            }
+
+        }
 
         private void btnMenToHome_Click(object sender, EventArgs e)
         {
@@ -115,9 +125,48 @@ namespace WeDevelopNowApplicationMain
         {
             Form1 formInstance = new Form1();
 
-            string menProductTypeSearch = "";
+            bool validFindRequest = false;
 
-            formInstance.MenToMenResultControlVisable();
+            string menProductTypeSearch = cmbxProductTypeMen.Text;
+
+            string menSizeSearch = cmbxSizeMen.Text;
+
+            string menColourSearch = cmbxColourMen.Text;
+
+            string menBrandSearch = cmbxBrandMen.Text;
+
+            int menPriceMin = 0;
+
+            int menPriceMax = 0;
+
+            try
+            {
+                menPriceMin = (int)Int64.Parse(txtbPriceMinMen.Text);
+            }
+
+            catch
+            {
+                MessageBox.Show("Please enter a number for price min");
+
+                validFindRequest = false;
+            }
+
+            try
+            {
+                menPriceMax = (int)Int64.Parse(txtbPriceMaxMen.Text);
+            }
+
+            catch
+            {
+                MessageBox.Show("Please enter a number for price max");
+
+                validFindRequest = false;
+            }
+
+            if (validFindRequest = true)
+            {
+                formInstance.MenToMenResultControlVisable();
+            }
         }
     }
 }
