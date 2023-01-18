@@ -27,6 +27,9 @@ namespace WeDevelopNowApplicationMain
 
 
         List<string> columnProductTypelist = new List<string>();
+        List<string> columnMensSizelist = new List<string>();
+        List<string> columnColourlist = new List<string>();
+        List<string> columnBrandlist = new List<string>();
 
         public void PopulateProductTypeDropdownBox()
         {
@@ -52,11 +55,54 @@ namespace WeDevelopNowApplicationMain
                 }
             }
 
+            string excludedItemDressSkirt = "Dresses & Skirts\r\n                                                                                  ";
+
+            string excludedItemLeggingsTights = "Leggings & Tights\r\n                                                                                 ";
+
             for (int i = 0; i < (columnProductTypelist.Count - 1); i++)
             {
-                cmbxProductTypeMen.Items.Add(columnProductTypelist[i]);
+                if (columnProductTypelist[i] != excludedItemDressSkirt)
+                {
+                    if(columnProductTypelist[i] != excludedItemLeggingsTights)
+                    {
+                        cmbxProductTypeMen.Items.Add(columnProductTypelist[i]);
+                    }
+                }
             }
         }
+
+        public void PopulateSizeDropdownBox()
+        {
+            string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                con.Open();
+
+                string sqlStatement = "Select [Mens Sizes] FROM OurProducts";
+
+                using (SqlCommand cmd = new SqlCommand(sqlStatement, con))
+                {
+                    if (con.State == System.Data.ConnectionState.Open)
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        while (reader.Read())
+                        {
+                            columnMensSizelist.Add(reader.GetString(0));
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < (columnProductTypelist.Count - 1); i++)
+            {
+                cmbxSizeMen.Items.Add(columnProductTypelist[i]);
+            }
+        }
+
+
+
 
         private void btnMenToHome_Click(object sender, EventArgs e)
         {
