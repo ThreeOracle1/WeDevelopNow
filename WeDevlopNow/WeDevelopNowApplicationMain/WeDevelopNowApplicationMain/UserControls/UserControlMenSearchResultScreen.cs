@@ -13,17 +13,21 @@ namespace WeDevelopNowApplicationMain
 {
     public partial class UserControlMenSearchResultScreen : UserControl
     {
+        public Label slqMenString;
+
+        string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
+
         public UserControlMenSearchResultScreen()
         {
             InitializeComponent();
 
             BindDataGridMenResult();
+
+            slqMenString = lblSqlStringMenResult;
         }
 
         public void BindDataGridMenResult()
         {
-
-            string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
 
             using (SqlConnection con = new SqlConnection(conString))
             {
@@ -31,6 +35,31 @@ namespace WeDevelopNowApplicationMain
 
 
                 using (SqlCommand cmd = new SqlCommand(sqlCommandStringSelectData, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            dgvwMenResults.DataSource = dt;
+                        }
+                    }
+                }
+            }
+        }
+
+        public void BindDataGridMenFindResult()
+        {
+            
+            
+            lblSqlStringMenResult.text = ;
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand(receivedMenFindSqlStatment, con))
                 {
                     cmd.CommandType = CommandType.Text;
 

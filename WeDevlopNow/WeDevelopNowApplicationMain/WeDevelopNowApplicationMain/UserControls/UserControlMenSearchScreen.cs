@@ -18,6 +18,8 @@ namespace WeDevelopNowApplicationMain
 {
     public partial class UserControlMenSearchScreen : UserControl
     {
+        string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
+
         public UserControlMenSearchScreen()
         {
             InitializeComponent();
@@ -39,8 +41,6 @@ namespace WeDevelopNowApplicationMain
 
         public void PopulateProductTypeDropdownBox()
         {
-            string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
-
             using (SqlConnection con = new SqlConnection(conString))
             {
                 con.Open();
@@ -121,11 +121,32 @@ namespace WeDevelopNowApplicationMain
             formInstance.MenToHomeControlVisable();
         }
 
+        bool validFindRequest = true;
+
+        string sqlMenFindStatement;
+
         private void btnFindMen_Click(object sender, EventArgs e)
         {
             Form1 formInstance = new Form1();
 
-            bool validFindRequest = false;
+            UserControlMenSearchResultScreen menResultInstance = new UserControlMenSearchResultScreen();
+
+            FindTableSearchQueryMen();
+
+            if (validFindRequest == true)
+            {
+
+                menResultInstance.BindDataGridMenFindResult();
+
+
+                formInstance.MenToMenResultControlVisable();
+            }
+
+            validFindRequest = true;
+        }
+
+        public void FindTableSearchQueryMen()
+        {
 
             string menProductTypeSearch = cmbxProductTypeMen.Text;
 
@@ -163,10 +184,15 @@ namespace WeDevelopNowApplicationMain
                 validFindRequest = false;
             }
 
-            if (validFindRequest = true)
+            if (menPriceMin > menPriceMax)
             {
-                formInstance.MenToMenResultControlVisable();
+                MessageBox.Show("Please enter a valid price range");
+
+                validFindRequest = false;
             }
+
+            sqlMenFindStatement = "SELECT [Product Type], [Mens Sizes], Colour, Price, Brands FROM OurProducts WHERE [Product Type] ='" + menProductTypeSearch + "' AND [Mens Sizes]='" + menSizeSearch + "' AND Colour = '" + menColourSearch + "' AND Price BETWEEN '" + menPriceMin + "' AND '" + menPriceMax + "' AND Brands = '" + menBrandSearch + "'";
         }
+
     }
 }
