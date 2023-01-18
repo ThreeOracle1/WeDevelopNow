@@ -9,6 +9,9 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using System.Data;
 
 namespace WeDevelopNowApplicationMain
 {
@@ -21,6 +24,8 @@ namespace WeDevelopNowApplicationMain
 
             DisableAllUserControlVisability();
         }
+
+        public string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
 
         public void DisableAllUserControlVisability()
         {

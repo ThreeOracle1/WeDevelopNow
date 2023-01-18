@@ -34,12 +34,15 @@
             this.btnBackToMen = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvwMenResults = new System.Windows.Forms.DataGridView();
             this.pnlMenSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwMenResults)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenSearchResult
             // 
+            this.pnlMenSearchResult.Controls.Add(this.dgvwMenResults);
             this.pnlMenSearchResult.Controls.Add(this.btnMenResultToHome);
             this.pnlMenSearchResult.Controls.Add(this.btnBackToMen);
             this.pnlMenSearchResult.Controls.Add(this.pictureBox1);
@@ -88,6 +91,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Men results";
             // 
+            // dgvwMenResults
+            // 
+            this.dgvwMenResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvwMenResults.Location = new System.Drawing.Point(61, 233);
+            this.dgvwMenResults.Name = "dgvwMenResults";
+            this.dgvwMenResults.RowHeadersWidth = 51;
+            this.dgvwMenResults.RowTemplate.Height = 24;
+            this.dgvwMenResults.Size = new System.Drawing.Size(479, 343);
+            this.dgvwMenResults.TabIndex = 9;
+            // 
             // UserControlMenSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,6 +111,7 @@
             this.pnlMenSearchResult.ResumeLayout(false);
             this.pnlMenSearchResult.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwMenResults)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,5 +123,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMenResultToHome;
         private System.Windows.Forms.Button btnBackToMen;
+        private System.Windows.Forms.DataGridView dgvwMenResults;
     }
 }
