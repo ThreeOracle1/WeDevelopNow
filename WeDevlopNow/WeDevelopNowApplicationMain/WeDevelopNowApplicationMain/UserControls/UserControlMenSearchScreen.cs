@@ -97,19 +97,16 @@ namespace WeDevelopNowApplicationMain
 
         private void btnFindMen_Click(object sender, EventArgs e)
         {
-            Form1 formInstance = new Form1();
 
-            UserControlMenSearchResultScreen menResultInstance = new UserControlMenSearchResultScreen();
+            var formInstance1 = Form.ActiveForm as Form1;
 
             string sqlMenStatementReady = FindTableSearchQueryMen();
 
+            formInstance1.userControlMenSearchResultScreen1.BindDataGridMenFindResult(sqlMenStatementReady);
+
             if (validFindRequest == true)
             {
-
-                menResultInstance.BindDataGridMenFindResult(sqlMenStatementReady);
-
-
-                formInstance.MenToMenResultControlVisable();
+                formInstance1.MenToMenResultControlVisable();
             }
 
             validFindRequest = true;

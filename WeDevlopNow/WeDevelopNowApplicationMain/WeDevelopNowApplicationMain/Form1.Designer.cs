@@ -139,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(582, 753);
+            this.ClientSize = new System.Drawing.Size(562, 703);
             this.Controls.Add(this.userControlHomepage1);
             this.Controls.Add(this.userControlWomenSearchScreen1);
             this.Controls.Add(this.userControlWomenSearchResultScreen1);
@@ -169,7 +169,7 @@
         private UserControlBrandTypeSearchScreen userControlBrandTypeSearchScreen1;
         private UserControlGirlsSearchResultScreen userControlGirlsSearchResultScreen1;
         private UserControlGirlsSearchScreen userControlGirlsSearchScreen1;
-        private UserControlMenSearchResultScreen userControlMenSearchResultScreen1;
+        public UserControlMenSearchResultScreen userControlMenSearchResultScreen1;
         private UserControlMenSearchScreen userControlMenSearchScreen1;
         private UserControlWomenSearchResultScreen userControlWomenSearchResultScreen1;
         private UserControlWomenSearchScreen userControlWomenSearchScreen1;

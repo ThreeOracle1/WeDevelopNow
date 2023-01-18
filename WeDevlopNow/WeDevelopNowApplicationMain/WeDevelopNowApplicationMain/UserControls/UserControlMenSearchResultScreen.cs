@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,15 +23,16 @@ namespace WeDevelopNowApplicationMain
             InitializeComponent();
         }
 
-        public void BindDataGridMenResult()
+
+
+        public void BindDataGridMenResult(string sqlMenFindStatement)
         {
 
             using (SqlConnection con = new SqlConnection(conString))
             {
-                string sqlCommandStringSelectData = "SELECT * FROM OurProducts";
+                string starterQuery = "SELECT * FROM OurProducts";
 
-
-                using (SqlCommand cmd = new SqlCommand(sqlCommandStringSelectData, con))
+                using (SqlCommand cmd = new SqlCommand(sqlMenFindStatement, con))
                 {
                     cmd.CommandType = CommandType.Text;
 
@@ -48,29 +51,25 @@ namespace WeDevelopNowApplicationMain
 
         public void BindDataGridMenFindResult(string sqlMenFindStatement)
         {
-            SqlConnection con = new SqlConnection(conString);
-
-            con.Open();
-
-            if (con.State == System.Data.ConnectionState.Open)
+            using (SqlConnection con = new SqlConnection(conString))
             {
-                SqlCommand cmd = con.CreateCommand();
 
-                cmd.CommandType = CommandType.Text;
+                using (SqlCommand cmd = new SqlCommand(sqlMenFindStatement, con))
+                {
+                    cmd.CommandType = CommandType.Text;
 
-                cmd.CommandText = sqlMenFindStatement;
-
-                cmd.ExecuteNonQuery();
-
-                DataTable dt = new DataTable();
-
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-
-                sda.Fill(dt);
-
-                dgvwMenResults.DataSource = dt;
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            dgvwMenResults.DataSource = dt;
+                            dgvwMenResults.Refresh();
+                            dgvwMenResults.Update();
+                        }
+                    }
+                }
             }
-
         }
 
 
