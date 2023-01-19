@@ -34,7 +34,6 @@
             this.btnGirlsResultsToHome = new System.Windows.Forms.Button();
             this.btnBackToGirls = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblNoMatchesGirls = new System.Windows.Forms.Label();
             this.pnlGirlsSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwGirlsResults)).BeginInit();
@@ -47,7 +46,6 @@
             this.pnlGirlsSearchResult.Controls.Add(this.btnGirlsResultsToHome);
             this.pnlGirlsSearchResult.Controls.Add(this.btnBackToGirls);
             this.pnlGirlsSearchResult.Controls.Add(this.pictureBox1);
-            this.pnlGirlsSearchResult.Controls.Add(this.label1);
             this.pnlGirlsSearchResult.Location = new System.Drawing.Point(0, 0);
             this.pnlGirlsSearchResult.Name = "pnlGirlsSearchResult";
             this.pnlGirlsSearchResult.Size = new System.Drawing.Size(580, 750);
@@ -65,6 +63,7 @@
             // 
             // btnGirlsResultsToHome
             // 
+            this.btnGirlsResultsToHome.Font = new System.Drawing.Font("Verdana", 18F);
             this.btnGirlsResultsToHome.Location = new System.Drawing.Point(304, 642);
             this.btnGirlsResultsToHome.Name = "btnGirlsResultsToHome";
             this.btnGirlsResultsToHome.Size = new System.Drawing.Size(220, 90);
@@ -75,6 +74,7 @@
             // 
             // btnBackToGirls
             // 
+            this.btnBackToGirls.Font = new System.Drawing.Font("Verdana", 18F);
             this.btnBackToGirls.Location = new System.Drawing.Point(29, 642);
             this.btnBackToGirls.Name = "btnBackToGirls";
             this.btnBackToGirls.Size = new System.Drawing.Size(220, 90);
@@ -89,26 +89,18 @@
             this.pictureBox1.Location = new System.Drawing.Point(210, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(181, 191);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Girls results";
             // 
             // lblNoMatchesGirls
             // 
             this.lblNoMatchesGirls.AutoSize = true;
-            this.lblNoMatchesGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblNoMatchesGirls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblNoMatchesGirls.Font = new System.Drawing.Font("Verdana", 16F);
             this.lblNoMatchesGirls.Location = new System.Drawing.Point(115, 430);
             this.lblNoMatchesGirls.Name = "lblNoMatchesGirls";
-            this.lblNoMatchesGirls.Size = new System.Drawing.Size(379, 36);
+            this.lblNoMatchesGirls.Size = new System.Drawing.Size(400, 32);
             this.lblNoMatchesGirls.TabIndex = 12;
             this.lblNoMatchesGirls.Text = "No items match search filter";
             // 
@@ -116,12 +108,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.Controls.Add(this.lblNoMatchesGirls);
             this.Controls.Add(this.pnlGirlsSearchResult);
             this.Name = "UserControlGirlsSearchResultScreen";
             this.Size = new System.Drawing.Size(580, 750);
             this.pnlGirlsSearchResult.ResumeLayout(false);
-            this.pnlGirlsSearchResult.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwGirlsResults)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -133,7 +125,6 @@
 
         private System.Windows.Forms.Panel pnlGirlsSearchResult;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGirlsResultsToHome;
         private System.Windows.Forms.Button btnBackToGirls;
         private System.Windows.Forms.DataGridView dgvwGirlsResults;

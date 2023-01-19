@@ -45,12 +45,14 @@
             this.lblProductTypeMen = new System.Windows.Forms.Label();
             this.btnMenToHome = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblMenS = new System.Windows.Forms.Label();
             this.pnlMenSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenSearch
             // 
+            this.pnlMenSearch.Controls.Add(this.lblMenS);
             this.pnlMenSearch.Controls.Add(this.cmbxBrandMen);
             this.pnlMenSearch.Controls.Add(this.cmbxColourMen);
             this.pnlMenSearch.Controls.Add(this.cmbxSizeMen);
@@ -73,7 +75,7 @@
             // 
             // cmbxBrandMen
             // 
-            this.cmbxBrandMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxBrandMen.Font = new System.Drawing.Font("Verdana", 18F);
             this.cmbxBrandMen.FormattingEnabled = true;
             this.cmbxBrandMen.Location = new System.Drawing.Point(240, 510);
             this.cmbxBrandMen.Name = "cmbxBrandMen";
@@ -84,7 +86,7 @@
             // 
             // cmbxColourMen
             // 
-            this.cmbxColourMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxColourMen.Font = new System.Drawing.Font("Verdana", 18F);
             this.cmbxColourMen.FormattingEnabled = true;
             this.cmbxColourMen.Location = new System.Drawing.Point(240, 377);
             this.cmbxColourMen.Name = "cmbxColourMen";
@@ -95,7 +97,7 @@
             // 
             // cmbxSizeMen
             // 
-            this.cmbxSizeMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxSizeMen.Font = new System.Drawing.Font("Verdana", 18F);
             this.cmbxSizeMen.FormattingEnabled = true;
             this.cmbxSizeMen.Location = new System.Drawing.Point(240, 315);
             this.cmbxSizeMen.Name = "cmbxSizeMen";
@@ -106,7 +108,7 @@
             // 
             // cmbxProductTypeMen
             // 
-            this.cmbxProductTypeMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxProductTypeMen.Font = new System.Drawing.Font("Verdana", 18F);
             this.cmbxProductTypeMen.FormattingEnabled = true;
             this.cmbxProductTypeMen.Location = new System.Drawing.Point(240, 247);
             this.cmbxProductTypeMen.Name = "cmbxProductTypeMen";
@@ -131,7 +133,7 @@
             this.lblBrandMen.AutoSize = true;
             this.lblBrandMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.lblBrandMen.Font = new System.Drawing.Font("Verdana", 14F);
-            this.lblBrandMen.Location = new System.Drawing.Point(33, 519);
+            this.lblBrandMen.Location = new System.Drawing.Point(30, 519);
             this.lblBrandMen.Name = "lblBrandMen";
             this.lblBrandMen.Size = new System.Drawing.Size(94, 29);
             this.lblBrandMen.TabIndex = 14;
@@ -139,10 +141,10 @@
             // 
             // txtbPriceMaxMen
             // 
-            this.txtbPriceMaxMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.txtbPriceMaxMen.Font = new System.Drawing.Font("Verdana", 18F);
             this.txtbPriceMaxMen.Location = new System.Drawing.Point(449, 445);
             this.txtbPriceMaxMen.Name = "txtbPriceMaxMen";
-            this.txtbPriceMaxMen.Size = new System.Drawing.Size(100, 41);
+            this.txtbPriceMaxMen.Size = new System.Drawing.Size(100, 44);
             this.txtbPriceMaxMen.TabIndex = 13;
             // 
             // lblPriceMaxMen
@@ -158,10 +160,10 @@
             // 
             // txtbPriceMinMen
             // 
-            this.txtbPriceMinMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.txtbPriceMinMen.Font = new System.Drawing.Font("Verdana", 18F);
             this.txtbPriceMinMen.Location = new System.Drawing.Point(178, 445);
             this.txtbPriceMinMen.Name = "txtbPriceMinMen";
-            this.txtbPriceMinMen.Size = new System.Drawing.Size(100, 41);
+            this.txtbPriceMinMen.Size = new System.Drawing.Size(100, 44);
             this.txtbPriceMinMen.TabIndex = 11;
             // 
             // label2
@@ -169,7 +171,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.label2.Font = new System.Drawing.Font("Verdana", 14F);
-            this.label2.Location = new System.Drawing.Point(33, 449);
+            this.label2.Location = new System.Drawing.Point(30, 449);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 29);
             this.label2.TabIndex = 10;
@@ -180,7 +182,7 @@
             this.lblColourMen.AutoSize = true;
             this.lblColourMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.lblColourMen.Font = new System.Drawing.Font("Verdana", 14F);
-            this.lblColourMen.Location = new System.Drawing.Point(34, 377);
+            this.lblColourMen.Location = new System.Drawing.Point(30, 377);
             this.lblColourMen.Name = "lblColourMen";
             this.lblColourMen.Size = new System.Drawing.Size(102, 29);
             this.lblColourMen.TabIndex = 8;
@@ -191,7 +193,7 @@
             this.lab.AutoSize = true;
             this.lab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.lab.Font = new System.Drawing.Font("Verdana", 14F);
-            this.lab.Location = new System.Drawing.Point(33, 324);
+            this.lab.Location = new System.Drawing.Point(30, 324);
             this.lab.Name = "lab";
             this.lab.Size = new System.Drawing.Size(73, 29);
             this.lab.TabIndex = 6;
@@ -202,7 +204,7 @@
             this.lblProductTypeMen.AutoSize = true;
             this.lblProductTypeMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.lblProductTypeMen.Font = new System.Drawing.Font("Verdana", 14F);
-            this.lblProductTypeMen.Location = new System.Drawing.Point(33, 256);
+            this.lblProductTypeMen.Location = new System.Drawing.Point(30, 256);
             this.lblProductTypeMen.Name = "lblProductTypeMen";
             this.lblProductTypeMen.Size = new System.Drawing.Size(179, 29);
             this.lblProductTypeMen.TabIndex = 5;
@@ -228,6 +230,17 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            // 
+            // lblMenS
+            // 
+            this.lblMenS.AutoSize = true;
+            this.lblMenS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblMenS.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lblMenS.Location = new System.Drawing.Point(30, 72);
+            this.lblMenS.Name = "lblMenS";
+            this.lblMenS.Size = new System.Drawing.Size(165, 29);
+            this.lblMenS.TabIndex = 24;
+            this.lblMenS.Text = "Mens Search";
             // 
             // UserControlMenSearchScreen
             // 
@@ -262,5 +275,6 @@
         private System.Windows.Forms.ComboBox cmbxColourMen;
         private System.Windows.Forms.ComboBox cmbxSizeMen;
         private System.Windows.Forms.ComboBox cmbxProductTypeMen;
+        private System.Windows.Forms.Label lblMenS;
     }
 }

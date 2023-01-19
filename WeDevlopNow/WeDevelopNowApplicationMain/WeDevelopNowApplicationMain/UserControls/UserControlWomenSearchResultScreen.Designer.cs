@@ -65,6 +65,7 @@
             // 
             // btnWomenResultToHome
             // 
+            this.btnWomenResultToHome.Font = new System.Drawing.Font("Verdana", 18F);
             this.btnWomenResultToHome.Location = new System.Drawing.Point(326, 618);
             this.btnWomenResultToHome.Name = "btnWomenResultToHome";
             this.btnWomenResultToHome.Size = new System.Drawing.Size(220, 90);
@@ -75,6 +76,7 @@
             // 
             // btnBackToWomen
             // 
+            this.btnBackToWomen.Font = new System.Drawing.Font("Verdana", 18F);
             this.btnBackToWomen.Location = new System.Drawing.Point(48, 618);
             this.btnBackToWomen.Name = "btnBackToWomen";
             this.btnBackToWomen.Size = new System.Drawing.Size(220, 90);
@@ -86,9 +88,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(199, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(210, 16);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(182, 130);
+            this.pictureBox1.Size = new System.Drawing.Size(182, 192);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -105,10 +107,11 @@
             // lblNoMatchesWomen
             // 
             this.lblNoMatchesWomen.AutoSize = true;
-            this.lblNoMatchesWomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblNoMatchesWomen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblNoMatchesWomen.Font = new System.Drawing.Font("Verdana", 16F);
             this.lblNoMatchesWomen.Location = new System.Drawing.Point(115, 430);
             this.lblNoMatchesWomen.Name = "lblNoMatchesWomen";
-            this.lblNoMatchesWomen.Size = new System.Drawing.Size(379, 36);
+            this.lblNoMatchesWomen.Size = new System.Drawing.Size(400, 32);
             this.lblNoMatchesWomen.TabIndex = 11;
             this.lblNoMatchesWomen.Text = "No items match search filter";
             // 
@@ -116,6 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(29)))), ((int)(((byte)(54)))));
             this.Controls.Add(this.lblNoMatchesWomen);
             this.Controls.Add(this.pnlWomenSearchResult);
             this.Name = "UserControlWomenSearchResultScreen";

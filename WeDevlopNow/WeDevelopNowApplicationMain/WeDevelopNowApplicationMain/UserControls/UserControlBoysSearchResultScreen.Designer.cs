@@ -31,11 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBoysSearchResultScreen));
             this.btnBoysResultToHome = new System.Windows.Forms.Button();
             this.btnBackToBoys = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dgvwBoysResults = new System.Windows.Forms.DataGridView();
             this.lblNoMatchesBoys = new System.Windows.Forms.Label();
+            this.dgvwBoysResults = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwBoysResults)).BeginInit();
@@ -43,6 +42,7 @@
             // 
             // btnBoysResultToHome
             // 
+            this.btnBoysResultToHome.Font = new System.Drawing.Font("Verdana", 18F);
             this.btnBoysResultToHome.Location = new System.Drawing.Point(326, 634);
             this.btnBoysResultToHome.Name = "btnBoysResultToHome";
             this.btnBoysResultToHome.Size = new System.Drawing.Size(220, 90);
@@ -53,6 +53,7 @@
             // 
             // btnBackToBoys
             // 
+            this.btnBackToBoys.Font = new System.Drawing.Font("Verdana", 18F);
             this.btnBackToBoys.Location = new System.Drawing.Point(45, 634);
             this.btnBackToBoys.Name = "btnBackToBoys";
             this.btnBackToBoys.Size = new System.Drawing.Size(220, 90);
@@ -60,15 +61,6 @@
             this.btnBackToBoys.Text = "<< Back";
             this.btnBackToBoys.UseVisualStyleBackColor = true;
             this.btnBackToBoys.Click += new System.EventHandler(this.btnBackToBoys_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Boys results";
             // 
             // pictureBox1
             // 
@@ -87,11 +79,21 @@
             this.panel4.Controls.Add(this.btnBoysResultToHome);
             this.panel4.Controls.Add(this.btnBackToBoys);
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(580, 750);
             this.panel4.TabIndex = 6;
+            // 
+            // lblNoMatchesBoys
+            // 
+            this.lblNoMatchesBoys.AutoSize = true;
+            this.lblNoMatchesBoys.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblNoMatchesBoys.Font = new System.Drawing.Font("Verdana", 16F);
+            this.lblNoMatchesBoys.Location = new System.Drawing.Point(115, 430);
+            this.lblNoMatchesBoys.Name = "lblNoMatchesBoys";
+            this.lblNoMatchesBoys.Size = new System.Drawing.Size(400, 32);
+            this.lblNoMatchesBoys.TabIndex = 11;
+            this.lblNoMatchesBoys.Text = "No items match search filter";
             // 
             // dgvwBoysResults
             // 
@@ -103,20 +105,11 @@
             this.dgvwBoysResults.Size = new System.Drawing.Size(480, 345);
             this.dgvwBoysResults.TabIndex = 8;
             // 
-            // lblNoMatchesBoys
-            // 
-            this.lblNoMatchesBoys.AutoSize = true;
-            this.lblNoMatchesBoys.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lblNoMatchesBoys.Location = new System.Drawing.Point(115, 430);
-            this.lblNoMatchesBoys.Name = "lblNoMatchesBoys";
-            this.lblNoMatchesBoys.Size = new System.Drawing.Size(379, 36);
-            this.lblNoMatchesBoys.TabIndex = 11;
-            this.lblNoMatchesBoys.Text = "No items match search filter";
-            // 
             // UserControlBoysSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.Controls.Add(this.panel4);
             this.Name = "UserControlBoysSearchResultScreen";
             this.Size = new System.Drawing.Size(580, 750);
@@ -131,7 +124,6 @@
         #endregion
         private System.Windows.Forms.Button btnBoysResultToHome;
         private System.Windows.Forms.Button btnBackToBoys;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dgvwBoysResults;
