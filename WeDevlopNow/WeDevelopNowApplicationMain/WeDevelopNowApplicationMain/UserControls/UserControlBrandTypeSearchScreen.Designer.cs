@@ -95,6 +95,7 @@
             this.cmbxColourBrandType.Name = "cmbxColourBrandType";
             this.cmbxColourBrandType.Size = new System.Drawing.Size(327, 44);
             this.cmbxColourBrandType.TabIndex = 18;
+            this.cmbxColourBrandType.TextChanged += new System.EventHandler(this.cmbxColourBrandType_TextChanged);
             // 
             // cmbxSizeBrandType
             // 
@@ -113,6 +114,7 @@
             this.cmbxBrandBrandType.Name = "cmbxBrandBrandType";
             this.cmbxBrandBrandType.Size = new System.Drawing.Size(327, 44);
             this.cmbxBrandBrandType.TabIndex = 16;
+            this.cmbxBrandBrandType.TextChanged += new System.EventHandler(this.cmbxBrandBrandType_TextChanged);
             // 
             // cmbxGenderBrandType
             // 
@@ -122,6 +124,7 @@
             this.cmbxGenderBrandType.Name = "cmbxGenderBrandType";
             this.cmbxGenderBrandType.Size = new System.Drawing.Size(327, 44);
             this.cmbxGenderBrandType.TabIndex = 15;
+            this.cmbxGenderBrandType.TextChanged += new System.EventHandler(this.cmbxGenderBrandType_TextChanged);
             // 
             // btnFindBrandType
             // 

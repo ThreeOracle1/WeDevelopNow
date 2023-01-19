@@ -63,7 +63,7 @@ namespace WeDevelopNowApplicationMain
 
         public void PopulateGenderDropdownBox()
         {
-            string defaultGender = "Mens/Womens";
+            string defaultGender = "Mens/Womens/Boys/Girls";
 
             string[] individualBrands = defaultGender.Split('/');
 
@@ -245,11 +245,22 @@ namespace WeDevelopNowApplicationMain
 
                 if (cmbxColourBrand.Text == "Red")
                 {
-                    cmbxProductTypeBrand.Text = "Hoodie";
+                    if (cmbxProductTypeBrand.Text == "Hoodie")
+                    {
+                        cmbxSizeBrand.Text = "L";
 
-                    cmbxSizeBrand.Text = "L";
+                        cmbxGenderBrand.Text = "Mens";
+                    }
+                }
 
-                    cmbxGenderBrand.Text = "Mens";
+                if (cmbxColourBrand.Text == "Red")
+                {
+                    if (cmbxProductTypeBrand.Text == "Tracksuit Bottoms")
+                    {
+                        cmbxSizeBrand.Text = "M";
+
+                        cmbxGenderBrand.Text = "Womens";
+                    }
                 }
 
                 if (cmbxColourBrand.Text == "Multi")
@@ -259,6 +270,44 @@ namespace WeDevelopNowApplicationMain
                     cmbxSizeBrand.Text = "L";
 
                     cmbxGenderBrand.Text = "Mens";
+                }
+
+                if (cmbxColourBrand.Text == "Purple")
+                {
+                    cmbxProductTypeBrand.Text = "Sweatshirts";
+
+                    cmbxSizeBrand.Text = "M";
+
+                    cmbxGenderBrand.Text = "Womens";
+                }
+
+                if (cmbxColourBrand.Text == "Pink")
+                {
+                    if (cmbxProductTypeBrand.Text == "Sweatshirts")
+                    {
+                        cmbxSizeBrand.Text = "M";
+
+                        cmbxGenderBrand.Text = "Womens";
+                    }
+                }
+
+                if (cmbxColourBrand.Text == "Pink")
+                {
+                    if (cmbxProductTypeBrand.Text == "Shorts")
+                    {
+                        cmbxSizeBrand.Text = "M";
+
+                        cmbxGenderBrand.Text = "Girls";
+                    }
+                }
+
+                if (cmbxColourBrand.Text == "Tan")
+                {
+                    if (cmbxProductTypeBrand.Text == "Leggings & Tights")
+                    {
+
+                        cmbxGenderBrand.Text = "Womens";
+                    }
                 }
             }
         }
@@ -284,6 +333,74 @@ namespace WeDevelopNowApplicationMain
                     cmbxSizeBrand.Text = "M";
 
                     cmbxColourBrand.Text = "Blue";
+                }
+
+                if (cmbxGenderBrand.Text == "Boys")
+                {
+                    cmbxProductTypeBrand.Text = "Polo Shirts";
+
+                    cmbxSizeBrand.Text = "M";
+
+                    cmbxColourBrand.Text = "Multi";
+                }
+
+                if (cmbxGenderBrand.Text == "Girls")
+                {
+                    cmbxProductTypeBrand.Text = "Shorts";
+
+                    cmbxSizeBrand.Text = "M";
+
+                    cmbxColourBrand.Text = "Pink";
+                }
+            }
+        }
+
+        public void SmartItenmSelectionBrandBrand()
+        {
+            if (cmbxGenderBrand.Text != null)
+            {
+                if (cmbxProductTypeBrand.Text != null)
+                {
+
+                    if (lblCurrentBrandSelected.Text == "Brand A")
+                    {
+                        cmbxProductTypeBrand.Text = "Hoddies";
+
+                        cmbxSizeBrand.Text = "L";
+
+                        cmbxGenderBrand.Text = "Mens";
+
+                        cmbxColourBrand.Text = "Red";
+
+                    }
+
+                    if (lblCurrentBrandSelected.Text == "Brand B")
+                    {
+                        cmbxProductTypeBrand.Text = "Leggings & Tights";
+
+                        cmbxGenderBrand.Text = "Womens";
+
+                        cmbxColourBrand.Text = "Tan";
+
+                    }
+
+                    if (lblCurrentBrandSelected.Text == "Brand C")
+                    {
+                        cmbxProductTypeBrand.Text = "Polo Shirts";
+
+                        cmbxGenderBrand.Text = "Boys";
+
+                        cmbxColourBrand.Text = "Multi";
+                    }
+
+                    if (lblCurrentBrandSelected.Text == "Brand D")
+                    {
+                        cmbxProductTypeBrand.Text = "Sweatshirts";
+
+                        cmbxGenderBrand.Text = "Womens";
+
+                        cmbxColourBrand.Text = "Pink";
+                    }
                 }
             }
         }
@@ -321,7 +438,9 @@ namespace WeDevelopNowApplicationMain
 
             switchCounter++;
 
-            if(switchCounter == 4)
+            SmartItenmSelectionBrandBrand();
+
+            if (switchCounter == 4)
             {
                 switchCounter = 0;
             }
