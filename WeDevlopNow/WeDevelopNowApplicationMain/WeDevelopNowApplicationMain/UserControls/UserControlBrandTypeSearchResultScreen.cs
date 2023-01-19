@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,78 @@ namespace WeDevelopNowApplicationMain
         public UserControlBrandTypeSearchResultScreen()
         {
             InitializeComponent();
+        }
+
+        string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
+
+        public void BindDataGridBrandTypeResult(string sqlBrandTypeFindStatement)
+        {
+
+            lblNoMatchesBrandType.Visible = false;
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                string starterQuery = "SELECT * FROM OurProducts";
+
+                using (SqlCommand cmd = new SqlCommand(sqlBrandTypeFindStatement, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            dgvwBrandTypeResults.DataSource = dt;
+                        }
+                    }
+                }
+            }
+        }
+
+        public void BindDataGridBrandTypeFindResult(string sqlBrandTypeFindStatement)
+        {
+
+            lblNoMatchesBrandType.Visible = false;
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sqlBrandTypeFindStatement, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            dgvwBrandTypeResults.DataSource = dt;
+                            dgvwBrandTypeResults.Refresh();
+                            dgvwBrandTypeResults.Update();
+
+                            if (dgvwBrandTypeResults.Rows.Count == 1)
+                            {
+                                lblNoMatchesBrandType.Visible = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void btnBrandTypeToHome_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.BrandTypeResultToHomeControlVisable();
+        }
+
+        private void btnBrandTypeResultBack_Click(object sender, EventArgs e)
+        {
+            Form1 formInstance = new Form1();
+
+            formInstance.BackToBrandTypeControlVisable();
         }
     }
 }

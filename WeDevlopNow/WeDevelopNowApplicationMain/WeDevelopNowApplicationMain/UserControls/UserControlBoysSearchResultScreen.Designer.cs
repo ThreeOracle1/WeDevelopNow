@@ -29,23 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBoysSearchResultScreen));
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnBoysResultToHome = new System.Windows.Forms.Button();
+            this.btnBackToBoys = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.panel4.SuspendLayout();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblNoMatchesBoys = new System.Windows.Forms.Label();
+            this.dgvwBoysResults = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwBoysResults)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel4
+            // btnBoysResultToHome
             // 
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(600, 800);
-            this.panel4.TabIndex = 6;
+            this.btnBoysResultToHome.Font = new System.Drawing.Font("Verdana", 18F);
+            this.btnBoysResultToHome.Location = new System.Drawing.Point(326, 634);
+            this.btnBoysResultToHome.Name = "btnBoysResultToHome";
+            this.btnBoysResultToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnBoysResultToHome.TabIndex = 3;
+            this.btnBoysResultToHome.Text = "Home";
+            this.btnBoysResultToHome.UseVisualStyleBackColor = true;
+            this.btnBoysResultToHome.Click += new System.EventHandler(this.btnBoysResultToHome_Click);
+            // 
+            // btnBackToBoys
+            // 
+            this.btnBackToBoys.Font = new System.Drawing.Font("Verdana", 18F);
+            this.btnBackToBoys.Location = new System.Drawing.Point(45, 634);
+            this.btnBackToBoys.Name = "btnBackToBoys";
+            this.btnBackToBoys.Size = new System.Drawing.Size(220, 90);
+            this.btnBackToBoys.TabIndex = 7;
+            this.btnBackToBoys.Text = "<< Back";
+            this.btnBackToBoys.UseVisualStyleBackColor = true;
+            this.btnBackToBoys.Click += new System.EventHandler(this.btnBackToBoys_Click);
             // 
             // pictureBox1
             // 
@@ -57,55 +72,61 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // panel4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Boys results";
+            this.panel4.Controls.Add(this.lblNoMatchesBoys);
+            this.panel4.Controls.Add(this.dgvwBoysResults);
+            this.panel4.Controls.Add(this.btnBoysResultToHome);
+            this.panel4.Controls.Add(this.btnBackToBoys);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(580, 750);
+            this.panel4.TabIndex = 6;
             // 
-            // btnHome
+            // lblNoMatchesBoys
             // 
-            this.btnHome.Location = new System.Drawing.Point(340, 676);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.lblNoMatchesBoys.AutoSize = true;
+            this.lblNoMatchesBoys.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblNoMatchesBoys.Font = new System.Drawing.Font("Verdana", 16F);
+            this.lblNoMatchesBoys.Location = new System.Drawing.Point(115, 430);
+            this.lblNoMatchesBoys.Name = "lblNoMatchesBoys";
+            this.lblNoMatchesBoys.Size = new System.Drawing.Size(400, 32);
+            this.lblNoMatchesBoys.TabIndex = 11;
+            this.lblNoMatchesBoys.Text = "No items match search filter";
             // 
-            // btnBack
+            // dgvwBoysResults
             // 
-            this.btnBack.Location = new System.Drawing.Point(49, 676);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(220, 90);
-            this.btnBack.TabIndex = 7;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.dgvwBoysResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvwBoysResults.Location = new System.Drawing.Point(61, 233);
+            this.dgvwBoysResults.Name = "dgvwBoysResults";
+            this.dgvwBoysResults.RowHeadersWidth = 51;
+            this.dgvwBoysResults.RowTemplate.Height = 24;
+            this.dgvwBoysResults.Size = new System.Drawing.Size(480, 345);
+            this.dgvwBoysResults.TabIndex = 8;
             // 
             // UserControlBoysSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnHome);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.Controls.Add(this.panel4);
             this.Name = "UserControlBoysSearchResultScreen";
-            this.Size = new System.Drawing.Size(600, 800);
+            this.Size = new System.Drawing.Size(580, 750);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwBoysResults)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnBoysResultToHome;
+        private System.Windows.Forms.Button btnBackToBoys;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridView dgvwBoysResults;
+        private System.Windows.Forms.Label lblNoMatchesBoys;
     }
 }

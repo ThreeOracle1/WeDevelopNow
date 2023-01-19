@@ -29,33 +29,59 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlGirlsSearchResultScreen));
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.pnlGirlsSearchResult = new System.Windows.Forms.Panel();
+            this.dgvwGirlsResults = new System.Windows.Forms.DataGridView();
+            this.btnGirlsResultsToHome = new System.Windows.Forms.Button();
+            this.btnBackToGirls = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.panel4.SuspendLayout();
+            this.lblNoMatchesGirls = new System.Windows.Forms.Label();
+            this.pnlGirlsSearchResult.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwGirlsResults)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel4
+            // pnlGirlsSearchResult
             // 
-            this.panel4.Controls.Add(this.btnBack);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(600, 800);
-            this.panel4.TabIndex = 6;
+            this.pnlGirlsSearchResult.Controls.Add(this.dgvwGirlsResults);
+            this.pnlGirlsSearchResult.Controls.Add(this.btnGirlsResultsToHome);
+            this.pnlGirlsSearchResult.Controls.Add(this.btnBackToGirls);
+            this.pnlGirlsSearchResult.Controls.Add(this.pictureBox1);
+            this.pnlGirlsSearchResult.Location = new System.Drawing.Point(0, 0);
+            this.pnlGirlsSearchResult.Name = "pnlGirlsSearchResult";
+            this.pnlGirlsSearchResult.Size = new System.Drawing.Size(580, 750);
+            this.pnlGirlsSearchResult.TabIndex = 6;
             // 
-            // btnBack
+            // dgvwGirlsResults
             // 
-            this.btnBack.Location = new System.Drawing.Point(-51, 607);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(220, 90);
-            this.btnBack.TabIndex = 8;
-            this.btnBack.Text = "<< Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.dgvwGirlsResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvwGirlsResults.Location = new System.Drawing.Point(61, 233);
+            this.dgvwGirlsResults.Name = "dgvwGirlsResults";
+            this.dgvwGirlsResults.RowHeadersWidth = 51;
+            this.dgvwGirlsResults.RowTemplate.Height = 24;
+            this.dgvwGirlsResults.Size = new System.Drawing.Size(480, 345);
+            this.dgvwGirlsResults.TabIndex = 9;
+            // 
+            // btnGirlsResultsToHome
+            // 
+            this.btnGirlsResultsToHome.Font = new System.Drawing.Font("Verdana", 18F);
+            this.btnGirlsResultsToHome.Location = new System.Drawing.Point(304, 642);
+            this.btnGirlsResultsToHome.Name = "btnGirlsResultsToHome";
+            this.btnGirlsResultsToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnGirlsResultsToHome.TabIndex = 7;
+            this.btnGirlsResultsToHome.Text = "Home";
+            this.btnGirlsResultsToHome.UseVisualStyleBackColor = true;
+            this.btnGirlsResultsToHome.Click += new System.EventHandler(this.btnGirlsResultsToHome_Click);
+            // 
+            // btnBackToGirls
+            // 
+            this.btnBackToGirls.Font = new System.Drawing.Font("Verdana", 18F);
+            this.btnBackToGirls.Location = new System.Drawing.Point(29, 642);
+            this.btnBackToGirls.Name = "btnBackToGirls";
+            this.btnBackToGirls.Size = new System.Drawing.Size(220, 90);
+            this.btnBackToGirls.TabIndex = 8;
+            this.btnBackToGirls.Text = "<< Back";
+            this.btnBackToGirls.UseVisualStyleBackColor = true;
+            this.btnBackToGirls.Click += new System.EventHandler(this.btnBackToGirls_Click);
             // 
             // pictureBox1
             // 
@@ -63,49 +89,45 @@
             this.pictureBox1.Location = new System.Drawing.Point(210, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(181, 191);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // lblNoMatchesGirls
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Girls results";
-            // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(355, 642);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 7;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.lblNoMatchesGirls.AutoSize = true;
+            this.lblNoMatchesGirls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblNoMatchesGirls.Font = new System.Drawing.Font("Verdana", 16F);
+            this.lblNoMatchesGirls.Location = new System.Drawing.Point(115, 430);
+            this.lblNoMatchesGirls.Name = "lblNoMatchesGirls";
+            this.lblNoMatchesGirls.Size = new System.Drawing.Size(400, 32);
+            this.lblNoMatchesGirls.TabIndex = 12;
+            this.lblNoMatchesGirls.Text = "No items match search filter";
             // 
             // UserControlGirlsSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnHome);
-            this.Controls.Add(this.panel4);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            this.Controls.Add(this.lblNoMatchesGirls);
+            this.Controls.Add(this.pnlGirlsSearchResult);
             this.Name = "UserControlGirlsSearchResultScreen";
-            this.Size = new System.Drawing.Size(600, 800);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.Size = new System.Drawing.Size(580, 750);
+            this.pnlGirlsSearchResult.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwGirlsResults)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlGirlsSearchResult;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnGirlsResultsToHome;
+        private System.Windows.Forms.Button btnBackToGirls;
+        private System.Windows.Forms.DataGridView dgvwGirlsResults;
+        private System.Windows.Forms.Label lblNoMatchesGirls;
     }
 }

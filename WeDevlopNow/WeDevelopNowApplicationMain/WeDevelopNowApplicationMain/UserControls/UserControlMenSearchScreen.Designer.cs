@@ -29,22 +29,204 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlMenSearchScreen));
-            this.pnlMens = new System.Windows.Forms.Panel();
+            this.pnlMenSearch = new System.Windows.Forms.Panel();
+            this.lblMenS = new System.Windows.Forms.Label();
+            this.cmbxBrandMen = new System.Windows.Forms.ComboBox();
+            this.cmbxColourMen = new System.Windows.Forms.ComboBox();
+            this.cmbxSizeMen = new System.Windows.Forms.ComboBox();
+            this.cmbxProductTypeMen = new System.Windows.Forms.ComboBox();
+            this.btnFindMen = new System.Windows.Forms.Button();
+            this.lblBrandMen = new System.Windows.Forms.Label();
+            this.txtbPriceMaxMen = new System.Windows.Forms.TextBox();
+            this.lblPriceMaxMen = new System.Windows.Forms.Label();
+            this.txtbPriceMinMen = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblColourMen = new System.Windows.Forms.Label();
+            this.lab = new System.Windows.Forms.Label();
+            this.lblProductTypeMen = new System.Windows.Forms.Label();
+            this.btnMenToHome = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.pnlMens.SuspendLayout();
+            this.pnlMenSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlMens
+            // pnlMenSearch
             // 
-            this.pnlMens.Controls.Add(this.pictureBox2);
-            this.pnlMens.Controls.Add(this.label1);
-            this.pnlMens.Location = new System.Drawing.Point(0, 0);
-            this.pnlMens.Name = "pnlMens";
-            this.pnlMens.Size = new System.Drawing.Size(600, 800);
-            this.pnlMens.TabIndex = 2;
+            this.pnlMenSearch.Controls.Add(this.lblMenS);
+            this.pnlMenSearch.Controls.Add(this.cmbxBrandMen);
+            this.pnlMenSearch.Controls.Add(this.cmbxColourMen);
+            this.pnlMenSearch.Controls.Add(this.cmbxSizeMen);
+            this.pnlMenSearch.Controls.Add(this.cmbxProductTypeMen);
+            this.pnlMenSearch.Controls.Add(this.btnFindMen);
+            this.pnlMenSearch.Controls.Add(this.lblBrandMen);
+            this.pnlMenSearch.Controls.Add(this.txtbPriceMaxMen);
+            this.pnlMenSearch.Controls.Add(this.lblPriceMaxMen);
+            this.pnlMenSearch.Controls.Add(this.txtbPriceMinMen);
+            this.pnlMenSearch.Controls.Add(this.label2);
+            this.pnlMenSearch.Controls.Add(this.lblColourMen);
+            this.pnlMenSearch.Controls.Add(this.lab);
+            this.pnlMenSearch.Controls.Add(this.lblProductTypeMen);
+            this.pnlMenSearch.Controls.Add(this.btnMenToHome);
+            this.pnlMenSearch.Controls.Add(this.pictureBox2);
+            this.pnlMenSearch.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenSearch.Name = "pnlMenSearch";
+            this.pnlMenSearch.Size = new System.Drawing.Size(580, 750);
+            this.pnlMenSearch.TabIndex = 2;
+            // 
+            // lblMenS
+            // 
+            this.lblMenS.AutoSize = true;
+            this.lblMenS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblMenS.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lblMenS.Location = new System.Drawing.Point(30, 72);
+            this.lblMenS.Name = "lblMenS";
+            this.lblMenS.Size = new System.Drawing.Size(165, 29);
+            this.lblMenS.TabIndex = 24;
+            this.lblMenS.Text = "Mens Search";
+            // 
+            // cmbxBrandMen
+            // 
+            this.cmbxBrandMen.Font = new System.Drawing.Font("Verdana", 18F);
+            this.cmbxBrandMen.FormattingEnabled = true;
+            this.cmbxBrandMen.Location = new System.Drawing.Point(240, 510);
+            this.cmbxBrandMen.Name = "cmbxBrandMen";
+            this.cmbxBrandMen.Size = new System.Drawing.Size(309, 44);
+            this.cmbxBrandMen.TabIndex = 20;
+            this.cmbxBrandMen.TextChanged += new System.EventHandler(this.cmbxBrandMen_TextChanged);
+            // 
+            // cmbxColourMen
+            // 
+            this.cmbxColourMen.Font = new System.Drawing.Font("Verdana", 18F);
+            this.cmbxColourMen.FormattingEnabled = true;
+            this.cmbxColourMen.Location = new System.Drawing.Point(240, 377);
+            this.cmbxColourMen.Name = "cmbxColourMen";
+            this.cmbxColourMen.Size = new System.Drawing.Size(309, 44);
+            this.cmbxColourMen.TabIndex = 19;
+            this.cmbxColourMen.TextChanged += new System.EventHandler(this.cmbxColourMen_TextChanged);
+            // 
+            // cmbxSizeMen
+            // 
+            this.cmbxSizeMen.Font = new System.Drawing.Font("Verdana", 18F);
+            this.cmbxSizeMen.FormattingEnabled = true;
+            this.cmbxSizeMen.Location = new System.Drawing.Point(240, 315);
+            this.cmbxSizeMen.Name = "cmbxSizeMen";
+            this.cmbxSizeMen.Size = new System.Drawing.Size(309, 44);
+            this.cmbxSizeMen.TabIndex = 18;
+            this.cmbxSizeMen.TextChanged += new System.EventHandler(this.cmbxSizeMen_TextChanged);
+            // 
+            // cmbxProductTypeMen
+            // 
+            this.cmbxProductTypeMen.Font = new System.Drawing.Font("Verdana", 18F);
+            this.cmbxProductTypeMen.FormattingEnabled = true;
+            this.cmbxProductTypeMen.Location = new System.Drawing.Point(240, 247);
+            this.cmbxProductTypeMen.Name = "cmbxProductTypeMen";
+            this.cmbxProductTypeMen.Size = new System.Drawing.Size(309, 44);
+            this.cmbxProductTypeMen.TabIndex = 17;
+            this.cmbxProductTypeMen.TextChanged += new System.EventHandler(this.cmbxProductTypeMen_TextChanged);
+            // 
+            // btnFindMen
+            // 
+            this.btnFindMen.Font = new System.Drawing.Font("Verdana", 18F);
+            this.btnFindMen.Location = new System.Drawing.Point(19, 598);
+            this.btnFindMen.Name = "btnFindMen";
+            this.btnFindMen.Size = new System.Drawing.Size(530, 56);
+            this.btnFindMen.TabIndex = 16;
+            this.btnFindMen.Text = "Find";
+            this.btnFindMen.UseVisualStyleBackColor = true;
+            this.btnFindMen.Click += new System.EventHandler(this.btnFindMen_Click);
+            // 
+            // lblBrandMen
+            // 
+            this.lblBrandMen.AutoSize = true;
+            this.lblBrandMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblBrandMen.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lblBrandMen.Location = new System.Drawing.Point(30, 519);
+            this.lblBrandMen.Name = "lblBrandMen";
+            this.lblBrandMen.Size = new System.Drawing.Size(94, 29);
+            this.lblBrandMen.TabIndex = 14;
+            this.lblBrandMen.Text = "Brand:";
+            // 
+            // txtbPriceMaxMen
+            // 
+            this.txtbPriceMaxMen.Font = new System.Drawing.Font("Verdana", 18F);
+            this.txtbPriceMaxMen.Location = new System.Drawing.Point(449, 445);
+            this.txtbPriceMaxMen.Name = "txtbPriceMaxMen";
+            this.txtbPriceMaxMen.Size = new System.Drawing.Size(100, 44);
+            this.txtbPriceMaxMen.TabIndex = 13;
+            // 
+            // lblPriceMaxMen
+            // 
+            this.lblPriceMaxMen.AutoSize = true;
+            this.lblPriceMaxMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblPriceMaxMen.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lblPriceMaxMen.Location = new System.Drawing.Point(294, 449);
+            this.lblPriceMaxMen.Name = "lblPriceMaxMen";
+            this.lblPriceMaxMen.Size = new System.Drawing.Size(137, 29);
+            this.lblPriceMaxMen.TabIndex = 12;
+            this.lblPriceMaxMen.Text = "Price Max:";
+            // 
+            // txtbPriceMinMen
+            // 
+            this.txtbPriceMinMen.Font = new System.Drawing.Font("Verdana", 18F);
+            this.txtbPriceMinMen.Location = new System.Drawing.Point(178, 445);
+            this.txtbPriceMinMen.Name = "txtbPriceMinMen";
+            this.txtbPriceMinMen.Size = new System.Drawing.Size(100, 44);
+            this.txtbPriceMinMen.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.label2.Font = new System.Drawing.Font("Verdana", 14F);
+            this.label2.Location = new System.Drawing.Point(30, 449);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 29);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Price Min:";
+            // 
+            // lblColourMen
+            // 
+            this.lblColourMen.AutoSize = true;
+            this.lblColourMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblColourMen.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lblColourMen.Location = new System.Drawing.Point(30, 377);
+            this.lblColourMen.Name = "lblColourMen";
+            this.lblColourMen.Size = new System.Drawing.Size(102, 29);
+            this.lblColourMen.TabIndex = 8;
+            this.lblColourMen.Text = "Colour:";
+            // 
+            // lab
+            // 
+            this.lab.AutoSize = true;
+            this.lab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lab.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lab.Location = new System.Drawing.Point(30, 324);
+            this.lab.Name = "lab";
+            this.lab.Size = new System.Drawing.Size(73, 29);
+            this.lab.TabIndex = 6;
+            this.lab.Text = "Size:";
+            // 
+            // lblProductTypeMen
+            // 
+            this.lblProductTypeMen.AutoSize = true;
+            this.lblProductTypeMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblProductTypeMen.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lblProductTypeMen.Location = new System.Drawing.Point(30, 256);
+            this.lblProductTypeMen.Name = "lblProductTypeMen";
+            this.lblProductTypeMen.Size = new System.Drawing.Size(179, 29);
+            this.lblProductTypeMen.TabIndex = 5;
+            this.lblProductTypeMen.Text = "Product Type:";
+            // 
+            // btnMenToHome
+            // 
+            this.btnMenToHome.Font = new System.Drawing.Font("Verdana", 18F);
+            this.btnMenToHome.Location = new System.Drawing.Point(19, 660);
+            this.btnMenToHome.Name = "btnMenToHome";
+            this.btnMenToHome.Size = new System.Drawing.Size(530, 57);
+            this.btnMenToHome.TabIndex = 3;
+            this.btnMenToHome.Text = "<< Home";
+            this.btnMenToHome.UseVisualStyleBackColor = true;
+            this.btnMenToHome.Click += new System.EventHandler(this.btnMenToHome_Click);
             // 
             // pictureBox2
             // 
@@ -52,39 +234,20 @@
             this.pictureBox2.Location = new System.Drawing.Point(210, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(181, 192);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 18F);
-            this.label1.Location = new System.Drawing.Point(33, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Men";
-            // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(636, 643);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 90);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
             // 
             // UserControlMenSearchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnHome);
-            this.Controls.Add(this.pnlMens);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
+            this.Controls.Add(this.pnlMenSearch);
             this.Name = "UserControlMenSearchScreen";
-            this.Size = new System.Drawing.Size(600, 800);
-            this.pnlMens.ResumeLayout(false);
-            this.pnlMens.PerformLayout();
+            this.Size = new System.Drawing.Size(580, 750);
+            this.pnlMenSearch.ResumeLayout(false);
+            this.pnlMenSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -92,9 +255,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlMens;
+        private System.Windows.Forms.Panel pnlMenSearch;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnMenToHome;
+        private System.Windows.Forms.TextBox txtbPriceMaxMen;
+        private System.Windows.Forms.Label lblPriceMaxMen;
+        private System.Windows.Forms.TextBox txtbPriceMinMen;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblColourMen;
+        private System.Windows.Forms.Label lab;
+        private System.Windows.Forms.Label lblProductTypeMen;
+        private System.Windows.Forms.Label lblBrandMen;
+        private System.Windows.Forms.Button btnFindMen;
+        private System.Windows.Forms.ComboBox cmbxBrandMen;
+        private System.Windows.Forms.ComboBox cmbxColourMen;
+        private System.Windows.Forms.ComboBox cmbxSizeMen;
+        private System.Windows.Forms.ComboBox cmbxProductTypeMen;
+        private System.Windows.Forms.Label lblMenS;
     }
 }
