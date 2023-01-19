@@ -411,5 +411,10 @@ namespace WeDevelopNowApplicationMain
                 formInstance1.userControlHomepage1.Visible = true;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

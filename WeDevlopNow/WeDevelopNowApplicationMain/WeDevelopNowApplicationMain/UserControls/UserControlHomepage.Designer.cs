@@ -32,11 +32,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHomeMen = new System.Windows.Forms.Button();
             this.pnlHomepage = new System.Windows.Forms.Panel();
-            this.btnHomeWomen = new System.Windows.Forms.Button();
-            this.btnHomeBoys = new System.Windows.Forms.Button();
-            this.btnHomeGirls = new System.Windows.Forms.Button();
-            this.btnHomeBrand = new System.Windows.Forms.Button();
             this.btnHomeBrandType = new System.Windows.Forms.Button();
+            this.btnHomeBrand = new System.Windows.Forms.Button();
+            this.btnHomeGirls = new System.Windows.Forms.Button();
+            this.btnHomeBoys = new System.Windows.Forms.Button();
+            this.btnHomeWomen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlHomepage.SuspendLayout();
             this.SuspendLayout();
@@ -44,21 +44,23 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(183, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(191, 67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 192);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // btnHomeMen
             // 
-            this.btnHomeMen.Location = new System.Drawing.Point(129, 339);
+            this.btnHomeMen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
+            this.btnHomeMen.Font = new System.Drawing.Font("Verdana", 14F);
+            this.btnHomeMen.Location = new System.Drawing.Point(129, 308);
             this.btnHomeMen.Name = "btnHomeMen";
-            this.btnHomeMen.Size = new System.Drawing.Size(125, 79);
+            this.btnHomeMen.Size = new System.Drawing.Size(120, 120);
             this.btnHomeMen.TabIndex = 3;
             this.btnHomeMen.Text = "Men";
-            this.btnHomeMen.UseVisualStyleBackColor = true;
+            this.btnHomeMen.UseVisualStyleBackColor = false;
             this.btnHomeMen.Click += new System.EventHandler(this.btnHomeMen_Click);
             // 
             // pnlHomepage
@@ -75,66 +77,78 @@
             this.pnlHomepage.Size = new System.Drawing.Size(580, 750);
             this.pnlHomepage.TabIndex = 4;
             // 
-            // btnHomeWomen
+            // btnHomeBrandType
             // 
-            this.btnHomeWomen.Location = new System.Drawing.Point(306, 339);
-            this.btnHomeWomen.Name = "btnHomeWomen";
-            this.btnHomeWomen.Size = new System.Drawing.Size(114, 79);
-            this.btnHomeWomen.TabIndex = 4;
-            this.btnHomeWomen.Text = "Women";
-            this.btnHomeWomen.UseVisualStyleBackColor = true;
-            this.btnHomeWomen.Click += new System.EventHandler(this.btnHomeWomen_Click);
-            // 
-            // btnHomeBoys
-            // 
-            this.btnHomeBoys.Location = new System.Drawing.Point(129, 442);
-            this.btnHomeBoys.Name = "btnHomeBoys";
-            this.btnHomeBoys.Size = new System.Drawing.Size(125, 79);
-            this.btnHomeBoys.TabIndex = 5;
-            this.btnHomeBoys.Text = "Boys";
-            this.btnHomeBoys.UseVisualStyleBackColor = true;
-            this.btnHomeBoys.Click += new System.EventHandler(this.btnHomeBoys_Click);
-            // 
-            // btnHomeGirls
-            // 
-            this.btnHomeGirls.Location = new System.Drawing.Point(306, 442);
-            this.btnHomeGirls.Name = "btnHomeGirls";
-            this.btnHomeGirls.Size = new System.Drawing.Size(114, 79);
-            this.btnHomeGirls.TabIndex = 6;
-            this.btnHomeGirls.Text = "Girls";
-            this.btnHomeGirls.UseVisualStyleBackColor = true;
-            this.btnHomeGirls.Click += new System.EventHandler(this.btnHomeGirls_Click);
+            this.btnHomeBrandType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(39)))));
+            this.btnHomeBrandType.Font = new System.Drawing.Font("Verdana", 14F);
+            this.btnHomeBrandType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.btnHomeBrandType.Location = new System.Drawing.Point(306, 582);
+            this.btnHomeBrandType.Name = "btnHomeBrandType";
+            this.btnHomeBrandType.Size = new System.Drawing.Size(120, 120);
+            this.btnHomeBrandType.TabIndex = 8;
+            this.btnHomeBrandType.Text = "Brand Type";
+            this.btnHomeBrandType.UseVisualStyleBackColor = false;
+            this.btnHomeBrandType.Click += new System.EventHandler(this.btnHomeBrandType_Click);
             // 
             // btnHomeBrand
             // 
-            this.btnHomeBrand.Location = new System.Drawing.Point(129, 539);
+            this.btnHomeBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(39)))));
+            this.btnHomeBrand.Font = new System.Drawing.Font("Verdana", 14F);
+            this.btnHomeBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.btnHomeBrand.Location = new System.Drawing.Point(129, 582);
             this.btnHomeBrand.Name = "btnHomeBrand";
-            this.btnHomeBrand.Size = new System.Drawing.Size(125, 79);
+            this.btnHomeBrand.Size = new System.Drawing.Size(120, 120);
             this.btnHomeBrand.TabIndex = 7;
             this.btnHomeBrand.Text = "Brand";
-            this.btnHomeBrand.UseVisualStyleBackColor = true;
+            this.btnHomeBrand.UseVisualStyleBackColor = false;
             this.btnHomeBrand.Click += new System.EventHandler(this.btnHomeBrand_Click);
             // 
-            // btnHomeBrandType
+            // btnHomeGirls
             // 
-            this.btnHomeBrandType.Location = new System.Drawing.Point(306, 539);
-            this.btnHomeBrandType.Name = "btnHomeBrandType";
-            this.btnHomeBrandType.Size = new System.Drawing.Size(114, 79);
-            this.btnHomeBrandType.TabIndex = 8;
-            this.btnHomeBrandType.Text = "Brand Type";
-            this.btnHomeBrandType.UseVisualStyleBackColor = true;
-            this.btnHomeBrandType.Click += new System.EventHandler(this.btnHomeBrandType_Click);
+            this.btnHomeGirls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            this.btnHomeGirls.Font = new System.Drawing.Font("Verdana", 14F);
+            this.btnHomeGirls.Location = new System.Drawing.Point(306, 447);
+            this.btnHomeGirls.Name = "btnHomeGirls";
+            this.btnHomeGirls.Size = new System.Drawing.Size(120, 120);
+            this.btnHomeGirls.TabIndex = 6;
+            this.btnHomeGirls.Text = "Girls";
+            this.btnHomeGirls.UseVisualStyleBackColor = false;
+            this.btnHomeGirls.Click += new System.EventHandler(this.btnHomeGirls_Click);
+            // 
+            // btnHomeBoys
+            // 
+            this.btnHomeBoys.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            this.btnHomeBoys.Font = new System.Drawing.Font("Verdana", 14F);
+            this.btnHomeBoys.Location = new System.Drawing.Point(129, 447);
+            this.btnHomeBoys.Name = "btnHomeBoys";
+            this.btnHomeBoys.Size = new System.Drawing.Size(120, 120);
+            this.btnHomeBoys.TabIndex = 5;
+            this.btnHomeBoys.Text = "Boys";
+            this.btnHomeBoys.UseVisualStyleBackColor = false;
+            this.btnHomeBoys.Click += new System.EventHandler(this.btnHomeBoys_Click);
+            // 
+            // btnHomeWomen
+            // 
+            this.btnHomeWomen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(29)))), ((int)(((byte)(54)))));
+            this.btnHomeWomen.Font = new System.Drawing.Font("Verdana", 14F);
+            this.btnHomeWomen.Location = new System.Drawing.Point(306, 308);
+            this.btnHomeWomen.Name = "btnHomeWomen";
+            this.btnHomeWomen.Size = new System.Drawing.Size(120, 120);
+            this.btnHomeWomen.TabIndex = 4;
+            this.btnHomeWomen.Text = "Women";
+            this.btnHomeWomen.UseVisualStyleBackColor = false;
+            this.btnHomeWomen.Click += new System.EventHandler(this.btnHomeWomen_Click);
             // 
             // UserControlHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.Controls.Add(this.pnlHomepage);
             this.Name = "UserControlHomepage";
             this.Size = new System.Drawing.Size(580, 750);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlHomepage.ResumeLayout(false);
-            this.pnlHomepage.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -47,7 +47,7 @@
             // 
             this.userControlHomepage1.Location = new System.Drawing.Point(0, 0);
             this.userControlHomepage1.Name = "userControlHomepage1";
-            this.userControlHomepage1.Size = new System.Drawing.Size(596, 636);
+            this.userControlHomepage1.Size = new System.Drawing.Size(580, 750);
             this.userControlHomepage1.TabIndex = 12;
             // 
             // userControlWomenSearchScreen1
@@ -153,8 +153,10 @@
             this.Controls.Add(this.userControlBrandSearchResultScreen1);
             this.Controls.Add(this.userControlBoysSearchScreen1);
             this.Controls.Add(this.userControlBoysSearchResultScreen1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
