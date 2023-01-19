@@ -84,21 +84,21 @@ namespace WeDevelopNowApplicationMain
         public string FindTableSearchQueryWomen()
         {
 
-            string menProductTypeSearch = cmbxProductTypeWomen.Text;
+            string womenProductTypeSearch = cmbxProductTypeWomen.Text;
 
-            string menSizeSearch = cmbxSizeWomen.Text;
+            string womenSizeSearch = cmbxSizeWomen.Text;
 
-            string menColourSearch = cmbxColourWomen.Text;
+            string womenColourSearch = cmbxColourWomen.Text;
 
-            string menBrandSearch = cmbxBrandWomen.Text;
+            string womenBrandSearch = cmbxBrandWomen.Text;
 
-            int menPriceMin = 0;
+            int womenPriceMin = 0;
 
-            int menPriceMax = 0;
+            int womenPriceMax = 0;
 
             try
             {
-                menPriceMin = (int)Int64.Parse(txtbPriceMinWomen.Text);
+                womenPriceMin = (int)Int64.Parse(txtbPriceMinWomen.Text);
             }
 
             catch
@@ -110,7 +110,7 @@ namespace WeDevelopNowApplicationMain
 
             try
             {
-                menPriceMax = (int)Int64.Parse(txtbPriceMaxWomen.Text);
+                womenPriceMax = (int)Int64.Parse(txtbPriceMaxWomen.Text);
             }
 
             catch
@@ -120,14 +120,14 @@ namespace WeDevelopNowApplicationMain
                 validFindRequest = false;
             }
 
-            if (menPriceMin > menPriceMax)
+            if (womenPriceMin > womenPriceMax)
             {
                 MessageBox.Show("Please enter a valid price range");
 
                 validFindRequest = false;
             }
 
-            return "SELECT [Product Discription], Brands , Quantity, Location FROM OurProducts WHERE [Product Type] ='" + menProductTypeSearch + "' AND [Mens Sizes]='" + menSizeSearch + "' AND Colour = '" + menColourSearch + "' AND Price BETWEEN '" + menPriceMin + "' AND '" + menPriceMax + "' AND Brands = '" + menBrandSearch + "'";
+            return "SELECT [Product Discription], Brands , Quantity, Location FROM OurProducts WHERE [Product Type] ='" + womenProductTypeSearch + "' AND [Womens Sizes] like'%" + womenSizeSearch + "%' AND Colour = '" + womenColourSearch + "' AND Price BETWEEN '" + womenPriceMin + "' AND '" + womenPriceMax + "' AND Brands = '" + womenBrandSearch + "'";
         }
 
 

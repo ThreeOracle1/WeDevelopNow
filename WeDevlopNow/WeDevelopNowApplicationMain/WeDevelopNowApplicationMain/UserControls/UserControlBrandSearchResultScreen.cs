@@ -23,6 +23,8 @@ namespace WeDevelopNowApplicationMain
         public void BindDataGridBrandResult(string sqlBrandFindStatement)
         {
 
+            lblNoMatchesBrand.Visible = false;
+
             using (SqlConnection con = new SqlConnection(conString))
             {
                 string starterQuery = "SELECT * FROM OurProducts";
@@ -45,6 +47,9 @@ namespace WeDevelopNowApplicationMain
 
         public void BindDataGridBrandFindResult(string sqlBrandFindStatement)
         {
+
+            lblNoMatchesBrand.Visible = false;
+
             using (SqlConnection con = new SqlConnection(conString))
             {
 
@@ -60,6 +65,11 @@ namespace WeDevelopNowApplicationMain
                             dgvwBrandResults.DataSource = dt;
                             dgvwBrandResults.Refresh();
                             dgvwBrandResults.Update();
+
+                            if (dgvwBrandResults.Rows.Count == 1)
+                            {
+                                lblNoMatchesBrand.Visible = true;
+                            }
                         }
                     }
                 }

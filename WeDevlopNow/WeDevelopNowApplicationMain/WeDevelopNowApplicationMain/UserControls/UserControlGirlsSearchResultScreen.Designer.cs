@@ -30,14 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlGirlsSearchResultScreen));
             this.pnlGirlsSearchResult = new System.Windows.Forms.Panel();
+            this.dgvwGirlsResults = new System.Windows.Forms.DataGridView();
             this.btnGirlsResultsToHome = new System.Windows.Forms.Button();
             this.btnBackToGirls = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvwGirlsResults = new System.Windows.Forms.DataGridView();
+            this.lblNoMatchesGirls = new System.Windows.Forms.Label();
             this.pnlGirlsSearchResult.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwGirlsResults)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGirlsSearchResult
@@ -51,6 +52,16 @@
             this.pnlGirlsSearchResult.Name = "pnlGirlsSearchResult";
             this.pnlGirlsSearchResult.Size = new System.Drawing.Size(580, 750);
             this.pnlGirlsSearchResult.TabIndex = 6;
+            // 
+            // dgvwGirlsResults
+            // 
+            this.dgvwGirlsResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvwGirlsResults.Location = new System.Drawing.Point(61, 233);
+            this.dgvwGirlsResults.Name = "dgvwGirlsResults";
+            this.dgvwGirlsResults.RowHeadersWidth = 51;
+            this.dgvwGirlsResults.RowTemplate.Height = 24;
+            this.dgvwGirlsResults.Size = new System.Drawing.Size(480, 345);
+            this.dgvwGirlsResults.TabIndex = 9;
             // 
             // btnGirlsResultsToHome
             // 
@@ -91,28 +102,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Girls results";
             // 
-            // dgvwGirlsResults
+            // lblNoMatchesGirls
             // 
-            this.dgvwGirlsResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvwGirlsResults.Location = new System.Drawing.Point(61, 233);
-            this.dgvwGirlsResults.Name = "dgvwGirlsResults";
-            this.dgvwGirlsResults.RowHeadersWidth = 51;
-            this.dgvwGirlsResults.RowTemplate.Height = 24;
-            this.dgvwGirlsResults.Size = new System.Drawing.Size(480, 345);
-            this.dgvwGirlsResults.TabIndex = 9;
+            this.lblNoMatchesGirls.AutoSize = true;
+            this.lblNoMatchesGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblNoMatchesGirls.Location = new System.Drawing.Point(115, 430);
+            this.lblNoMatchesGirls.Name = "lblNoMatchesGirls";
+            this.lblNoMatchesGirls.Size = new System.Drawing.Size(379, 36);
+            this.lblNoMatchesGirls.TabIndex = 12;
+            this.lblNoMatchesGirls.Text = "No items match search filter";
             // 
             // UserControlGirlsSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblNoMatchesGirls);
             this.Controls.Add(this.pnlGirlsSearchResult);
             this.Name = "UserControlGirlsSearchResultScreen";
             this.Size = new System.Drawing.Size(580, 750);
             this.pnlGirlsSearchResult.ResumeLayout(false);
             this.pnlGirlsSearchResult.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwGirlsResults)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -124,5 +137,6 @@
         private System.Windows.Forms.Button btnGirlsResultsToHome;
         private System.Windows.Forms.Button btnBackToGirls;
         private System.Windows.Forms.DataGridView dgvwGirlsResults;
+        private System.Windows.Forms.Label lblNoMatchesGirls;
     }
 }

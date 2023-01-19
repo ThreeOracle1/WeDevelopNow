@@ -90,6 +90,15 @@ namespace WeDevelopNowApplicationMain
 
             string brandTypeGenderSearch = cmbxGenderBrandType.Text;
 
+            if (brandTypeGenderSearch == "")
+            {
+                brandTypeGenderSearch = "Mens";
+
+                validFindRequest = false;
+
+                MessageBox.Show("Please enter a gender");
+            }
+
             int brandTypePriceMin = 0;
 
             int brandTypePriceMax = 0;
@@ -124,7 +133,27 @@ namespace WeDevelopNowApplicationMain
 
                 validFindRequest = false;
             }
-            return "SELECT [Product Discription], Brands, Quantity, Location FROM OurProducts WHERE ["+brandTypeGenderSearch+" Sizes]='M' AND Colour = '" + brandTypeColourSearch + "' AND Price BETWEEN '" + brandTypePriceMin + "' AND '" + brandTypePriceMax + "' AND Brands = '" + brandBrandTypeSearch + "'";
+            return "SELECT [Product Discription], Brands, Quantity, Location FROM OurProducts WHERE ["+brandTypeGenderSearch+" Sizes] like '%"+ brandTypeSizeSearch + "%' AND Colour = '" + brandTypeColourSearch + "' AND Price BETWEEN '" + brandTypePriceMin + "' AND '" + brandTypePriceMax + "' AND Brands = '" + brandBrandTypeSearch + "'";
+        }
+
+        public void SmartItenmSelectionGenderBrandType()
+        {
+            if (cmbxGenderBrandType.Text != null)
+            {
+                if (cmbxGenderBrandType.Text == "Mens")
+                {
+                    cmbxSizeBrandType.Text = "M";
+
+                    cmbxColourBrandType.Text = "Beige";
+                }
+
+                if (cmbxGenderBrandType.Text == "Womens")
+                {
+                    cmbxSizeBrandType.Text = "M";
+
+                    cmbxColourBrandType.Text = "Blue";
+                }
+            }
         }
 
         private void btnBrandTypeToHome_Click(object sender, EventArgs e)

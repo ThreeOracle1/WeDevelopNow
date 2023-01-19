@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dgvwBoysResults = new System.Windows.Forms.DataGridView();
+            this.lblNoMatchesBoys = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwBoysResults)).BeginInit();
@@ -81,6 +82,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.lblNoMatchesBoys);
             this.panel4.Controls.Add(this.dgvwBoysResults);
             this.panel4.Controls.Add(this.btnBoysResultToHome);
             this.panel4.Controls.Add(this.btnBackToBoys);
@@ -100,6 +102,16 @@
             this.dgvwBoysResults.RowTemplate.Height = 24;
             this.dgvwBoysResults.Size = new System.Drawing.Size(480, 345);
             this.dgvwBoysResults.TabIndex = 8;
+            // 
+            // lblNoMatchesBoys
+            // 
+            this.lblNoMatchesBoys.AutoSize = true;
+            this.lblNoMatchesBoys.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblNoMatchesBoys.Location = new System.Drawing.Point(115, 430);
+            this.lblNoMatchesBoys.Name = "lblNoMatchesBoys";
+            this.lblNoMatchesBoys.Size = new System.Drawing.Size(379, 36);
+            this.lblNoMatchesBoys.TabIndex = 11;
+            this.lblNoMatchesBoys.Text = "No items match search filter";
             // 
             // UserControlBoysSearchResultScreen
             // 
@@ -123,5 +135,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dgvwBoysResults;
+        private System.Windows.Forms.Label lblNoMatchesBoys;
     }
 }

@@ -145,7 +145,7 @@ namespace WeDevelopNowApplicationMain
                 validFindRequest = false;
             }
 
-            return "SELECT [Product Discription], Brands, Quantity , Location FROM OurProducts WHERE [Product Type] ='" + girlsProductTypeSearch + "' AND [Mens Sizes]='" + girlsSizeSearch + "' AND Colour = '" + girlsColourSearch + "' AND Price BETWEEN '" + girlsPriceMin + "' AND '" + girlsPriceMax + "' AND Brands = '" + girlsBrandSearch + "'";
+            return "SELECT [Product Discription], Brands, Quantity , Location FROM OurProducts WHERE [Product Type] ='" + girlsProductTypeSearch + "' AND [Womens Sizes] like '%" + girlsSizeSearch + "%' AND Colour = '" + girlsColourSearch + "' AND Price BETWEEN '" + girlsPriceMin + "' AND '" + girlsPriceMax + "' AND Brands = '" + girlsBrandSearch + "'";
         }
 
         public void SmartItenmSelectionProductTypeGirls()

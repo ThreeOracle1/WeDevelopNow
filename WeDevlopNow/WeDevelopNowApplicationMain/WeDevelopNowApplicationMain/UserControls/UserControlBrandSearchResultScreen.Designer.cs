@@ -30,14 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBrandSearchResultScreen));
             this.pnlBrandSearchResult = new System.Windows.Forms.Panel();
+            this.dgvwBrandResults = new System.Windows.Forms.DataGridView();
             this.btnBrandResultToHome = new System.Windows.Forms.Button();
             this.btnBrandResultBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvwBrandResults = new System.Windows.Forms.DataGridView();
+            this.lblNoMatchesBrand = new System.Windows.Forms.Label();
             this.pnlBrandSearchResult.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwBrandResults)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBrandSearchResult
@@ -51,6 +52,16 @@
             this.pnlBrandSearchResult.Name = "pnlBrandSearchResult";
             this.pnlBrandSearchResult.Size = new System.Drawing.Size(580, 750);
             this.pnlBrandSearchResult.TabIndex = 6;
+            // 
+            // dgvwBrandResults
+            // 
+            this.dgvwBrandResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvwBrandResults.Location = new System.Drawing.Point(61, 233);
+            this.dgvwBrandResults.Name = "dgvwBrandResults";
+            this.dgvwBrandResults.RowHeadersWidth = 51;
+            this.dgvwBrandResults.RowTemplate.Height = 24;
+            this.dgvwBrandResults.Size = new System.Drawing.Size(480, 345);
+            this.dgvwBrandResults.TabIndex = 9;
             // 
             // btnBrandResultToHome
             // 
@@ -91,28 +102,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Brand results";
             // 
-            // dgvwBrandResults
+            // lblNoMatchesBrand
             // 
-            this.dgvwBrandResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvwBrandResults.Location = new System.Drawing.Point(61, 233);
-            this.dgvwBrandResults.Name = "dgvwBrandResults";
-            this.dgvwBrandResults.RowHeadersWidth = 51;
-            this.dgvwBrandResults.RowTemplate.Height = 24;
-            this.dgvwBrandResults.Size = new System.Drawing.Size(480, 345);
-            this.dgvwBrandResults.TabIndex = 9;
+            this.lblNoMatchesBrand.AutoSize = true;
+            this.lblNoMatchesBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblNoMatchesBrand.Location = new System.Drawing.Point(115, 430);
+            this.lblNoMatchesBrand.Name = "lblNoMatchesBrand";
+            this.lblNoMatchesBrand.Size = new System.Drawing.Size(379, 36);
+            this.lblNoMatchesBrand.TabIndex = 13;
+            this.lblNoMatchesBrand.Text = "No items match search filter";
             // 
             // UserControlBrandSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblNoMatchesBrand);
             this.Controls.Add(this.pnlBrandSearchResult);
             this.Name = "UserControlBrandSearchResultScreen";
             this.Size = new System.Drawing.Size(580, 750);
             this.pnlBrandSearchResult.ResumeLayout(false);
             this.pnlBrandSearchResult.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwBrandResults)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -124,5 +137,6 @@
         private System.Windows.Forms.Button btnBrandResultToHome;
         private System.Windows.Forms.Button btnBrandResultBack;
         private System.Windows.Forms.DataGridView dgvwBrandResults;
+        private System.Windows.Forms.Label lblNoMatchesBrand;
     }
 }

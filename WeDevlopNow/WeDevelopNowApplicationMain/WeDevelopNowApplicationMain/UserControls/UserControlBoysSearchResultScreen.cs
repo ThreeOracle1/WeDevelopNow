@@ -24,6 +24,8 @@ namespace WeDevelopNowApplicationMain
         public void BindDataGridWomenResult(string sqlBoysFindStatement)
         {
 
+            lblNoMatchesBoys.Visible = false;
+
             using (SqlConnection con = new SqlConnection(conString))
             {
                 string starterQuery = "SELECT * FROM OurProducts";
@@ -46,6 +48,9 @@ namespace WeDevelopNowApplicationMain
 
         public void BindDataGridBoysFindResult(string sqlBoysFindStatement)
         {
+
+            lblNoMatchesBoys.Visible = false;
+
             using (SqlConnection con = new SqlConnection(conString))
             {
 
@@ -61,6 +66,11 @@ namespace WeDevelopNowApplicationMain
                             dgvwBoysResults.DataSource = dt;
                             dgvwBoysResults.Refresh();
                             dgvwBoysResults.Update();
+
+                            if (dgvwBoysResults.Rows.Count == 1)
+                            {
+                                lblNoMatchesBoys.Visible = true;
+                            }
                         }
                     }
                 }
