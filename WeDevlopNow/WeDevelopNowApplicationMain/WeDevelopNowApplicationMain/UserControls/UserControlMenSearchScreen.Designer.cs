@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlMenSearchScreen));
             this.pnlMenSearch = new System.Windows.Forms.Panel();
+            this.cmbxBrandMen = new System.Windows.Forms.ComboBox();
+            this.cmbxColourMen = new System.Windows.Forms.ComboBox();
+            this.cmbxSizeMen = new System.Windows.Forms.ComboBox();
+            this.cmbxProductTypeMen = new System.Windows.Forms.ComboBox();
             this.btnFindMen = new System.Windows.Forms.Button();
             this.lblBrandMen = new System.Windows.Forms.Label();
             this.txtbPriceMaxMen = new System.Windows.Forms.TextBox();
@@ -42,10 +46,6 @@
             this.btnMenToHome = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbxProductTypeMen = new System.Windows.Forms.ComboBox();
-            this.cmbxSizeMen = new System.Windows.Forms.ComboBox();
-            this.cmbxColourMen = new System.Windows.Forms.ComboBox();
-            this.cmbxBrandMen = new System.Windows.Forms.ComboBox();
             this.pnlMenSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -72,6 +72,50 @@
             this.pnlMenSearch.Name = "pnlMenSearch";
             this.pnlMenSearch.Size = new System.Drawing.Size(580, 750);
             this.pnlMenSearch.TabIndex = 2;
+            // 
+            // cmbxBrandMen
+            // 
+            this.cmbxBrandMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxBrandMen.FormattingEnabled = true;
+            this.cmbxBrandMen.Location = new System.Drawing.Point(240, 510);
+            this.cmbxBrandMen.Name = "cmbxBrandMen";
+            this.cmbxBrandMen.Size = new System.Drawing.Size(309, 44);
+            this.cmbxBrandMen.TabIndex = 20;
+            this.cmbxBrandMen.SelectedIndexChanged += new System.EventHandler(this.cmbxBrandMen_SelectedIndexChanged);
+            this.cmbxBrandMen.SelectionChangeCommitted += new System.EventHandler(this.cmbxBrandMen_SelectionChangeCommitted);
+            // 
+            // cmbxColourMen
+            // 
+            this.cmbxColourMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxColourMen.FormattingEnabled = true;
+            this.cmbxColourMen.Location = new System.Drawing.Point(240, 377);
+            this.cmbxColourMen.Name = "cmbxColourMen";
+            this.cmbxColourMen.Size = new System.Drawing.Size(309, 44);
+            this.cmbxColourMen.TabIndex = 19;
+            this.cmbxColourMen.SelectedIndexChanged += new System.EventHandler(this.cmbxColourMen_SelectedIndexChanged);
+            this.cmbxColourMen.SelectionChangeCommitted += new System.EventHandler(this.cmbxColourMen_SelectionChangeCommitted);
+            // 
+            // cmbxSizeMen
+            // 
+            this.cmbxSizeMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxSizeMen.FormattingEnabled = true;
+            this.cmbxSizeMen.Location = new System.Drawing.Point(240, 315);
+            this.cmbxSizeMen.Name = "cmbxSizeMen";
+            this.cmbxSizeMen.Size = new System.Drawing.Size(309, 44);
+            this.cmbxSizeMen.TabIndex = 18;
+            this.cmbxSizeMen.SelectedIndexChanged += new System.EventHandler(this.cmbxSizeMen_SelectedIndexChanged);
+            this.cmbxSizeMen.SelectionChangeCommitted += new System.EventHandler(this.cmbxSizeMen_SelectionChangeCommitted);
+            // 
+            // cmbxProductTypeMen
+            // 
+            this.cmbxProductTypeMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxProductTypeMen.FormattingEnabled = true;
+            this.cmbxProductTypeMen.Location = new System.Drawing.Point(240, 247);
+            this.cmbxProductTypeMen.Name = "cmbxProductTypeMen";
+            this.cmbxProductTypeMen.Size = new System.Drawing.Size(309, 44);
+            this.cmbxProductTypeMen.TabIndex = 17;
+            this.cmbxProductTypeMen.SelectedIndexChanged += new System.EventHandler(this.cmbxProductTypeMen_SelectedIndexChanged);
+            this.cmbxProductTypeMen.SelectionChangeCommitted += new System.EventHandler(this.cmbxProductTypeMen_SelectionChangeCommitted);
             // 
             // btnFindMen
             // 
@@ -190,42 +234,6 @@
             this.label1.Size = new System.Drawing.Size(77, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Men";
-            // 
-            // cmbxProductTypeMen
-            // 
-            this.cmbxProductTypeMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.cmbxProductTypeMen.FormattingEnabled = true;
-            this.cmbxProductTypeMen.Location = new System.Drawing.Point(240, 247);
-            this.cmbxProductTypeMen.Name = "cmbxProductTypeMen";
-            this.cmbxProductTypeMen.Size = new System.Drawing.Size(309, 44);
-            this.cmbxProductTypeMen.TabIndex = 17;
-            // 
-            // cmbxSizeMen
-            // 
-            this.cmbxSizeMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.cmbxSizeMen.FormattingEnabled = true;
-            this.cmbxSizeMen.Location = new System.Drawing.Point(240, 315);
-            this.cmbxSizeMen.Name = "cmbxSizeMen";
-            this.cmbxSizeMen.Size = new System.Drawing.Size(309, 44);
-            this.cmbxSizeMen.TabIndex = 18;
-            // 
-            // cmbxColourMen
-            // 
-            this.cmbxColourMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.cmbxColourMen.FormattingEnabled = true;
-            this.cmbxColourMen.Location = new System.Drawing.Point(240, 377);
-            this.cmbxColourMen.Name = "cmbxColourMen";
-            this.cmbxColourMen.Size = new System.Drawing.Size(309, 44);
-            this.cmbxColourMen.TabIndex = 19;
-            // 
-            // cmbxBrandMen
-            // 
-            this.cmbxBrandMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.cmbxBrandMen.FormattingEnabled = true;
-            this.cmbxBrandMen.Location = new System.Drawing.Point(240, 510);
-            this.cmbxBrandMen.Name = "cmbxBrandMen";
-            this.cmbxBrandMen.Size = new System.Drawing.Size(309, 44);
-            this.cmbxBrandMen.TabIndex = 20;
             // 
             // UserControlMenSearchScreen
             // 

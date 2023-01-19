@@ -158,8 +158,182 @@ namespace WeDevelopNowApplicationMain
                 validFindRequest = false;
             }
 
-            return "SELECT [Product Type], [Mens Sizes], Colour, Price, Brands FROM OurProducts WHERE [Product Type] ='" + menProductTypeSearch + "' AND [Mens Sizes]='" + menSizeSearch + "' AND Colour = '" + menColourSearch + "' AND Price BETWEEN '" + menPriceMin + "' AND '" + menPriceMax + "' AND Brands = '" + menBrandSearch + "'";
+            return "SELECT [Product Type], [Mens Sizes], Colour, Price, Brands, Quantity FROM OurProducts WHERE [Product Type] ='" + menProductTypeSearch + "' AND [Mens Sizes]='" + menSizeSearch + "' AND Colour = '" + menColourSearch + "' AND Price BETWEEN '" + menPriceMin + "' AND '" + menPriceMax + "' AND Brands = '" + menBrandSearch + "'";
         }
 
+        public void SmartItenmSelectionProductTypeMen()
+        {
+            if (cmbxProductTypeMen.Text != null)
+            {
+                if (cmbxProductTypeMen.Text == "Fleeces")
+                {
+                    cmbxSizeMen.Text = "M";
+
+                    cmbxColourMen.Text = "Beige";
+
+                    cmbxBrandMen.Text = "Brand A";
+                }
+
+                if (cmbxProductTypeMen.Text == "Hoodies")
+                {
+                    cmbxSizeMen.Text = "L";
+
+                    cmbxColourMen.Text = "Red";
+
+                    cmbxBrandMen.Text = "Brand A";
+                }
+
+                if (cmbxProductTypeMen.Text == "Polo Shirts")
+                {
+                    cmbxSizeMen.Text = "M";
+
+                    cmbxColourMen.Text = "Multi";
+
+                    cmbxBrandMen.Text = "Brand A";
+                }
+
+                if (cmbxProductTypeMen.Text == "Shoes")
+                {
+                    cmbxSizeMen.Text = "9.5";
+
+                    cmbxColourMen.Text = "Black";
+
+                    cmbxBrandMen.Text = "Brand C";
+                }
+
+                if (cmbxProductTypeMen.Text == "Shorts")
+                {
+                    cmbxBrandMen.Text = "Not in stock";
+                }
+
+                if (cmbxProductTypeMen.Text == "Sweatshirts")
+                {
+                    cmbxBrandMen.Text = "Not in stock";
+                }
+
+                if (cmbxProductTypeMen.Text == "Tracksuit Bottoms")
+                {
+                    cmbxBrandMen.Text = "Not in stock";
+                }
+            }
+        }
+
+        public void SmartItenmSelectionColourMen()
+        {
+            if (cmbxColourMen.Text != null)
+            {
+                if (cmbxColourMen.Text == "Black")
+                {
+                    cmbxProductTypeMen.Text = "Shoes";
+
+                    cmbxSizeMen.Text = "9.5";
+
+                    cmbxBrandMen.Text = "Brand C";
+                }
+
+                if (cmbxColourMen.Text == "Biege")
+                {
+                    cmbxProductTypeMen.Text = "Fleeces";
+
+                    cmbxSizeMen.Text = "M";
+
+                    cmbxBrandMen.Text = "Brand A";
+                }
+
+                if (cmbxColourMen.Text == "Red")
+                {
+                    cmbxProductTypeMen.Text = "Hoodie";
+
+                    cmbxSizeMen.Text = "L";
+
+                    cmbxBrandMen.Text = "Brand A";
+                }
+
+                if (cmbxColourMen.Text == "Multi")
+                {
+                    cmbxProductTypeMen.Text = "Polo Shirts";
+
+                    cmbxSizeMen.Text = "L";
+
+                    cmbxBrandMen.Text = "Brand A";
+                }
+            }
+        }
+
+        public void SmartItenmSelectionBrandMen()
+        {
+            if (cmbxBrandMen.Text != null)
+            {
+                if (cmbxBrandMen.Text == "Brand A")
+                {
+                    cmbxProductTypeMen.Text = "Fleeces";
+
+                    cmbxSizeMen.Text = "M";
+
+                    cmbxColourMen.Text = "Beige";
+                }
+
+                if (cmbxProductTypeMen.Text == "Brand C")
+                {
+                    cmbxProductTypeMen.Text = "Shoes";
+
+                    cmbxSizeMen.Text = "M";
+
+                    cmbxColourMen.Text = "Black";
+                }
+
+                if (cmbxProductTypeMen.Text == "Brand C")
+                {
+                    cmbxProductTypeMen.Text = "Not in stock";
+                }
+
+                if (cmbxProductTypeMen.Text == "Brand D")
+                {
+                    cmbxProductTypeMen.Text = "Not in stock";
+                }
+
+            }
+        }
+
+
+        private void cmbxProductTypeMen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SmartItenmSelectionProductTypeMen();
+        }
+
+        private void cmbxSizeMen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SmartItenmSelectionColourMen();
+        }
+
+        private void cmbxSizeMen_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            SmartItenmSelectionColourMen();
+        }
+
+        private void cmbxProductTypeMen_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            SmartItenmSelectionProductTypeMen();
+        }
+
+        private void cmbxColourMen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SmartItenmSelectionColourMen();
+        }
+
+        private void cmbxColourMen_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            SmartItenmSelectionColourMen();
+        }
+
+        private void cmbxBrandMen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SmartItenmSelectionBrandMen();
+        }
+
+        private void cmbxBrandMen_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            SmartItenmSelectionBrandMen();
+        }
     }
 }
