@@ -31,7 +31,7 @@ namespace WeDevelopNowApplicationMain
 
         public void PopulateProductTypeDropdownBox()
         {
-            string defaultProductTypeWomen = "Fleeces/Hoodies/Sweatshirts/Polo Shirts/Shoes/Shorts/Sweatshirts/Tracksuit Bottoms";
+            string defaultProductTypeWomen = "Dresses & Skirts/Leggings & Tights/Sweatshirts";
 
             string[] individualProductType = defaultProductTypeWomen.Split('/');
 
@@ -162,55 +162,29 @@ namespace WeDevelopNowApplicationMain
         {
             if (cmbxProductTypeWomen.Text != null)
             {
-                if (cmbxProductTypeWomen.Text == "Fleeces")
+                if (cmbxProductTypeWomen.Text == "Dresses & Skirts")
                 {
                     cmbxSizeWomen.Text = "M";
 
-                    cmbxColourWomen.Text = "Beige";
-
-                    cmbxBrandWomen.Text = "Brand A";
-                }
-
-                if (cmbxProductTypeWomen.Text == "Hoodies")
-                {
-                    cmbxSizeWomen.Text = "L";
-
-                    cmbxColourWomen.Text = "Red";
-
-                    cmbxBrandWomen.Text = "Brand A";
-                }
-
-                if (cmbxProductTypeWomen.Text == "Polo Shirts")
-                {
-                    cmbxSizeWomen.Text = "M";
-
-                    cmbxColourWomen.Text = "Multi";
-
-                    cmbxBrandWomen.Text = "Brand A";
-                }
-
-                if (cmbxProductTypeWomen.Text == "Shoes")
-                {
-                    cmbxSizeWomen.Text = "9.5";
-
-                    cmbxColourWomen.Text = "Black";
+                    cmbxColourWomen.Text = "Blue";
 
                     cmbxBrandWomen.Text = "Brand C";
                 }
 
-                if (cmbxProductTypeWomen.Text == "Shorts")
+                if (cmbxProductTypeWomen.Text == "Leggings & Tights")
                 {
-                    cmbxBrandWomen.Text = "Not in stock";
+                    cmbxColourWomen.Text = "Tan";
+
+                    cmbxBrandWomen.Text = "Brand B";
                 }
 
                 if (cmbxProductTypeWomen.Text == "Sweatshirts")
                 {
-                    cmbxBrandWomen.Text = "Not in stock";
-                }
+                    cmbxSizeWomen.Text = "M";
 
-                if (cmbxProductTypeWomen.Text == "Tracksuit Bottoms")
-                {
-                    cmbxBrandWomen.Text = "Not in stock";
+                    cmbxColourWomen.Text = "Pink";
+
+                    cmbxBrandWomen.Text = "Brand D";
                 }
             }
         }
@@ -219,40 +193,31 @@ namespace WeDevelopNowApplicationMain
         {
             if (cmbxColourWomen.Text != null)
             {
-                if (cmbxColourWomen.Text == "Black")
+                if (cmbxColourWomen.Text == "Blue")
                 {
-                    cmbxProductTypeWomen.Text = "Shoes";
+                    cmbxProductTypeWomen.Text = "Dresses & Skirts";
 
-                    cmbxSizeWomen.Text = "9.5";
+                    cmbxSizeWomen.Text = "M";
 
                     cmbxBrandWomen.Text = "Brand C";
                 }
 
-                if (cmbxColourWomen.Text == "Biege")
+                if (cmbxColourWomen.Text == "Tan")
                 {
-                    cmbxProductTypeWomen.Text = "Fleeces";
+                    cmbxProductTypeWomen.Text = "Leggings & Tights";
 
                     cmbxSizeWomen.Text = "M";
 
-                    cmbxBrandWomen.Text = "Brand A";
+                    cmbxBrandWomen.Text = "Brand B";
                 }
 
-                if (cmbxColourWomen.Text == "Red")
+                if (cmbxColourWomen.Text == "Pink")
                 {
-                    cmbxProductTypeWomen.Text = "Hoodie";
+                    cmbxProductTypeWomen.Text = "Sweatshirts";
 
-                    cmbxSizeWomen.Text = "L";
+                    cmbxSizeWomen.Text = "M";
 
-                    cmbxBrandWomen.Text = "Brand A";
-                }
-
-                if (cmbxColourWomen.Text == "Multi")
-                {
-                    cmbxProductTypeWomen.Text = "Polo Shirts";
-
-                    cmbxSizeWomen.Text = "L";
-
-                    cmbxBrandWomen.Text = "Brand A";
+                    cmbxBrandWomen.Text = "Brand D";
                 }
             }
         }
@@ -261,34 +226,32 @@ namespace WeDevelopNowApplicationMain
         {
             if (cmbxBrandWomen.Text != null)
             {
-                if (cmbxBrandWomen.Text == "Brand A")
+                if (cmbxBrandWomen.Text == "Brand B")
                 {
-                    cmbxProductTypeWomen.Text = "Fleeces";
+                    cmbxProductTypeWomen.Text = "Leggings & Tights";
 
                     cmbxSizeWomen.Text = "M";
 
-                    cmbxColourWomen.Text = "Beige";
+                    cmbxColourWomen.Text = "Tan";
                 }
 
                 if (cmbxProductTypeWomen.Text == "Brand C")
                 {
-                    cmbxProductTypeWomen.Text = "Shoes";
+                    cmbxProductTypeWomen.Text = "Dresses & Skirts";
 
                     cmbxSizeWomen.Text = "M";
 
-                    cmbxColourWomen.Text = "Black";
-                }
-
-                if (cmbxProductTypeWomen.Text == "Brand C")
-                {
-                    cmbxProductTypeWomen.Text = "Not in stock";
+                    cmbxColourWomen.Text = "Blue";
                 }
 
                 if (cmbxProductTypeWomen.Text == "Brand D")
                 {
-                    cmbxProductTypeWomen.Text = "Not in stock";
-                }
+                    cmbxProductTypeWomen.Text = "Sweatshirts";
 
+                    cmbxSizeWomen.Text = "M";
+
+                    cmbxColourWomen.Text = "Pink";
+                }
             }
         }
 
