@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlGirlsSearchScreen));
             this.pnlGirlsSearch = new System.Windows.Forms.Panel();
-            this.txtBrandGirls = new System.Windows.Forms.TextBox();
+            this.cmbxBrandGirls = new System.Windows.Forms.ComboBox();
+            this.cmbxColourGirls = new System.Windows.Forms.ComboBox();
+            this.cmbxSizeGirls = new System.Windows.Forms.ComboBox();
+            this.cmbxProductTypeGirls = new System.Windows.Forms.ComboBox();
+            this.btnFindGirls = new System.Windows.Forms.Button();
             this.txtbPriceMaxGirls = new System.Windows.Forms.TextBox();
             this.txtbPriceMinGirls = new System.Windows.Forms.TextBox();
-            this.txtbColourGirls = new System.Windows.Forms.TextBox();
-            this.txtbSizeGirls = new System.Windows.Forms.TextBox();
-            this.txtbProductTypeGirls = new System.Windows.Forms.TextBox();
             this.lblBrandGirls = new System.Windows.Forms.Label();
             this.lblPriceMaxGirls = new System.Windows.Forms.Label();
             this.lblPriceMinGirls = new System.Windows.Forms.Label();
@@ -45,20 +46,19 @@
             this.btnGirlsToHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnFindGirls = new System.Windows.Forms.Button();
             this.pnlGirlsSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGirlsSearch
             // 
+            this.pnlGirlsSearch.Controls.Add(this.cmbxBrandGirls);
+            this.pnlGirlsSearch.Controls.Add(this.cmbxColourGirls);
+            this.pnlGirlsSearch.Controls.Add(this.cmbxSizeGirls);
+            this.pnlGirlsSearch.Controls.Add(this.cmbxProductTypeGirls);
             this.pnlGirlsSearch.Controls.Add(this.btnFindGirls);
-            this.pnlGirlsSearch.Controls.Add(this.txtBrandGirls);
             this.pnlGirlsSearch.Controls.Add(this.txtbPriceMaxGirls);
             this.pnlGirlsSearch.Controls.Add(this.txtbPriceMinGirls);
-            this.pnlGirlsSearch.Controls.Add(this.txtbColourGirls);
-            this.pnlGirlsSearch.Controls.Add(this.txtbSizeGirls);
-            this.pnlGirlsSearch.Controls.Add(this.txtbProductTypeGirls);
             this.pnlGirlsSearch.Controls.Add(this.lblBrandGirls);
             this.pnlGirlsSearch.Controls.Add(this.lblPriceMaxGirls);
             this.pnlGirlsSearch.Controls.Add(this.lblPriceMinGirls);
@@ -73,13 +73,60 @@
             this.pnlGirlsSearch.Size = new System.Drawing.Size(580, 750);
             this.pnlGirlsSearch.TabIndex = 6;
             // 
-            // txtBrandGirls
+            // cmbxBrandGirls
             // 
-            this.txtBrandGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtBrandGirls.Location = new System.Drawing.Point(178, 477);
-            this.txtBrandGirls.Name = "txtBrandGirls";
-            this.txtBrandGirls.Size = new System.Drawing.Size(373, 41);
-            this.txtBrandGirls.TabIndex = 19;
+            this.cmbxBrandGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxBrandGirls.FormattingEnabled = true;
+            this.cmbxBrandGirls.Location = new System.Drawing.Point(226, 482);
+            this.cmbxBrandGirls.Name = "cmbxBrandGirls";
+            this.cmbxBrandGirls.Size = new System.Drawing.Size(325, 44);
+            this.cmbxBrandGirls.TabIndex = 24;
+            this.cmbxBrandGirls.SelectedIndexChanged += new System.EventHandler(this.cmbxBrandGirls_SelectedIndexChanged);
+            this.cmbxBrandGirls.SelectionChangeCommitted += new System.EventHandler(this.cmbxBrandGirls_SelectionChangeCommitted);
+            // 
+            // cmbxColourGirls
+            // 
+            this.cmbxColourGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxColourGirls.FormattingEnabled = true;
+            this.cmbxColourGirls.Location = new System.Drawing.Point(226, 352);
+            this.cmbxColourGirls.Name = "cmbxColourGirls";
+            this.cmbxColourGirls.Size = new System.Drawing.Size(325, 44);
+            this.cmbxColourGirls.TabIndex = 23;
+            this.cmbxColourGirls.SelectedIndexChanged += new System.EventHandler(this.cmbxColourGirls_SelectedIndexChanged);
+            this.cmbxColourGirls.SelectionChangeCommitted += new System.EventHandler(this.cmbxColourGirls_SelectionChangeCommitted);
+            // 
+            // cmbxSizeGirls
+            // 
+            this.cmbxSizeGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxSizeGirls.FormattingEnabled = true;
+            this.cmbxSizeGirls.Location = new System.Drawing.Point(226, 301);
+            this.cmbxSizeGirls.Name = "cmbxSizeGirls";
+            this.cmbxSizeGirls.Size = new System.Drawing.Size(325, 44);
+            this.cmbxSizeGirls.TabIndex = 22;
+            this.cmbxSizeGirls.SelectedIndexChanged += new System.EventHandler(this.cmbxSizeGirls_SelectedIndexChanged);
+            this.cmbxSizeGirls.SelectionChangeCommitted += new System.EventHandler(this.cmbxSizeGirls_SelectionChangeCommitted);
+            // 
+            // cmbxProductTypeGirls
+            // 
+            this.cmbxProductTypeGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbxProductTypeGirls.FormattingEnabled = true;
+            this.cmbxProductTypeGirls.Location = new System.Drawing.Point(226, 250);
+            this.cmbxProductTypeGirls.Name = "cmbxProductTypeGirls";
+            this.cmbxProductTypeGirls.Size = new System.Drawing.Size(325, 44);
+            this.cmbxProductTypeGirls.TabIndex = 21;
+            this.cmbxProductTypeGirls.SelectedIndexChanged += new System.EventHandler(this.cmbxProductTypeGirls_SelectedIndexChanged);
+            this.cmbxProductTypeGirls.SelectionChangeCommitted += new System.EventHandler(this.cmbxProductTypeGirls_SelectionChangeCommitted);
+            // 
+            // btnFindGirls
+            // 
+            this.btnFindGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.btnFindGirls.Location = new System.Drawing.Point(43, 556);
+            this.btnFindGirls.Name = "btnFindGirls";
+            this.btnFindGirls.Size = new System.Drawing.Size(512, 77);
+            this.btnFindGirls.TabIndex = 20;
+            this.btnFindGirls.Text = "Find";
+            this.btnFindGirls.UseVisualStyleBackColor = true;
+            this.btnFindGirls.Click += new System.EventHandler(this.btnFindGirls_Click);
             // 
             // txtbPriceMaxGirls
             // 
@@ -96,30 +143,6 @@
             this.txtbPriceMinGirls.Name = "txtbPriceMinGirls";
             this.txtbPriceMinGirls.Size = new System.Drawing.Size(100, 41);
             this.txtbPriceMinGirls.TabIndex = 17;
-            // 
-            // txtbColourGirls
-            // 
-            this.txtbColourGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtbColourGirls.Location = new System.Drawing.Point(226, 344);
-            this.txtbColourGirls.Name = "txtbColourGirls";
-            this.txtbColourGirls.Size = new System.Drawing.Size(325, 41);
-            this.txtbColourGirls.TabIndex = 16;
-            // 
-            // txtbSizeGirls
-            // 
-            this.txtbSizeGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtbSizeGirls.Location = new System.Drawing.Point(226, 297);
-            this.txtbSizeGirls.Name = "txtbSizeGirls";
-            this.txtbSizeGirls.Size = new System.Drawing.Size(325, 41);
-            this.txtbSizeGirls.TabIndex = 15;
-            // 
-            // txtbProductTypeGirls
-            // 
-            this.txtbProductTypeGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtbProductTypeGirls.Location = new System.Drawing.Point(226, 250);
-            this.txtbProductTypeGirls.Name = "txtbProductTypeGirls";
-            this.txtbProductTypeGirls.Size = new System.Drawing.Size(325, 41);
-            this.txtbProductTypeGirls.TabIndex = 14;
             // 
             // lblBrandGirls
             // 
@@ -155,7 +178,7 @@
             // 
             this.lblColourGirls.AutoSize = true;
             this.lblColourGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lblColourGirls.Location = new System.Drawing.Point(25, 349);
+            this.lblColourGirls.Location = new System.Drawing.Point(25, 360);
             this.lblColourGirls.Name = "lblColourGirls";
             this.lblColourGirls.Size = new System.Drawing.Size(112, 36);
             this.lblColourGirls.TabIndex = 10;
@@ -211,17 +234,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Girls";
             // 
-            // btnFindGirls
-            // 
-            this.btnFindGirls.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnFindGirls.Location = new System.Drawing.Point(43, 556);
-            this.btnFindGirls.Name = "btnFindGirls";
-            this.btnFindGirls.Size = new System.Drawing.Size(512, 77);
-            this.btnFindGirls.TabIndex = 20;
-            this.btnFindGirls.Text = "Find";
-            this.btnFindGirls.UseVisualStyleBackColor = true;
-            this.btnFindGirls.Click += new System.EventHandler(this.btnFindGirls_Click);
-            // 
             // UserControlGirlsSearchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -242,12 +254,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGirlsToHome;
-        private System.Windows.Forms.TextBox txtBrandGirls;
         private System.Windows.Forms.TextBox txtbPriceMaxGirls;
         private System.Windows.Forms.TextBox txtbPriceMinGirls;
-        private System.Windows.Forms.TextBox txtbColourGirls;
-        private System.Windows.Forms.TextBox txtbSizeGirls;
-        private System.Windows.Forms.TextBox txtbProductTypeGirls;
         private System.Windows.Forms.Label lblBrandGirls;
         private System.Windows.Forms.Label lblPriceMaxGirls;
         private System.Windows.Forms.Label lblPriceMinGirls;
@@ -255,5 +263,9 @@
         private System.Windows.Forms.Label lblSizeGirls;
         private System.Windows.Forms.Label lblProductTypeGirls;
         private System.Windows.Forms.Button btnFindGirls;
+        private System.Windows.Forms.ComboBox cmbxSizeGirls;
+        private System.Windows.Forms.ComboBox cmbxProductTypeGirls;
+        private System.Windows.Forms.ComboBox cmbxColourGirls;
+        private System.Windows.Forms.ComboBox cmbxBrandGirls;
     }
 }
