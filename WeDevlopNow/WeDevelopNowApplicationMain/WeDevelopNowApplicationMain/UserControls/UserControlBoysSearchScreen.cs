@@ -30,7 +30,7 @@ namespace WeDevelopNowApplicationMain
 
         public void PopulateProductTypeDropdownBox()
         {
-            string defaultProductTypeBoys = "Fleeces/Hoodies/Sweatshirts/Polo Shirts/Shoes/Shorts/Sweatshirts/Tracksuit Bottoms";
+            string defaultProductTypeBoys = "Polo Shirts/Shoes";
 
             string[] individualProductType = defaultProductTypeBoys.Split('/');
 
@@ -148,30 +148,13 @@ namespace WeDevelopNowApplicationMain
                 validFindRequest = false;
             }
 
-            return "SELECT [Product Discription], Brands , Quantity , Location FROM OurProducts WHERE [Product Type] ='" + BoysProductTypeSearch + "' AND [Mens Sizes] like '%" + BoysSizeSearch + "%' AND Colour = '" + BoysColourSearch + "' AND Price BETWEEN '" + BoysPriceMin + "' AND '" + BoysPriceMax + "' AND Brands = '" + BoysBrandSearch + "'";
+            return "SELECT [Product Discription], Brands , Quantity , Location FROM OurProducts WHERE [Product Type] ='" + BoysProductTypeSearch + "' AND [Boys Sizes] like '%" + BoysSizeSearch + "%' AND Colour = '" + BoysColourSearch + "' AND Price BETWEEN '" + BoysPriceMin + "' AND '" + BoysPriceMax + "' AND Brands = '" + BoysBrandSearch + "'";
         }
 
         public void SmartItenmSelectionProductTypeBoys()
         {
             if (cmbxProductTypeBoys.Text != null)
             {
-                if (cmbxProductTypeBoys.Text == "Fleeces")
-                {
-                    cmbxSizeBoys.Text = "M";
-
-                    cmbxColourBoys.Text = "Beige";
-
-                    cmbxBrandBoys.Text = "Brand A";
-                }
-
-                if (cmbxProductTypeBoys.Text == "Hoodies")
-                {
-                    cmbxSizeBoys.Text = "L";
-
-                    cmbxColourBoys.Text = "Red";
-
-                    cmbxBrandBoys.Text = "Brand A";
-                }
 
                 if (cmbxProductTypeBoys.Text == "Polo Shirts")
                 {
@@ -179,7 +162,7 @@ namespace WeDevelopNowApplicationMain
 
                     cmbxColourBoys.Text = "Multi";
 
-                    cmbxBrandBoys.Text = "Brand A";
+                    cmbxBrandBoys.Text = "Brand C";
                 }
 
                 if (cmbxProductTypeBoys.Text == "Shoes")
@@ -189,21 +172,6 @@ namespace WeDevelopNowApplicationMain
                     cmbxColourBoys.Text = "Black";
 
                     cmbxBrandBoys.Text = "Brand C";
-                }
-
-                if (cmbxProductTypeBoys.Text == "Shorts")
-                {
-                    cmbxBrandBoys.Text = "Not in stock";
-                }
-
-                if (cmbxProductTypeBoys.Text == "Sweatshirts")
-                {
-                    cmbxBrandBoys.Text = "Not in stock";
-                }
-
-                if (cmbxProductTypeBoys.Text == "Tracksuit Bottoms")
-                {
-                    cmbxBrandBoys.Text = "Not in stock";
                 }
             }
         }
@@ -221,31 +189,13 @@ namespace WeDevelopNowApplicationMain
                     cmbxBrandBoys.Text = "Brand C";
                 }
 
-                if (cmbxColourBoys.Text == "Biege")
-                {
-                    cmbxProductTypeBoys.Text = "Fleeces";
-
-                    cmbxSizeBoys.Text = "M";
-
-                    cmbxBrandBoys.Text = "Brand A";
-                }
-
-                if (cmbxColourBoys.Text == "Red")
-                {
-                    cmbxProductTypeBoys.Text = "Hoodie";
-
-                    cmbxSizeBoys.Text = "L";
-
-                    cmbxBrandBoys.Text = "Brand A";
-                }
-
                 if (cmbxColourBoys.Text == "Multi")
                 {
                     cmbxProductTypeBoys.Text = "Polo Shirts";
 
                     cmbxSizeBoys.Text = "L";
 
-                    cmbxBrandBoys.Text = "Brand A";
+                    cmbxBrandBoys.Text = "Brand C";
                 }
             }
         }
@@ -254,32 +204,25 @@ namespace WeDevelopNowApplicationMain
         {
             if (cmbxBrandBoys.Text != null)
             {
-                if (cmbxBrandBoys.Text == "Brand A")
+
+                if (cmbxProductTypeBoys.Text == "Brand C")
                 {
-                    cmbxProductTypeBoys.Text = "Fleeces";
+                    if (cmbxProductTypeBoys.Text == "Shoes")
+                    {
+                        cmbxSizeBoys.Text = "M";
 
-                    cmbxSizeBoys.Text = "M";
-
-                    cmbxColourBoys.Text = "Beige";
+                        cmbxColourBoys.Text = "Black";
+                    }
                 }
 
                 if (cmbxProductTypeBoys.Text == "Brand C")
                 {
-                    cmbxProductTypeBoys.Text = "Shoes";
+                    if (cmbxProductTypeBoys.Text == "Polo Shirts")
+                    {
+                        cmbxSizeBoys.Text = "L";
 
-                    cmbxSizeBoys.Text = "M";
-
-                    cmbxColourBoys.Text = "Black";
-                }
-
-                if (cmbxProductTypeBoys.Text == "Brand C")
-                {
-                    cmbxProductTypeBoys.Text = "Not in stock";
-                }
-
-                if (cmbxProductTypeBoys.Text == "Brand D")
-                {
-                    cmbxProductTypeBoys.Text = "Not in stock";
+                        cmbxColourBoys.Text = "Multi";
+                    }
                 }
 
             }

@@ -27,7 +27,7 @@ namespace WeDevelopNowApplicationMain
 
         public void PopulateProductTypeDropdownBox()
         {
-            string defaultProductTypeGirls = "Fleeces/Hoodies/Sweatshirts/Polo Shirts/Shoes/Shorts/Sweatshirts/Tracksuit Bottoms";
+            string defaultProductTypeGirls = "Shorts/Sweatshirts/Tracksuit Bottoms";
 
             string[] individualProductType = defaultProductTypeGirls.Split('/');
 
@@ -145,62 +145,39 @@ namespace WeDevelopNowApplicationMain
                 validFindRequest = false;
             }
 
-            return "SELECT [Product Discription], Brands, Quantity , Location FROM OurProducts WHERE [Product Type] ='" + girlsProductTypeSearch + "' AND [Womens Sizes] like '%" + girlsSizeSearch + "%' AND Colour = '" + girlsColourSearch + "' AND Price BETWEEN '" + girlsPriceMin + "' AND '" + girlsPriceMax + "' AND Brands = '" + girlsBrandSearch + "'";
+            return "SELECT [Product Discription], Brands, Quantity , Location FROM OurProducts WHERE [Product Type] ='" + girlsProductTypeSearch + "' AND [Girls Sizes] like '%" + girlsSizeSearch + "%' AND Colour = '" + girlsColourSearch + "' AND Price BETWEEN '" + girlsPriceMin + "' AND '" + girlsPriceMax + "' AND Brands = '" + girlsBrandSearch + "'";
         }
 
         public void SmartItenmSelectionProductTypeGirls()
         {
             if (cmbxProductTypeGirls.Text != null)
             {
-                if (cmbxProductTypeGirls.Text == "Fleeces")
+
+                if (cmbxProductTypeGirls.Text == "Shorts")
                 {
                     cmbxSizeGirls.Text = "M";
 
-                    cmbxColourGirls.Text = "Beige";
+                    cmbxColourGirls.Text = "Pink";
 
-                    cmbxBrandGirls.Text = "Brand A";
+                    cmbxBrandGirls.Text = "Brand B";
                 }
 
-                if (cmbxProductTypeGirls.Text == "Hoodies")
+                if (cmbxProductTypeGirls.Text == "Sweatshirts")
+                {
+                    cmbxSizeGirls.Text = "S";
+
+                    cmbxColourGirls.Text = "Purple";
+
+                    cmbxBrandGirls.Text = "Brand C";
+                }
+
+                if (cmbxProductTypeGirls.Text == "Tracksuit Bottoms")
                 {
                     cmbxSizeGirls.Text = "L";
 
                     cmbxColourGirls.Text = "Red";
 
                     cmbxBrandGirls.Text = "Brand A";
-                }
-
-                if (cmbxProductTypeGirls.Text == "Polo Shirts")
-                {
-                    cmbxSizeGirls.Text = "M";
-
-                    cmbxColourGirls.Text = "Multi";
-
-                    cmbxBrandGirls.Text = "Brand A";
-                }
-
-                if (cmbxProductTypeGirls.Text == "Shoes")
-                {
-                    cmbxSizeGirls.Text = "9.5";
-
-                    cmbxColourGirls.Text = "Black";
-
-                    cmbxBrandGirls.Text = "Brand C";
-                }
-
-                if (cmbxProductTypeGirls.Text == "Shorts")
-                {
-                    cmbxBrandGirls.Text = "Not in stock";
-                }
-
-                if (cmbxProductTypeGirls.Text == "Sweatshirts")
-                {
-                    cmbxBrandGirls.Text = "Not in stock";
-                }
-
-                if (cmbxProductTypeGirls.Text == "Tracksuit Bottoms")
-                {
-                    cmbxBrandGirls.Text = "Not in stock";
                 }
             }
         }
@@ -209,36 +186,27 @@ namespace WeDevelopNowApplicationMain
         {
             if (cmbxColourGirls.Text != null)
             {
-                if (cmbxColourGirls.Text == "Black")
+                if (cmbxColourGirls.Text == "Pink")
                 {
-                    cmbxProductTypeGirls.Text = "Shoes";
+                    cmbxProductTypeGirls.Text = "Shorts";
 
-                    cmbxSizeGirls.Text = "9.5";
+                    cmbxSizeGirls.Text = "M";
+
+                    cmbxBrandGirls.Text = "Brand B";
+                }
+
+                if (cmbxColourGirls.Text == "Purple")
+                {
+                    cmbxProductTypeGirls.Text = "Sweatshirts";
+
+                    cmbxSizeGirls.Text = "S";
 
                     cmbxBrandGirls.Text = "Brand C";
                 }
 
-                if (cmbxColourGirls.Text == "Biege")
-                {
-                    cmbxProductTypeGirls.Text = "Fleeces";
-
-                    cmbxSizeGirls.Text = "M";
-
-                    cmbxBrandGirls.Text = "Brand A";
-                }
-
                 if (cmbxColourGirls.Text == "Red")
                 {
-                    cmbxProductTypeGirls.Text = "Hoodie";
-
-                    cmbxSizeGirls.Text = "L";
-
-                    cmbxBrandGirls.Text = "Brand A";
-                }
-
-                if (cmbxColourGirls.Text == "Multi")
-                {
-                    cmbxProductTypeGirls.Text = "Polo Shirts";
+                    cmbxProductTypeGirls.Text = "Tracksuit Bottoms";
 
                     cmbxSizeGirls.Text = "L";
 
@@ -253,32 +221,30 @@ namespace WeDevelopNowApplicationMain
             {
                 if (cmbxBrandGirls.Text == "Brand A")
                 {
-                    cmbxProductTypeGirls.Text = "Fleeces";
+                    cmbxProductTypeGirls.Text = "Tracksuit Bottoms";
+
+                    cmbxSizeGirls.Text = "L";
+
+                    cmbxColourGirls.Text = "Red";
+                }
+
+                if (cmbxProductTypeGirls.Text == "Brand B")
+                {
+                    cmbxProductTypeGirls.Text = "Shorts";
 
                     cmbxSizeGirls.Text = "M";
 
-                    cmbxColourGirls.Text = "Beige";
+                    cmbxColourGirls.Text = "Pink";
                 }
 
                 if (cmbxProductTypeGirls.Text == "Brand C")
                 {
-                    cmbxProductTypeGirls.Text = "Shoes";
+                    cmbxProductTypeGirls.Text = "Sweatshirts";
 
-                    cmbxSizeGirls.Text = "M";
+                    cmbxSizeGirls.Text = "S";
 
-                    cmbxColourGirls.Text = "Black";
+                    cmbxColourGirls.Text = "Purple";
                 }
-
-                if (cmbxProductTypeGirls.Text == "Brand C")
-                {
-                    cmbxProductTypeGirls.Text = "Not in stock";
-                }
-
-                if (cmbxProductTypeGirls.Text == "Brand D")
-                {
-                    cmbxProductTypeGirls.Text = "Not in stock";
-                }
-
             }
         }
 

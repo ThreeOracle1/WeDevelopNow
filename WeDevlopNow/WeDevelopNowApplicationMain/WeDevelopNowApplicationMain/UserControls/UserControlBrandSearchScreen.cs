@@ -27,7 +27,7 @@ namespace WeDevelopNowApplicationMain
 
         public void PopulateProductTypeDropdownBox()
         {
-            string defaultProductTypeBrand = "Fleeces/Hoodies/Sweatshirts/Polo Shirts/Shoes/Shorts/Sweatshirts/Tracksuit Bottoms";
+            string defaultProductTypeBrand = "Fleeces/Hoodies/Dresses & Skirts/Leggings & Tights/Sweatshirts/Polo Shirts/Shoes/Shorts/Sweatshirts/Tracksuit Bottoms";
 
             string[] individualProductType = defaultProductTypeBrand.Split('/');
 
@@ -148,6 +148,22 @@ namespace WeDevelopNowApplicationMain
                     cmbxProductTypeBrand.Text = "Brand A";
                 }
 
+                if (cmbxProductTypeBrand.Text == "Dresses & Skirts")
+                {
+                    cmbxSizeBrand.Text = "M";
+
+                    cmbxColourBrand.Text = "Blue";
+
+                    cmbxProductTypeBrand.Text = "Brand C";
+                }
+
+                if (cmbxProductTypeBrand.Text == "Leggings & Tights")
+                {
+                    cmbxColourBrand.Text = "Tan";
+
+                    cmbxProductTypeBrand.Text = "Brand A";
+                }
+
                 if (cmbxProductTypeBrand.Text == "Polo Shirts")
                 {
                     cmbxSizeBrand.Text = "M";
@@ -168,18 +184,31 @@ namespace WeDevelopNowApplicationMain
 
                 if (cmbxProductTypeBrand.Text == "Shorts")
                 {
-                    cmbxProductTypeBrand.Text = "Not in stock";
+                    cmbxSizeBrand.Text = "M";
+
+                    cmbxColourBrand.Text = "Pink";
+
+                    cmbxProductTypeBrand.Text = "Brand B";
                 }
 
                 if (cmbxProductTypeBrand.Text == "Sweatshirts")
                 {
-                    cmbxProductTypeBrand.Text = "Not in stock";
+                    cmbxSizeBrand.Text = "S";
+
+                    cmbxColourBrand.Text = "Purple";
+
+                    cmbxProductTypeBrand.Text = "Brand C";
                 }
 
                 if (cmbxProductTypeBrand.Text == "Tracksuit Bottoms")
                 {
-                    cmbxProductTypeBrand.Text = "Not in stock";
+                    cmbxSizeBrand.Text = "L";
+
+                    cmbxColourBrand.Text = "Red";
+
+                    cmbxProductTypeBrand.Text = "Brand A";
                 }
+
             }
         }
 
@@ -194,6 +223,15 @@ namespace WeDevelopNowApplicationMain
                     cmbxSizeBrand.Text = "9.5";
 
                     cmbxGenderBrand.Text = "Mens";
+                }
+
+                if (cmbxColourBrand.Text == "Blue")
+                {
+                    cmbxProductTypeBrand.Text = "Dresses & Skirts";
+
+                    cmbxSizeBrand.Text = "M";
+
+                    cmbxGenderBrand.Text = "Womens";
                 }
 
                 if (cmbxColourBrand.Text == "Biege")
