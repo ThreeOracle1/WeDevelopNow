@@ -161,17 +161,17 @@
 
         #endregion
 
-        private UserControlBoysSearchResultScreen userControlBoysSearchResultScreen1;
+        public UserControlBoysSearchResultScreen userControlBoysSearchResultScreen1;
         private UserControlBoysSearchScreen userControlBoysSearchScreen1;
-        private UserControlBrandSearchResultScreen userControlBrandSearchResultScreen1;
+        public UserControlBrandSearchResultScreen userControlBrandSearchResultScreen1;
         private UserControlBrandSearchScreen userControlBrandSearchScreen1;
-        private UserControlBrandTypeSearchResultScreen userControlBrandTypeSearchResultScreen1;
+        public UserControlBrandTypeSearchResultScreen userControlBrandTypeSearchResultScreen1;
         private UserControlBrandTypeSearchScreen userControlBrandTypeSearchScreen1;
-        private UserControlGirlsSearchResultScreen userControlGirlsSearchResultScreen1;
+        public UserControlGirlsSearchResultScreen userControlGirlsSearchResultScreen1;
         private UserControlGirlsSearchScreen userControlGirlsSearchScreen1;
         public UserControlMenSearchResultScreen userControlMenSearchResultScreen1;
         private UserControlMenSearchScreen userControlMenSearchScreen1;
-        private UserControlWomenSearchResultScreen userControlWomenSearchResultScreen1;
+        public UserControlWomenSearchResultScreen userControlWomenSearchResultScreen1;
         private UserControlWomenSearchScreen userControlWomenSearchScreen1;
         private UserControlHomepage userControlHomepage1;
     }

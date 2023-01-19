@@ -30,22 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlWomenSearchResultScreen));
             this.pnlWomenSearchResult = new System.Windows.Forms.Panel();
+            this.btnWomenResultToHome = new System.Windows.Forms.Button();
             this.btnBackToWomen = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnWomenResultToHome = new System.Windows.Forms.Button();
-            this.lfafafawf = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dgvwWomenResults = new System.Windows.Forms.DataGridView();
             this.pnlWomenSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwWomenResults)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlWomenSearchResult
             // 
-            this.pnlWomenSearchResult.Controls.Add(this.label3);
-            this.pnlWomenSearchResult.Controls.Add(this.label2);
-            this.pnlWomenSearchResult.Controls.Add(this.lfafafawf);
+            this.pnlWomenSearchResult.Controls.Add(this.dgvwWomenResults);
             this.pnlWomenSearchResult.Controls.Add(this.btnWomenResultToHome);
             this.pnlWomenSearchResult.Controls.Add(this.btnBackToWomen);
             this.pnlWomenSearchResult.Controls.Add(this.pictureBox1);
@@ -54,6 +51,16 @@
             this.pnlWomenSearchResult.Name = "pnlWomenSearchResult";
             this.pnlWomenSearchResult.Size = new System.Drawing.Size(580, 750);
             this.pnlWomenSearchResult.TabIndex = 6;
+            // 
+            // btnWomenResultToHome
+            // 
+            this.btnWomenResultToHome.Location = new System.Drawing.Point(326, 618);
+            this.btnWomenResultToHome.Name = "btnWomenResultToHome";
+            this.btnWomenResultToHome.Size = new System.Drawing.Size(220, 90);
+            this.btnWomenResultToHome.TabIndex = 7;
+            this.btnWomenResultToHome.Text = "Home";
+            this.btnWomenResultToHome.UseVisualStyleBackColor = true;
+            this.btnWomenResultToHome.Click += new System.EventHandler(this.btnWomenResultToHome_Click);
             // 
             // btnBackToWomen
             // 
@@ -84,44 +91,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Women results";
             // 
-            // btnWomenResultToHome
+            // dgvwWomenResults
             // 
-            this.btnWomenResultToHome.Location = new System.Drawing.Point(326, 618);
-            this.btnWomenResultToHome.Name = "btnWomenResultToHome";
-            this.btnWomenResultToHome.Size = new System.Drawing.Size(220, 90);
-            this.btnWomenResultToHome.TabIndex = 7;
-            this.btnWomenResultToHome.Text = "Home";
-            this.btnWomenResultToHome.UseVisualStyleBackColor = true;
-            this.btnWomenResultToHome.Click += new System.EventHandler(this.btnWomenResultToHome_Click);
-            // 
-            // lfafafawf
-            // 
-            this.lfafafawf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lfafafawf.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lfafafawf.Location = new System.Drawing.Point(87, 188);
-            this.lfafafawf.Name = "lfafafawf";
-            this.lfafafawf.Size = new System.Drawing.Size(129, 92);
-            this.lfafafawf.TabIndex = 9;
-            this.lfafafawf.Text = "label2";
-            this.lfafafawf.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(96, 331);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 376);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "label3";
+            this.dgvwWomenResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvwWomenResults.Location = new System.Drawing.Point(61, 233);
+            this.dgvwWomenResults.Name = "dgvwWomenResults";
+            this.dgvwWomenResults.RowHeadersWidth = 51;
+            this.dgvwWomenResults.RowTemplate.Height = 24;
+            this.dgvwWomenResults.Size = new System.Drawing.Size(480, 345);
+            this.dgvwWomenResults.TabIndex = 9;
             // 
             // UserControlWomenSearchResultScreen
             // 
@@ -133,6 +111,7 @@
             this.pnlWomenSearchResult.ResumeLayout(false);
             this.pnlWomenSearchResult.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwWomenResults)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -143,9 +122,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBackToWomen;
-        private System.Windows.Forms.Label lfafafawf;
         private System.Windows.Forms.Button btnWomenResultToHome;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dgvwWomenResults;
     }
 }

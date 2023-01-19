@@ -59,9 +59,8 @@
             this.dgvwMenResults.Name = "dgvwMenResults";
             this.dgvwMenResults.RowHeadersWidth = 51;
             this.dgvwMenResults.RowTemplate.Height = 24;
-            this.dgvwMenResults.Size = new System.Drawing.Size(479, 343);
+            this.dgvwMenResults.Size = new System.Drawing.Size(480, 345);
             this.dgvwMenResults.TabIndex = 9;
-            //this.dgvwMenResults.DataSourceChanged += new System.EventHandler(this.dgvwMenResults_DataSourceChanged);
             // 
             // btnMenResultToHome
             // 

@@ -18,7 +18,6 @@ namespace WeDevelopNowApplicationMain
 {
     public partial class UserControlMenSearchScreen : UserControl
     {
-        string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
 
         public UserControlMenSearchScreen()
         {
@@ -32,10 +31,6 @@ namespace WeDevelopNowApplicationMain
 
             PopulateBrandDropdownBox();
         }
-
-
-
-        List<string> columnProductTypelist = new List<string>();
 
         public void PopulateProductTypeDropdownBox()
         {

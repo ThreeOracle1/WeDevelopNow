@@ -23,8 +23,6 @@ namespace WeDevelopNowApplicationMain
             InitializeComponent();
         }
 
-
-
         public void BindDataGridMenResult(string sqlMenFindStatement)
         {
 

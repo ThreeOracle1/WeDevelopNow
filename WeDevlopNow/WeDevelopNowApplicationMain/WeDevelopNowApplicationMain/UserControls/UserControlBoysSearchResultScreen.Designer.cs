@@ -34,8 +34,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dgvwBoysResults = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwBoysResults)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBoysResultToHome
@@ -79,6 +81,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.dgvwBoysResults);
             this.panel4.Controls.Add(this.btnBoysResultToHome);
             this.panel4.Controls.Add(this.btnBackToBoys);
             this.panel4.Controls.Add(this.pictureBox1);
@@ -87,6 +90,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(580, 750);
             this.panel4.TabIndex = 6;
+            // 
+            // dgvwBoysResults
+            // 
+            this.dgvwBoysResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvwBoysResults.Location = new System.Drawing.Point(61, 233);
+            this.dgvwBoysResults.Name = "dgvwBoysResults";
+            this.dgvwBoysResults.RowHeadersWidth = 51;
+            this.dgvwBoysResults.RowTemplate.Height = 24;
+            this.dgvwBoysResults.Size = new System.Drawing.Size(480, 345);
+            this.dgvwBoysResults.TabIndex = 8;
             // 
             // UserControlBoysSearchResultScreen
             // 
@@ -98,6 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwBoysResults)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,5 +122,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridView dgvwBoysResults;
     }
 }
