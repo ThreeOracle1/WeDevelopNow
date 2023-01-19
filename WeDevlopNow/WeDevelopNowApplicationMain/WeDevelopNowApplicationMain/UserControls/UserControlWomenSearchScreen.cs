@@ -127,7 +127,7 @@ namespace WeDevelopNowApplicationMain
                 validFindRequest = false;
             }
 
-            return "SELECT [Product Type], [Womens Sizes], Colour, Price, Brands, Quantity FROM OurProducts WHERE [Product Type] ='" + menProductTypeSearch + "' AND [Mens Sizes]='" + menSizeSearch + "' AND Colour = '" + menColourSearch + "' AND Price BETWEEN '" + menPriceMin + "' AND '" + menPriceMax + "' AND Brands = '" + menBrandSearch + "'";
+            return "SELECT [Product Discription], Brands , Quantity, Location FROM OurProducts WHERE [Product Type] ='" + menProductTypeSearch + "' AND [Mens Sizes]='" + menSizeSearch + "' AND Colour = '" + menColourSearch + "' AND Price BETWEEN '" + menPriceMin + "' AND '" + menPriceMax + "' AND Brands = '" + menBrandSearch + "'";
         }
 
 

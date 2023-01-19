@@ -123,7 +123,7 @@ namespace WeDevelopNowApplicationMain
 
                 validFindRequest = false;
             }
-                return "SELECT [Product Type], ["+ brandGenderSearch+" Sizes], Colour, Price, Brands, Quantity FROM OurProducts WHERE [Product Type] ='" + brandProductTypeSearch + "' AND [Mens Sizes]='" + brandSizeSearch + "' AND Colour = '" + brandColourSearch + "' AND Price BETWEEN '" + brandPriceMin + "' AND '" + brandPriceMax + "' AND Brands = '" + BrandSearch + "'";
+                return "SELECT [Product Discription], Quantity , Location FROM OurProducts WHERE [Mens Sizes]='" + brandSizeSearch + "' AND Colour = '" + brandColourSearch + "' AND Price BETWEEN '" + brandPriceMin + "' AND '" + brandPriceMax + "' AND Brands = '" + BrandSearch + "'";
         }
 
         public void SmartItenmSelectionProductTypeBrand()

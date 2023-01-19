@@ -35,6 +35,7 @@
             this.btnBackToMen = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblSqlStringMenResult = new System.Windows.Forms.Label();
+            this.lblNoMatchesMen = new System.Windows.Forms.Label();
             this.pnlMenSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwMenResults)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -42,6 +43,7 @@
             // 
             // pnlMenSearchResult
             // 
+            this.pnlMenSearchResult.Controls.Add(this.lblNoMatchesMen);
             this.pnlMenSearchResult.Controls.Add(this.dgvwMenResults);
             this.pnlMenSearchResult.Controls.Add(this.btnMenResultToHome);
             this.pnlMenSearchResult.Controls.Add(this.btnBackToMen);
@@ -103,6 +105,16 @@
             this.lblSqlStringMenResult.UseWaitCursor = true;
             this.lblSqlStringMenResult.Visible = false;
             // 
+            // lblNoMatchesMen
+            // 
+            this.lblNoMatchesMen.AutoSize = true;
+            this.lblNoMatchesMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblNoMatchesMen.Location = new System.Drawing.Point(115, 430);
+            this.lblNoMatchesMen.Name = "lblNoMatchesMen";
+            this.lblNoMatchesMen.Size = new System.Drawing.Size(379, 36);
+            this.lblNoMatchesMen.TabIndex = 10;
+            this.lblNoMatchesMen.Text = "No items match search filter";
+            // 
             // UserControlMenSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -126,5 +138,6 @@
         private System.Windows.Forms.Button btnMenResultToHome;
         private System.Windows.Forms.Button btnBackToMen;
         private System.Windows.Forms.DataGridView dgvwMenResults;
+        private System.Windows.Forms.Label lblNoMatchesMen;
     }
 }
