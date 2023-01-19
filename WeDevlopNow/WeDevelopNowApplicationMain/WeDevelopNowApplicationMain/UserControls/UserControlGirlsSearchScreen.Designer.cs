@@ -92,8 +92,7 @@
             this.cmbxBrandGirls.Name = "cmbxBrandGirls";
             this.cmbxBrandGirls.Size = new System.Drawing.Size(325, 44);
             this.cmbxBrandGirls.TabIndex = 24;
-            this.cmbxBrandGirls.SelectedIndexChanged += new System.EventHandler(this.cmbxBrandGirls_SelectedIndexChanged);
-            this.cmbxBrandGirls.SelectionChangeCommitted += new System.EventHandler(this.cmbxBrandGirls_SelectionChangeCommitted);
+            this.cmbxBrandGirls.TextChanged += new System.EventHandler(this.cmbxBrandGirls_TextChanged);
             // 
             // cmbxColourGirls
             // 
@@ -103,8 +102,7 @@
             this.cmbxColourGirls.Name = "cmbxColourGirls";
             this.cmbxColourGirls.Size = new System.Drawing.Size(325, 44);
             this.cmbxColourGirls.TabIndex = 23;
-            this.cmbxColourGirls.SelectedIndexChanged += new System.EventHandler(this.cmbxColourGirls_SelectedIndexChanged);
-            this.cmbxColourGirls.SelectionChangeCommitted += new System.EventHandler(this.cmbxColourGirls_SelectionChangeCommitted);
+            this.cmbxColourGirls.TextChanged += new System.EventHandler(this.cmbxColourGirls_TextChanged);
             // 
             // cmbxSizeGirls
             // 
@@ -114,8 +112,7 @@
             this.cmbxSizeGirls.Name = "cmbxSizeGirls";
             this.cmbxSizeGirls.Size = new System.Drawing.Size(325, 44);
             this.cmbxSizeGirls.TabIndex = 22;
-            this.cmbxSizeGirls.SelectedIndexChanged += new System.EventHandler(this.cmbxSizeGirls_SelectedIndexChanged);
-            this.cmbxSizeGirls.SelectionChangeCommitted += new System.EventHandler(this.cmbxSizeGirls_SelectionChangeCommitted);
+            this.cmbxSizeGirls.TextChanged += new System.EventHandler(this.cmbxSizeGirls_TextChanged);
             // 
             // cmbxProductTypeGirls
             // 
@@ -125,8 +122,7 @@
             this.cmbxProductTypeGirls.Name = "cmbxProductTypeGirls";
             this.cmbxProductTypeGirls.Size = new System.Drawing.Size(325, 44);
             this.cmbxProductTypeGirls.TabIndex = 21;
-            this.cmbxProductTypeGirls.SelectedIndexChanged += new System.EventHandler(this.cmbxProductTypeGirls_SelectedIndexChanged);
-            this.cmbxProductTypeGirls.SelectionChangeCommitted += new System.EventHandler(this.cmbxProductTypeGirls_SelectionChangeCommitted);
+            this.cmbxProductTypeGirls.TextChanged += new System.EventHandler(this.cmbxProductTypeGirls_TextChanged);
             // 
             // btnFindGirls
             // 

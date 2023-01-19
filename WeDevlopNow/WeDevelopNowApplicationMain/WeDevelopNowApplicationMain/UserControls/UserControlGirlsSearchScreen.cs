@@ -248,42 +248,22 @@ namespace WeDevelopNowApplicationMain
             }
         }
 
-        private void cmbxProductTypeGirls_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbxProductTypeGirls_TextChanged(object sender, EventArgs e)
         {
             SmartItenmSelectionProductTypeGirls();
         }
 
-        private void cmbxProductTypeGirls_SelectionChangeCommitted(object sender, EventArgs e)
+        private void cmbxSizeGirls_TextChanged(object sender, EventArgs e)
         {
-            SmartItenmSelectionProductTypeGirls();
+            //
         }
 
-        private void cmbxSizeGirls_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SmartItenmSelectionColourGirls();
-        }
-
-        private void cmbxSizeGirls_SelectionChangeCommitted(object sender, EventArgs e)
+        private void cmbxColourGirls_TextChanged(object sender, EventArgs e)
         {
             SmartItenmSelectionColourGirls();
         }
 
-        private void cmbxColourGirls_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SmartItenmSelectionColourGirls();
-        }
-
-        private void cmbxColourGirls_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            SmartItenmSelectionColourGirls();
-        }
-
-        private void cmbxBrandGirls_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SmartItenmSelectionBrandGirls();
-        }
-
-        private void cmbxBrandGirls_SelectionChangeCommitted(object sender, EventArgs e)
+        private void cmbxBrandGirls_TextChanged(object sender, EventArgs e)
         {
             SmartItenmSelectionBrandGirls();
         }

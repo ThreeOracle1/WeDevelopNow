@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlWomenSearchScreen));
             this.pnlWomenSearch = new System.Windows.Forms.Panel();
+            this.label1s = new System.Windows.Forms.Label();
+            this.lblWomenS = new System.Windows.Forms.Label();
             this.cmbxBrandWomen = new System.Windows.Forms.ComboBox();
             this.cmbxColourWomen = new System.Windows.Forms.ComboBox();
             this.cmbxSizeWomen = new System.Windows.Forms.ComboBox();
@@ -45,8 +47,6 @@
             this.lblProductTypeWomen = new System.Windows.Forms.Label();
             this.btnMenToHome = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lblWomenS = new System.Windows.Forms.Label();
-            this.label1s = new System.Windows.Forms.Label();
             this.pnlWomenSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +75,28 @@
             this.pnlWomenSearch.Size = new System.Drawing.Size(580, 750);
             this.pnlWomenSearch.TabIndex = 3;
             // 
+            // label1s
+            // 
+            this.label1s.AutoSize = true;
+            this.label1s.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.label1s.Font = new System.Drawing.Font("Verdana", 14F);
+            this.label1s.Location = new System.Drawing.Point(30, 112);
+            this.label1s.Name = "label1s";
+            this.label1s.Size = new System.Drawing.Size(103, 29);
+            this.label1s.TabIndex = 26;
+            this.label1s.Text = "Search ";
+            // 
+            // lblWomenS
+            // 
+            this.lblWomenS.AutoSize = true;
+            this.lblWomenS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblWomenS.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lblWomenS.Location = new System.Drawing.Point(30, 72);
+            this.lblWomenS.Name = "lblWomenS";
+            this.lblWomenS.Size = new System.Drawing.Size(116, 29);
+            this.lblWomenS.TabIndex = 25;
+            this.lblWomenS.Text = "Womens";
+            // 
             // cmbxBrandWomen
             // 
             this.cmbxBrandWomen.Font = new System.Drawing.Font("Verdana", 18F);
@@ -83,8 +105,7 @@
             this.cmbxBrandWomen.Name = "cmbxBrandWomen";
             this.cmbxBrandWomen.Size = new System.Drawing.Size(331, 44);
             this.cmbxBrandWomen.TabIndex = 21;
-            this.cmbxBrandWomen.SelectedIndexChanged += new System.EventHandler(this.cmbxBrandWomen_SelectedIndexChanged);
-            this.cmbxBrandWomen.SelectionChangeCommitted += new System.EventHandler(this.cmbxBrandWomen_SelectionChangeCommitted);
+            this.cmbxBrandWomen.TextChanged += new System.EventHandler(this.cmbxBrandWomen_TextChanged);
             // 
             // cmbxColourWomen
             // 
@@ -94,8 +115,7 @@
             this.cmbxColourWomen.Name = "cmbxColourWomen";
             this.cmbxColourWomen.Size = new System.Drawing.Size(331, 44);
             this.cmbxColourWomen.TabIndex = 20;
-            this.cmbxColourWomen.SelectedIndexChanged += new System.EventHandler(this.cmbxColourWomen_SelectedIndexChanged);
-            this.cmbxColourWomen.SelectionChangeCommitted += new System.EventHandler(this.cmbxColourWomen_SelectionChangeCommitted);
+            this.cmbxColourWomen.TextChanged += new System.EventHandler(this.cmbxColourWomen_TextChanged);
             // 
             // cmbxSizeWomen
             // 
@@ -105,8 +125,7 @@
             this.cmbxSizeWomen.Name = "cmbxSizeWomen";
             this.cmbxSizeWomen.Size = new System.Drawing.Size(331, 44);
             this.cmbxSizeWomen.TabIndex = 19;
-            this.cmbxSizeWomen.SelectedIndexChanged += new System.EventHandler(this.cmbxSizeWomen_SelectedIndexChanged);
-            this.cmbxSizeWomen.SelectionChangeCommitted += new System.EventHandler(this.cmbxSizeWomen_SelectionChangeCommitted);
+            this.cmbxSizeWomen.TextChanged += new System.EventHandler(this.cmbxSizeWomen_TextChanged);
             // 
             // cmbxProductTypeWomen
             // 
@@ -116,8 +135,7 @@
             this.cmbxProductTypeWomen.Name = "cmbxProductTypeWomen";
             this.cmbxProductTypeWomen.Size = new System.Drawing.Size(331, 44);
             this.cmbxProductTypeWomen.TabIndex = 18;
-            this.cmbxProductTypeWomen.SelectedIndexChanged += new System.EventHandler(this.cmbxProductTypeWomen_SelectedIndexChanged);
-            this.cmbxProductTypeWomen.SelectionChangeCommitted += new System.EventHandler(this.cmbxProductTypeWomen_SelectionChangeCommitted);
+            this.cmbxProductTypeWomen.TextChanged += new System.EventHandler(this.cmbxProductTypeWomen_TextChanged);
             // 
             // btnFindWomen
             // 
@@ -232,28 +250,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
-            // 
-            // lblWomenS
-            // 
-            this.lblWomenS.AutoSize = true;
-            this.lblWomenS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.lblWomenS.Font = new System.Drawing.Font("Verdana", 14F);
-            this.lblWomenS.Location = new System.Drawing.Point(30, 72);
-            this.lblWomenS.Name = "lblWomenS";
-            this.lblWomenS.Size = new System.Drawing.Size(116, 29);
-            this.lblWomenS.TabIndex = 25;
-            this.lblWomenS.Text = "Womens";
-            // 
-            // label1s
-            // 
-            this.label1s.AutoSize = true;
-            this.label1s.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.label1s.Font = new System.Drawing.Font("Verdana", 14F);
-            this.label1s.Location = new System.Drawing.Point(30, 112);
-            this.label1s.Name = "label1s";
-            this.label1s.Size = new System.Drawing.Size(103, 29);
-            this.label1s.TabIndex = 26;
-            this.label1s.Text = "Search ";
             // 
             // UserControlWomenSearchScreen
             // 

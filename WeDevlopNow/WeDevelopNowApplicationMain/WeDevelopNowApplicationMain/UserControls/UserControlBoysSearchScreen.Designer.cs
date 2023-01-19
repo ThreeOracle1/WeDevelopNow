@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlBoysSearchScreen));
             this.pnlBoysSearch = new System.Windows.Forms.Panel();
+            this.lblBoysS = new System.Windows.Forms.Label();
             this.cmbxBrandBoys = new System.Windows.Forms.ComboBox();
             this.cmbxColourBoys = new System.Windows.Forms.ComboBox();
             this.cmbxSizeBoys = new System.Windows.Forms.ComboBox();
@@ -45,7 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnBoysToHome = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblBoysS = new System.Windows.Forms.Label();
             this.pnlBoysSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,17 @@
             this.pnlBoysSearch.Size = new System.Drawing.Size(580, 750);
             this.pnlBoysSearch.TabIndex = 4;
             // 
+            // lblBoysS
+            // 
+            this.lblBoysS.AutoSize = true;
+            this.lblBoysS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.lblBoysS.Font = new System.Drawing.Font("Verdana", 14F);
+            this.lblBoysS.Location = new System.Drawing.Point(30, 72);
+            this.lblBoysS.Name = "lblBoysS";
+            this.lblBoysS.Size = new System.Drawing.Size(161, 29);
+            this.lblBoysS.TabIndex = 23;
+            this.lblBoysS.Text = "Boys Search";
+            // 
             // cmbxBrandBoys
             // 
             this.cmbxBrandBoys.Font = new System.Drawing.Font("Verdana", 18F);
@@ -81,8 +92,7 @@
             this.cmbxBrandBoys.Name = "cmbxBrandBoys";
             this.cmbxBrandBoys.Size = new System.Drawing.Size(312, 44);
             this.cmbxBrandBoys.TabIndex = 22;
-            this.cmbxBrandBoys.SelectedIndexChanged += new System.EventHandler(this.cmbxBrandBoys_SelectedIndexChanged);
-            this.cmbxBrandBoys.SelectionChangeCommitted += new System.EventHandler(this.cmbxBrandBoys_SelectionChangeCommitted);
+            this.cmbxBrandBoys.TextChanged += new System.EventHandler(this.cmbxBrandBoys_TextChanged);
             // 
             // cmbxColourBoys
             // 
@@ -92,8 +102,7 @@
             this.cmbxColourBoys.Name = "cmbxColourBoys";
             this.cmbxColourBoys.Size = new System.Drawing.Size(312, 44);
             this.cmbxColourBoys.TabIndex = 21;
-            this.cmbxColourBoys.SelectedIndexChanged += new System.EventHandler(this.cmbxColourBoys_SelectedIndexChanged);
-            this.cmbxColourBoys.SelectionChangeCommitted += new System.EventHandler(this.cmbxColourBoys_SelectionChangeCommitted);
+            this.cmbxColourBoys.TextChanged += new System.EventHandler(this.cmbxColourBoys_TextChanged);
             // 
             // cmbxSizeBoys
             // 
@@ -103,8 +112,7 @@
             this.cmbxSizeBoys.Name = "cmbxSizeBoys";
             this.cmbxSizeBoys.Size = new System.Drawing.Size(312, 44);
             this.cmbxSizeBoys.TabIndex = 20;
-            this.cmbxSizeBoys.SelectedIndexChanged += new System.EventHandler(this.cmbxSizeBoys_SelectedIndexChanged);
-            this.cmbxSizeBoys.SelectionChangeCommitted += new System.EventHandler(this.cmbxSizeBoys_SelectionChangeCommitted);
+            this.cmbxSizeBoys.TextChanged += new System.EventHandler(this.cmbxSizeBoys_TextChanged);
             // 
             // cmbxProductTypeBoys
             // 
@@ -114,8 +122,7 @@
             this.cmbxProductTypeBoys.Name = "cmbxProductTypeBoys";
             this.cmbxProductTypeBoys.Size = new System.Drawing.Size(315, 44);
             this.cmbxProductTypeBoys.TabIndex = 19;
-            this.cmbxProductTypeBoys.SelectedIndexChanged += new System.EventHandler(this.cmbxProductTypeBoys_SelectedIndexChanged);
-            this.cmbxProductTypeBoys.SelectionChangeCommitted += new System.EventHandler(this.cmbxProductTypeBoys_SelectionChangeCommitted);
+            this.cmbxProductTypeBoys.TextChanged += new System.EventHandler(this.cmbxProductTypeBoys_TextChanged);
             // 
             // btnFindBoys
             // 
@@ -230,17 +237,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
-            // 
-            // lblBoysS
-            // 
-            this.lblBoysS.AutoSize = true;
-            this.lblBoysS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.lblBoysS.Font = new System.Drawing.Font("Verdana", 14F);
-            this.lblBoysS.Location = new System.Drawing.Point(30, 72);
-            this.lblBoysS.Name = "lblBoysS";
-            this.lblBoysS.Size = new System.Drawing.Size(161, 29);
-            this.lblBoysS.TabIndex = 23;
-            this.lblBoysS.Text = "Boys Search";
             // 
             // UserControlBoysSearchScreen
             // 

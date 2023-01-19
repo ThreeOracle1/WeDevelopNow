@@ -120,8 +120,7 @@
             this.cmbxColourBrand.Name = "cmbxColourBrand";
             this.cmbxColourBrand.Size = new System.Drawing.Size(290, 44);
             this.cmbxColourBrand.TabIndex = 18;
-            this.cmbxColourBrand.SelectedIndexChanged += new System.EventHandler(this.cmbxColourBrand_SelectedIndexChanged);
-            this.cmbxColourBrand.SelectionChangeCommitted += new System.EventHandler(this.cmbxColourBrand_SelectionChangeCommitted);
+            this.cmbxColourBrand.TextChanged += new System.EventHandler(this.cmbxColourBrand_TextChanged);
             // 
             // cmbxSizeBrand
             // 
@@ -131,8 +130,7 @@
             this.cmbxSizeBrand.Name = "cmbxSizeBrand";
             this.cmbxSizeBrand.Size = new System.Drawing.Size(290, 44);
             this.cmbxSizeBrand.TabIndex = 17;
-            this.cmbxSizeBrand.SelectedIndexChanged += new System.EventHandler(this.cmbxSizeBrand_SelectedIndexChanged);
-            this.cmbxSizeBrand.SelectionChangeCommitted += new System.EventHandler(this.cmbxSizeBrand_SelectionChangeCommitted);
+            this.cmbxSizeBrand.TextChanged += new System.EventHandler(this.cmbxSizeBrand_TextChanged);
             // 
             // cmbxProductTypeBrand
             // 
@@ -142,8 +140,7 @@
             this.cmbxProductTypeBrand.Name = "cmbxProductTypeBrand";
             this.cmbxProductTypeBrand.Size = new System.Drawing.Size(290, 44);
             this.cmbxProductTypeBrand.TabIndex = 16;
-            this.cmbxProductTypeBrand.SelectedIndexChanged += new System.EventHandler(this.cmbxProductTypeBrand_SelectedIndexChanged);
-            this.cmbxProductTypeBrand.SelectionChangeCommitted += new System.EventHandler(this.cmbxProductTypeBrand_SelectionChangeCommitted);
+            this.cmbxProductTypeBrand.TextChanged += new System.EventHandler(this.cmbxProductTypeBrand_TextChanged);
             // 
             // cmbxGenderBrand
             // 
@@ -153,8 +150,7 @@
             this.cmbxGenderBrand.Name = "cmbxGenderBrand";
             this.cmbxGenderBrand.Size = new System.Drawing.Size(290, 44);
             this.cmbxGenderBrand.TabIndex = 15;
-            this.cmbxGenderBrand.SelectedIndexChanged += new System.EventHandler(this.cmbxGenderBrand_SelectedIndexChanged);
-            this.cmbxGenderBrand.SelectionChangeCommitted += new System.EventHandler(this.cmbxGenderBrand_SelectionChangeCommitted);
+            this.cmbxGenderBrand.TextChanged += new System.EventHandler(this.cmbxGenderBrand_TextChanged);
             // 
             // btnFindBrand
             // 
