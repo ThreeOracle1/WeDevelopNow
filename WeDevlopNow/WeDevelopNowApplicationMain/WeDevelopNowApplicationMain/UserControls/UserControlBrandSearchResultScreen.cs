@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,59 @@ namespace WeDevelopNowApplicationMain
 {
     public partial class UserControlBrandSearchResultScreen : UserControl
     {
+        string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
+
         public UserControlBrandSearchResultScreen()
         {
             InitializeComponent();
         }
+
+        public void BindDataGridBrandResult(string sqlBrandFindStatement)
+        {
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                string starterQuery = "SELECT * FROM OurProducts";
+
+                using (SqlCommand cmd = new SqlCommand(sqlBrandFindStatement, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            dgvwBrandResults.DataSource = dt;
+                        }
+                    }
+                }
+            }
+        }
+
+        public void BindDataGridBrandFindResult(string sqlBrandFindStatement)
+        {
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sqlBrandFindStatement, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            dgvwBrandResults.DataSource = dt;
+                            dgvwBrandResults.Refresh();
+                            dgvwBrandResults.Update();
+                        }
+                    }
+                }
+            }
+        }
+
 
         private void btnBrandResultBack_Click(object sender, EventArgs e)
         {

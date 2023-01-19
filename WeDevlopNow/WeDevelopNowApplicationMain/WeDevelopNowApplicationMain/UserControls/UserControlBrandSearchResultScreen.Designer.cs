@@ -34,12 +34,15 @@
             this.btnBrandResultBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvwBrandResults = new System.Windows.Forms.DataGridView();
             this.pnlBrandSearchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwBrandResults)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBrandSearchResult
             // 
+            this.pnlBrandSearchResult.Controls.Add(this.dgvwBrandResults);
             this.pnlBrandSearchResult.Controls.Add(this.btnBrandResultToHome);
             this.pnlBrandSearchResult.Controls.Add(this.btnBrandResultBack);
             this.pnlBrandSearchResult.Controls.Add(this.pictureBox1);
@@ -88,6 +91,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Brand results";
             // 
+            // dgvwBrandResults
+            // 
+            this.dgvwBrandResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvwBrandResults.Location = new System.Drawing.Point(61, 233);
+            this.dgvwBrandResults.Name = "dgvwBrandResults";
+            this.dgvwBrandResults.RowHeadersWidth = 51;
+            this.dgvwBrandResults.RowTemplate.Height = 24;
+            this.dgvwBrandResults.Size = new System.Drawing.Size(480, 345);
+            this.dgvwBrandResults.TabIndex = 9;
+            // 
             // UserControlBrandSearchResultScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,6 +111,7 @@
             this.pnlBrandSearchResult.ResumeLayout(false);
             this.pnlBrandSearchResult.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvwBrandResults)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,5 +123,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBrandResultToHome;
         private System.Windows.Forms.Button btnBrandResultBack;
+        private System.Windows.Forms.DataGridView dgvwBrandResults;
     }
 }
