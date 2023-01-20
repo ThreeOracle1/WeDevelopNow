@@ -108,7 +108,10 @@ namespace WeDevelopNowApplicationMain
 
             if (String.IsNullOrWhiteSpace(cmbxSizeGirls.Text))
             {
-                validFindRequest = false;
+                if (cmbxProductTypeGirls.Text != "Leggings & Tights")
+                {
+                    validFindRequest = false;
+                }
             }
 
             if (String.IsNullOrWhiteSpace(cmbxColourGirls.Text))

@@ -90,7 +90,10 @@ namespace WeDevelopNowApplicationMain
 
             if (String.IsNullOrWhiteSpace(cmbxSizeWomen.Text))
             {
-                validFindRequest = false;
+                if(cmbxProductTypeWomen.Text != "Leggings & Tights")
+                {
+                    validFindRequest = false;
+                }
             }
 
             if (String.IsNullOrWhiteSpace(cmbxColourWomen.Text))
@@ -226,8 +229,6 @@ namespace WeDevelopNowApplicationMain
                 if (cmbxColourWomen.Text == "Tan")
                 {
                     cmbxProductTypeWomen.Text = "Leggings & Tights";
-
-                    cmbxSizeWomen.Text = "M";
 
                     cmbxBrandWomen.Text = "Brand B";
                 }
