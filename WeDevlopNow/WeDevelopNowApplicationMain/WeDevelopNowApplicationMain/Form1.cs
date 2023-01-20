@@ -25,8 +25,6 @@ namespace WeDevelopNowApplicationMain
             DisableAllUserControlVisability();
         }
 
-        public string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";
-
         public void DisableAllUserControlVisability()
         {
             userControlBoysSearchResultScreen1.Visible = false;
