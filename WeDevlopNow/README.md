@@ -61,4 +61,26 @@ GO
 
 How to connect the database to the visual studio application:
 
-For the application to work, the database must be connected correctly. To do this, open the application file and expand the User Controls folder.
+Before opening the application, you will need to find what your database connection string is.
+
+To do this, right click your database in the object explorer and select 'Properties'. Then at the bottom left of the window click the 'View Connection Properties' link.
+
+This will display all the information you need to create a connection string.
+
+Change the following YOURSERVERNAMEHERE AND YOURDATABASENAMEHERE To the properties of your local database
+
+Data Source='YOURSERVERNAMEHERE'\\'Local;Initial Catalog='YOURDATABASENAMEHERE' ;Integrated Security=True;
+
+The end result should look like this:
+
+Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True
+
+Once thats done we can start connecting it to the application
+
+For the application to work, the database must be connected correctly. To do this, open the application file and expand the User Controls folder. Right click the User Control called 'UserControlMenSearchResultScreen' and select 'view code'. 
+
+This will open the script assosiated with the user control. Here there is a string declearation called 'string conString = "Data Source=(localdb)\\Local;Initial Catalog=DatabaseWeDevlopNow;Integrated Security=True";'. You will need to replace the 'conString' string content with your own connection string. 
+
+Unfortunately this will have to be done for each page. So select each of the User Control Results Screens and replace each of the connection string, depending on what you want to use.
+
+Once done the Database should be connected.
