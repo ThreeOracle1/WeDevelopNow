@@ -104,6 +104,25 @@ namespace WeDevelopNowApplicationMain
 
         public string FindTableSearchQueryBoys()
         {
+            if (String.IsNullOrWhiteSpace(cmbxProductTypeBoys.Text))
+            {
+                validFindRequest = false;
+            }
+
+            if (String.IsNullOrWhiteSpace(cmbxSizeBoys.Text))
+            {
+                validFindRequest = false;
+            }
+
+            if (String.IsNullOrWhiteSpace(cmbxColourBoys.Text))
+            {
+                validFindRequest = false;
+            }
+
+            if (String.IsNullOrWhiteSpace(cmbxBrandBoys.Text))
+            {
+                validFindRequest = false;
+            }
 
             string BoysProductTypeSearch = cmbxProductTypeBoys.Text;
 

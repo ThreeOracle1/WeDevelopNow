@@ -78,6 +78,25 @@ namespace WeDevelopNowApplicationMain
 
         public string FindTableSearchQueryBrand()
         {
+            if (String.IsNullOrWhiteSpace(cmbxProductTypeBrand.Text))
+            {
+                validFindRequest = false;
+            }
+
+            if (String.IsNullOrWhiteSpace(cmbxSizeBrand.Text))
+            {
+                validFindRequest = false;
+            }
+
+            if (String.IsNullOrWhiteSpace(cmbxColourBrand.Text))
+            {
+                validFindRequest = false;
+            }
+
+            if (String.IsNullOrWhiteSpace(cmbxGenderBrand.Text))
+            {
+                validFindRequest = false;
+            }
 
             string brandProductTypeSearch = cmbxProductTypeBrand.Text;
 
